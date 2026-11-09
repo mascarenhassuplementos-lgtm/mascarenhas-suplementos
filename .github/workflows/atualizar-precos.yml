@@ -1,0 +1,70 @@
+# Atualiza preços e prazos pela API do Mercado Livre e publica o site no GitHub Pages.
+name: Atualizar preços e publicar site
+
+on:
+  schedule:
+    - cron: "0 9,15,21,3 * * *"   # a cada 6h (06h, 12h, 18h e 00h no horário de Brasília)
+  workflow_dispatch:               # botão "Run workflow" para rodar na hora
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: atualizar-precos
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Consultar a API do Mercado Livre
+        env:
+          ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
+          ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
+          ML_REFRESH_TOKEN: ${{ secrets.ML_REFRESH_TOKEN }}
+          NOVO_REFRESH_TOKEN_ARQUIVO: ${{ runner.temp }}/novo_refresh_token
+        run: |
+          if [ -z "$ML_REFRESH_TOKEN" ]; then
+            echo "Segredos do Mercado Livre ainda não cadastrados: publicando o site sem atualizar preços."
+            exit 0
+          fi
+          python3 tools/atualizar_precos.py
+
+      - name: Guardar o novo refresh token (o ML troca a cada uso)
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          ARQ="${{ runner.temp }}/novo_refresh_token"
+          if [ -s "$ARQ" ]; then
+            echo "::add-mask::$(cat "$ARQ")"
+            gh secret set ML_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY" < "$ARQ"
+            rm -f "$ARQ"
+          fi
+
+      - name: Salvar produtos.json no repositório
+        run: |
+          git config user.name "atualizador-precos"
+          git config user.email "actions@users.noreply.github.com"
+          git add site/produtos.json
+          git diff --cached --quiet || git commit -m "Atualiza preços e prazos do Mercado Livre"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
