@@ -1,0 +1,7 @@
+{
+ "margem_sobre_ml": 0.1,
+ "cep_entrega": "41771080",
+ "tempo_proprio_horas": 24,
+ "prazo_max_ml_horas": 24,
+ "prazo_max_cliente_horas": 48
+}
