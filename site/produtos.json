@@ -1513,6 +1513,84 @@
    "preco": 149.9,
    "prazo_cliente_horas": 240,
    "disponivel": true
+  },
+  {
+   "id": "strap-strongfist-preto",
+   "cat": "Acessórios",
+   "nome": "Strong Fist Strap LPO Pro (par)",
+   "tam": "100% algodão · preto",
+   "img": "https://http2.mlstatic.com/D_Q_NP_2X_755700-MLA116319493110_092026-E.webp",
+   "ml_id": "MLB38399644",
+   "preco_ml": 19.79,
+   "prazo_ml_horas": 24,
+   "preco": 21.77,
+   "prazo_cliente_horas": 48,
+   "disponivel": true
+  },
+  {
+   "id": "strap-fortwazz-azul",
+   "cat": "Acessórios",
+   "nome": "Fortwazz Fita Strap Profissional (par)",
+   "tam": "100% algodão · preto/azul",
+   "img": "https://http2.mlstatic.com/D_Q_NP_2X_664019-MLA99602312890_122025-E.webp",
+   "ml_id": "MLB36118110",
+   "preco_ml": 19.8,
+   "prazo_ml_horas": 24,
+   "preco": 21.78,
+   "prazo_cliente_horas": 48,
+   "disponivel": true
+  },
+  {
+   "id": "strap-strongfist-rosa",
+   "cat": "Acessórios",
+   "nome": "Strong Fist Strap LPO Pro (par)",
+   "tam": "100% algodão · rosa",
+   "img": "https://http2.mlstatic.com/D_Q_NP_2X_651170-MLA115359927821_072026-E.webp",
+   "ml_id": "MLB48945960",
+   "preco_ml": 19.89,
+   "prazo_ml_horas": 24,
+   "preco": 21.88,
+   "prazo_cliente_horas": 48,
+   "disponivel": true
+  },
+  {
+   "id": "strap-strongfist-2pares",
+   "cat": "Acessórios",
+   "nome": "Strong Fist Strap – kit 2 pares",
+   "tam": "resistente · preto",
+   "img": "https://http2.mlstatic.com/D_Q_NP_2X_746685-MLA106283179265_012026-E.webp",
+   "ml_id": "MLB65143675",
+   "preco_ml": 28.39,
+   "prazo_ml_horas": 24,
+   "preco": 31.23,
+   "prazo_cliente_horas": 48,
+   "disponivel": true
+  },
+  {
+   "id": "strap-fortwazz-zz60",
+   "cat": "Acessórios",
+   "nome": "Fortwazz Tala Strap com Punho ZZ60 (par)",
+   "tam": "algodão · preto/rosa",
+   "img": "https://http2.mlstatic.com/D_Q_NP_2X_820775-MLA112694548261_062026-E.webp",
+   "ml_id": "MLB43890815",
+   "preco_ml": 36.9,
+   "prazo_ml_horas": 24,
+   "preco": 40.59,
+   "prazo_cliente_horas": 48,
+   "disponivel": true
+  },
+  {
+   "id": "strap-bulldozer",
+   "cat": "Acessórios",
+   "nome": "Bulldozer Strap Costura Dupla (par)",
+   "tam": "100% algodão",
+   "img": "https://http2.mlstatic.com/D_Q_NP_2X_968612-MLA117436853989_092026-E.webp",
+   "ml_id": "MLB27580947",
+   "preco_ml": 53.9,
+   "prazo_ml_horas": 24,
+   "preco": 59.29,
+   "prazo_cliente_horas": 48,
+   "disponivel": true
   }
  ]
 }
