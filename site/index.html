@@ -156,11 +156,11 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
 const CONFIG = {
   nomeLoja: "Mascarenhas Suplementos",
   whatsapp: "5571997044675",     // WhatsApp de atendimento (71) 99704-4675
-  chavePix: "25282475000149",    // chave Pix = CNPJ da SUPPLEMENT ONE LTDA
+  chavePix: "",                  // nova chave Pix (CNPJ novo) — vazio: a chave é enviada pelo WhatsApp
   taxaEntregaSalvador: 15.00,     // R$ por pedido — entrega via delivery em Salvador
   freteGratisAcimaDe: 0,          // 0 = sem frete grátis; ex.: 150
   prazoHoras: 48,
-  cnpj: "25.282.475/0001-49",
+  cnpj: "",                      // preencher quando o CNPJ novo for aberto
   email: "mascarenhassuplementos@gmail.com",
   instagram: "mascarenhassuplementos",
   enderecoRetirada: "Loteamento Aquarius, Rua Magno Valente, 484 – Edf. Georges Pompidou – Salvador/BA"
@@ -297,7 +297,7 @@ function renderGrid(){
 const cats = [...new Set(PRODUTOS.map(p => p.cat || "Creatina"))];
 $("grid").innerHTML = cats.map(c => `<h2 class="cat">${c}</h2>` + (AVISOS[c] ? `<p class="aviso">${AVISOS[c]}</p>` : "") + PRODUTOS.filter(p => (p.cat || "Creatina") === c).map(card).join("")).join("");
 const fone = CONFIG.whatsapp.replace(/^55(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
-$("foot").innerHTML = `<strong>${CONFIG.nomeLoja}</strong> · CNPJ ${CONFIG.cnpj} · Salvador – BA<br>WhatsApp: <a href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener">${fone}</a>${CONFIG.email ? ` · E-mail: <a href="mailto:${CONFIG.email}">${CONFIG.email}</a>` : ""}${CONFIG.instagram ? ` · Instagram: <a href="https://www.instagram.com/${CONFIG.instagram}/" target="_blank" rel="noopener">@${CONFIG.instagram}</a>` : ""}${ATUALIZADO ? `<br>Preços e prazos atualizados em ${new Date(ATUALIZADO).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}` : ""}`;
+$("foot").innerHTML = `<strong>${CONFIG.nomeLoja}</strong>${CONFIG.cnpj ? ` · CNPJ ${CONFIG.cnpj}` : ""} · Salvador – BA<br>WhatsApp: <a href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener">${fone}</a>${CONFIG.email ? ` · E-mail: <a href="mailto:${CONFIG.email}">${CONFIG.email}</a>` : ""}${CONFIG.instagram ? ` · Instagram: <a href="https://www.instagram.com/${CONFIG.instagram}/" target="_blank" rel="noopener">@${CONFIG.instagram}</a>` : ""}${ATUALIZADO ? `<br>Preços e prazos atualizados em ${new Date(ATUALIZADO).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}` : ""}`;
 }
 renderGrid();
 
@@ -411,7 +411,7 @@ v("obs") ? `Obs.: ${v("obs")}` : null,
       <h3>Pedido ${id}</h3>
       <p>Se o WhatsApp não abriu, <a href="https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener">toque aqui</a>.</p>
       <p>Total: <strong>${brl(total)}</strong></p>
-      ${v("pag")==="Pix" ? `<p>Pague com Pix na chave abaixo e mande o comprovante no WhatsApp:</p><div class="pix">Chave Pix (CNPJ): ${CONFIG.chavePix}<br><small>O Pix aparece no nome SUPPLEMENT ONE LTDA, empresa responsável pela Mascarenhas Suplementos.</small></div><button type="button" class="add" id="copiarPix">Copiar chave Pix</button>` : `<p>Vamos te enviar o link de pagamento do cartão no WhatsApp.</p>`}
+      ${v("pag")==="Pix" ? (CONFIG.chavePix ? `<p>Pague com Pix na chave abaixo e mande o comprovante no WhatsApp:</p><div class="pix">Chave Pix: ${CONFIG.chavePix}<br><small>Mascarenhas Suplementos</small></div><button type="button" class="add" id="copiarPix">Copiar chave Pix</button>` : `<p>Vamos te enviar a <b>chave Pix</b> pelo WhatsApp para você pagar e mandar o comprovante.</p>`) : `<p>Vamos te enviar o link de pagamento do cartão no WhatsApp.</p>`}
       <p class="note">${ret ? `Retirada em: ${CONFIG.enderecoRetirada}. Avisamos no WhatsApp quando estiver pronto.` : `A entrega em até ${CONFIG.prazoHoras}h conta a partir da confirmação do pagamento.`}</p>
     </div>`;
   cart = {}; save(); $("count").textContent = 0;
