@@ -37,7 +37,7 @@ CAF = "Contém cafeína. Não indicado para gestantes, menores de 18 anos, card�
 AVISO = {"Pré-treino": CAF, "Termogênico": CAF}
 ENTREGA = "🚚 Entrega via delivery em Salvador: *R$ 15,00* (até 48h após o pagamento)"
 RETIRADA = "🏢 Retirada *GRÁTIS*: Loteamento Aquarius, Rua Magno Valente, 484 – Edf. Georges Pompidou"
-PAG = "💸 Pagamento: Pix (CNPJ 25282475000149) ou cartão por link"
+PAG = "💸 Pagamento: Pix (chave enviada no WhatsApp) ou cartão por link"
 
 # ---------- texto completo ----------
 t = ["*MASCARENHAS SUPLEMENTOS* 💪", "_Suplementos originais em Salvador_", "", ENTREGA, RETIRADA, PAG, ""]
@@ -82,7 +82,7 @@ logo.hAlign = "LEFT"
 s = [logo, Paragraph("Suplementos originais em Salvador – BA", SUB), Spacer(1, 8)]
 info = Table([[Paragraph("<b>Delivery em Salvador:</b> R$ 15,00 – entrega em até 48h após o pagamento", N)],
               [Paragraph("<b>Retirada GRÁTIS:</b> Loteamento Aquarius, Rua Magno Valente, 484 – Edf. Georges Pompidou", N)],
-              [Paragraph("<b>Pagamento:</b> Pix (CNPJ 25282475000149 – SUPPLEMENT ONE LTDA) ou cartão por link", N)],
+              [Paragraph("<b>Pagamento:</b> Pix (chave enviada pelo WhatsApp) ou cartão por link", N)],
               [Paragraph("<b>Pedidos:</b> WhatsApp (71) 99704-4675 · E-mail: mascarenhassuplementos@gmail.com · Instagram: @mascarenhassuplementos", N)]], colWidths=[W])
 info.setStyle(TableStyle([("BACKGROUND", (0, 0), (-1, -1), CLARO), ("BOX", (0, 0), (-1, -1), 0.8, VERDE),
                           ("LEFTPADDING", (0, 0), (-1, -1), 8), ("TOPPADDING", (0, 0), (-1, -1), 3),
@@ -105,7 +105,7 @@ for c, ps in cats.items():
         bloco += [Spacer(1, 3), Paragraph("Atenção: " + AVISO[c], AV)]
     # categorias grandes podem quebrar de página; as pequenas ficam juntas
     s += ([KeepTogether(bloco)] if len(ps) <= 12 else bloco) + [Spacer(1, 10)]
-s.append(Paragraph("Preços sujeitos a alteração e à disponibilidade de estoque. Mascarenhas Suplementos · CNPJ 25.282.475/0001-49",
+s.append(Paragraph("Preços sujeitos a alteração e à disponibilidade de estoque. Mascarenhas Suplementos · Salvador – BA",
                    st(fontSize=8, textColor=CINZA, alignment=1)))
 doc.build(s)
 print(sum(len(v) for v in cats.values()), "produtos;", len(cats), "categorias")

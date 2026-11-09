@@ -46,7 +46,7 @@ topo.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("LEFTPADDING"
 story = [topo,
          Paragraph(f"Atualizada em {hoje} · Pedidos: WhatsApp (71) 99704-4675 · E-mail: mascarenhassuplementos@gmail.com · Instagram: @mascarenhassuplementos · Delivery em Salvador R$ 15,00 (até 48h) · "
                    "Retirada GRÁTIS: Loteamento Aquarius, Rua Magno Valente, 484 – Edf. Georges Pompidou · "
-                   "Pix CNPJ 25282475000149", S), Spacer(1, 5)]
+                   "Pix ou cartão (chave Pix enviada pelo WhatsApp)", S), Spacer(1, 5)]
 
 # monta as linhas (cabeçalho de categoria + produtos) e divide em 2 colunas
 linhas = []
