@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mascarenhas Suplementos</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<meta property="og:image" content="logo.png">
+<meta name="description" content="Creatina, whey protein, pré-treino, glutamina, termogênicos, BCAA, barras de proteína e vitaminas com entrega em até 48h em Salvador. Peça pelo site e receba a confirmação no WhatsApp.">
+<style>
+/* =====================================================================
+   CONFIGURAÇÃO DA LOJA — edite os valores em CONFIG e PRODUTOS (no <script>)
+   ===================================================================== */
+:root{
+  --bg:#0f1412; --surface:#171e1b; --surface-2:#1f2824; --text:#eef3f0; --muted:#9fb0a8;
+  --accent:#3ddc84; --accent-ink:#06210f; --line:#2a3530; --warn:#ffcc66; --danger:#ff7a7a;
+  --radius:14px;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg:#f5f7f6; --surface:#ffffff; --surface-2:#eef2f0; --text:#14201b; --muted:#5b6b64;
+    --accent:#14894a; --accent-ink:#ffffff; --line:#dbe3df; --warn:#8a5a00; --danger:#b42318;
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{font-weight:800;letter-spacing:.5px;font-size:20px;display:flex;align-items:center;gap:10px}
+.logo img{width:46px;height:43px;flex:none;object-fit:contain}
+.logo .nome span{color:var(--accent)}
+.cart-btn{background:var(--accent);color:var(--accent-ink);border:0;border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer;font-size:15px}
+.hero{padding:40px 0 24px}
+.hero h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0 0 12px}
+.hero p{color:var(--muted);margin:0;max-width:640px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.badge{background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;padding:16px 0 48px}
+.cat{grid-column:1/-1;margin:16px 0 0;font-size:22px}
+.aviso{grid-column:1/-1;margin:0;padding:10px 12px;border-radius:10px;border:1px solid var(--warn);color:var(--warn);font-size:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:8px}
+.thumb{height:180px;border-radius:10px;background:#fff;overflow:hidden;display:grid;place-items:center;font-weight:800;font-size:28px;color:var(--accent)}
+.thumb img{width:100%;height:100%;object-fit:contain;padding:8px}
+.card h3{font-size:16px;margin:4px 0 0}
+.meta{color:var(--muted);font-size:14px}
+.price{font-size:22px;font-weight:800;margin-top:auto}
+.add{background:transparent;border:1.5px solid var(--accent);color:var(--accent);border-radius:10px;padding:10px;font-weight:700;cursor:pointer}
+.add:disabled{opacity:.5;cursor:not-allowed;border-color:var(--line);color:var(--muted)}
+.off .thumb{opacity:.5}
+.add:not(:disabled):hover{background:var(--accent);color:var(--accent-ink)}
+/* painel */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;z-index:20}
+.panel{position:fixed;top:0;right:0;height:100%;width:min(480px,100%);background:var(--surface);border-left:1px solid var(--line);z-index:30;transform:translateX(100%);transition:transform .25s;display:flex;flex-direction:column}
+.open .overlay{display:block}.open .panel{transform:none}
+.panel-head{display:flex;justify-content:space-between;align-items:center;padding:16px;border-bottom:1px solid var(--line)}
+.panel-body{padding:16px;overflow:auto;flex:1}
+.x{background:none;border:0;color:var(--text);font-size:26px;cursor:pointer;line-height:1}
+.line{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.qty{display:flex;align-items:center;gap:6px}
+.qty button{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);color:var(--text);cursor:pointer;font-size:16px}
+.totals{padding:12px 0}
+.totals div{display:flex;justify-content:space-between;padding:3px 0}
+.totals .big{font-weight:800;font-size:19px}
+h4{margin:18px 0 8px}
+label{display:block;font-size:14px;color:var(--muted);margin:10px 0 4px}
+input,select,textarea{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--surface-2);color:var(--text);font:inherit}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opts{display:grid;gap:8px}
+.opt{display:flex;gap:10px;align-items:flex-start;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:0;color:var(--text);cursor:pointer}
+.opt input{width:auto;margin-top:4px}
+.opt small{color:var(--muted)}
+.send{width:100%;margin-top:16px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;padding:14px;font-weight:800;font-size:16px;cursor:pointer}
+.send:disabled{opacity:.5;cursor:not-allowed}
+.note{font-size:13px;color:var(--muted);margin-top:8px}
+.err{color:var(--danger);font-size:14px;margin-top:8px;min-height:1em}
+.done{text-align:center;padding:24px 8px}
+.done .pix{background:var(--surface-2);border:1px dashed var(--accent);border-radius:12px;padding:12px;margin:12px 0;word-break:break-all;font-weight:700}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <div class="logo" id="logo"></div>
+  <button class="cart-btn" id="openCart">🛒 Carrinho (<span id="count">0</span>)</button>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Suplementos com entrega em até 48h em Salvador</h1>
+    <p>Escolha seu produto, preencha o endereço e o pedido chega direto no nosso WhatsApp. Confirmamos o pagamento e entregamos em até 48 horas.</p>
+    <div class="badges">
+      <span class="badge">🚚 Entrega em até 48h em Salvador</span>
+      <span class="badge">🏢 Retirada grátis no Aquarius</span>
+      <span class="badge">💸 Pix ou cartão</span>
+      <a class="badge" href="https://www.instagram.com/mascarenhassuplementos/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">📸 @mascarenhassuplementos</a>
+      <span class="badge">✅ Marcas originais</span>
+    </div>
+  </section>
+  <section class="grid" id="grid" aria-label="Produtos"></section>
+</main>
+
+<footer><div class="wrap" id="foot"></div></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="panel" aria-label="Carrinho e entrega">
+  <div class="panel-head"><strong id="panelTitle">Seu pedido</strong><button class="x" id="closeCart" aria-label="Fechar">×</button></div>
+  <div class="panel-body" id="panelBody">
+    <div id="lines"></div>
+    <div class="totals" id="totals"></div>
+
+    <form id="form" novalidate>
+      <h4>Como você quer receber?</h4>
+      <div class="opts">
+        <label class="opt"><input type="radio" name="receb" value="entrega" checked> <span><strong>Entrega via delivery</strong><br><small id="lblEntrega"></small></span></label>
+        <label class="opt"><input type="radio" name="receb" value="retirada"> <span><strong>Retirar no local — grátis</strong><br><small id="lblRetirada"></small></span></label>
+      </div>
+      <h4 id="fichaTitulo">Ficha de entrega</h4>
+      <label for="nome">Nome completo *</label><input id="nome" required autocomplete="name">
+      <label for="tel">WhatsApp *</label><input id="tel" required inputmode="tel" autocomplete="tel" placeholder="(71) 9 0000-0000">
+      <div id="endereco">
+      <div class="row">
+        <div><label for="cep">CEP *</label><input id="cep" required inputmode="numeric" autocomplete="postal-code" placeholder="40000-000"></div>
+        <div><label for="bairro">Bairro *</label><input id="bairro" required></div>
+      </div>
+      <label for="rua">Rua / avenida *</label><input id="rua" required autocomplete="address-line1">
+      <div class="row">
+        <div><label for="num">Número *</label><input id="num" required></div>
+        <div><label for="comp">Complemento</label><input id="comp" placeholder="Apto, bloco"></div>
+      </div>
+      <div class="row">
+        <div><label for="cidade">Cidade *</label><input id="cidade" required value="Salvador"></div>
+        <div><label for="uf">UF</label><input id="uf" value="BA" maxlength="2"></div>
+      </div>
+      <label for="ref">Ponto de referência</label><input id="ref">
+      </div>
+      <label for="janela">Melhor horário para receber / retirar</label>
+      <select id="janela"><option>Qualquer horário</option><option>Manhã (8h–12h)</option><option>Tarde (12h–18h)</option><option>Noite (18h–21h)</option></select>
+      <label for="pag">Forma de pagamento *</label>
+      <select id="pag"><option value="Pix">Pix (antes da entrega)</option><option value="Cartão (link de pagamento)">Cartão (enviamos um link)</option></select>
+      <label for="obs">Observações</label><textarea id="obs" rows="2"></textarea>
+      <div class="err" id="err"></div>
+      <button class="send" id="send" type="submit">Enviar pedido pelo WhatsApp</button>
+      <p class="note">Ao enviar, o WhatsApp abre com o seu pedido e a ficha de entrega já preenchidos. É só tocar em enviar.</p>
+    </form>
+  </div>
+</aside>
+
+<script>
+/* =====================================================================
+   CONFIGURAÇÃO — troque estes valores antes de publicar
+   ===================================================================== */
+const CONFIG = {
+  nomeLoja: "Mascarenhas Suplementos",
+  whatsapp: "5571997044675",     // WhatsApp de atendimento (71) 99704-4675
+  chavePix: "25282475000149",    // chave Pix = CNPJ da SUPPLEMENT ONE LTDA
+  taxaEntregaSalvador: 15.00,     // R$ por pedido — entrega via delivery em Salvador
+  freteGratisAcimaDe: 0,          // 0 = sem frete grátis; ex.: 150
+  prazoHoras: 48,
+  cnpj: "25.282.475/0001-49",
+  email: "mascarenhassuplementos@gmail.com",
+  instagram: "mascarenhassuplementos",
+  enderecoRetirada: "Loteamento Aquarius, Rua Magno Valente, 484 – Edf. Georges Pompidou – Salvador/BA"
+};
+
+/* Os preços e prazos vêm do arquivo produtos.json (atualizado automaticamente pela API do ML).
+   Esta lista é só reserva, caso o arquivo não carregue. */
+let PRODUTOS = [
+  {id:"growth-250", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_662415-MLA97812910758_112025-E.webp", nome:"Creatina Monohidratada Growth", tam:"250 g", preco:41.69},
+  {id:"growth-500p", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_923658-MLB117765624789_092026-E--creatina-monohidratada-500g-pouch-growth-supplements.webp", nome:"Creatina Monohidratada Growth (pouch)", tam:"500 g", preco:69.19},
+  {id:"soldiers-300", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_874037-MLA118277770414_102026-E.webp", nome:"Creatina Soldiers Nutrition", tam:"300 g", preco:43.89},
+  {id:"soldiers-500", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_784236-MLA119862530715_102026-E.webp", nome:"Creatina Soldiers Nutrition", tam:"500 g", preco:49.39},
+  {id:"soldiers-1kg", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_605306-MLA119872143535_102026-E.webp", nome:"Creatina Soldiers Nutrition", tam:"1 kg", preco:75.79},
+  {id:"darklab-300", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_830138-MLA116668021755_082026-E.webp", nome:"Creatina Dark Lab Premium Pure", tam:"300 g", preco:40.30},
+  {id:"darklab-500", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_734286-MLA115263082370_082026-E.webp", nome:"Creatina Dark Lab Premium Pure", tam:"500 g", preco:49.49},
+  {id:"darklab-1kg", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_603981-MLA115262802698_082026-E.webp", nome:"Creatina Monohidratada Dark Lab", tam:"1 kg", preco:76.99},
+  {id:"im-300", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_888917-MLA120800034791_112026-E.webp", nome:"Creatina Integralmédica Hardcore", tam:"300 g", preco:39.38},
+  {id:"im-1kg", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_779449-MLA100012609239_122025-E.webp", nome:"Creatina Integralmédica Hardcore", tam:"1 kg", preco:114.05},
+  {id:"maxt-300", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_920350-MLA113966831509_062026-E.webp", nome:"Creatina Max Titanium", tam:"300 g", preco:44.11},
+  {id:"bskull-300", cat:"Creatina", img:"https://http2.mlstatic.com/D_Q_NP_2X_901273-MLA99622932862_122025-E.webp", nome:"Creatina Black Skull Pura", tam:"300 g", preco:41.69},
+  {id:"creat-true", cat:"Creatina", img:"https://m.media-amazon.com/images/I/61wnpsQq7NL._AC_UL320_.jpg", nome:"True Source True Creatine 100% Pure", tam:"300 g", preco:55.00, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"whey-growth-basic", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_819000-MLA101180020755_122025-E.webp", nome:"Growth Basic Whey", tam:"1 kg · chocolate", preco:82.39},
+  {id:"whey-soldiers-core", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_972299-MLA114716702965_072026-E.webp", nome:"Soldiers Whey Core 70%", tam:"900 g · chocolate", preco:86.79},
+  {id:"whey-maxt-super", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_766899-MLA112393880407_052026-E.webp", nome:"Max Titanium Super Whey", tam:"900 g · chocolate", preco:76.89},
+  {id:"whey-darklab-1kg", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_999968-MLA99990200369_112025-E.webp", nome:"Dark Lab Whey Concentrado", tam:"1 kg · baunilha", preco:164.91},
+  {id:"whey-im-pure", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_784713-MLA118654723630_102026-E.webp", nome:"Integralmédica Whey 100% Pure", tam:"900 g · chocolate", preco:164.89},
+  {id:"whey-vitafor-wpc", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_965969-MLA99506477616_112025-E.webp", nome:"Vitafor Whey WPC", tam:"900 g · beijinho", preco:151.38},
+  {id:"whey-growth-conc", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_824274-MLA98770399871_112025-E.webp", nome:"Growth Whey Concentrado", tam:"1 kg · baunilha", preco:232.59},
+  {id:"whey-true-iso", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_903408-MLB95659677863_102025-E--whey-isolada-hidrolisada-gourmet-837g-true-source-brinde.webp", nome:"True Source True Whey Isolada & Hidrolisada Gourmet", tam:"837 g", preco:343.07},
+  {id:"whey-dux-conc", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_728880-MLA107260069950_032026-E.webp", nome:"Dux Whey Concentrado", tam:"900 g · chocolate", preco:212.65},
+  {id:"whey-dux-sache", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_904418-MLA119341515437_102026-E.webp", nome:"Dux Whey Concentrado – kit sachês", tam:"7 sachês · sabores variados", preco:98.89},
+  {id:"whey-dux-conc-450", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_666597-MLA107124009476_022026-E.webp", nome:"Dux Whey Concentrado", tam:"450 g · chocolate branco", preco:146.19},
+  {id:"whey-dux-fresh-450", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_824219-MLA110863132598_052026-E.webp", nome:"Dux Fresh Whey 3W", tam:"450 g · chocolate e amendoim", preco:170.08},
+  {id:"whey-dux-iso", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_907462-MLA100849173513_122025-E.webp", nome:"Dux Whey Isolado", tam:"900 g · chocolate", preco:361.71},
+  {id:"whey-dux-conc-18", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_778817-MLA114107313188_082026-E.webp", nome:"Dux Whey Concentrado", tam:"1,8 kg · baunilha", preco:477.81},
+  {id:"whey-dux-iso-18", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_701908-MLA99505330570_112025-E.webp", nome:"Dux Whey Isolado", tam:"1,8 kg · baunilha", preco:726.13},
+  {id:"whey-ftw-1kg", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_621717-MLA96994457340_112025-E.webp", nome:"FTW Whey Concentrado", tam:"1 kg · doce de leite", preco:82.45},
+  {id:"whey-im-pure-pouch", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_834791-MLA99514208339_112025-E.webp", nome:"Integralmédica Whey 100% Pure (pouch)", tam:"900 g · morango", preco:161.61},
+  {id:"whey-mu-pacoquinha", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_617786-MLA100000347809_112025-E.webp", nome:"+Mu Whey Concentrado", tam:"900 g · paçoquinha", preco:168.26},
+  {id:"whey-vitafor-3w", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_683095-MLA116188539817_082026-E.webp", nome:"Vitafor Whey Fort 3W", tam:"900 g · chocolate", preco:228.89},
+  {id:"whey-adaptogen-tasty", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_786360-MLA117211810828_102026-E.webp", nome:"Adaptogen Tasty Whey Gourmet 3W", tam:"900 g", preco:222.64},
+  {id:"whey-im-iso-triple", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_645191-MLA119102284218_112026-E.webp", nome:"Integralmédica Iso Triple Zero", tam:"900 g · baunilha", preco:332.77},
+  {id:"whey-growth-iso", cat:"Whey Protein", img:"https://http2.mlstatic.com/D_Q_NP_2X_800306-MLA99153783380_112025-E.webp", nome:"Growth Whey Isolado", tam:"1 kg · chocolate", preco:439.89},
+  {id:"whey-true-protein", cat:"Whey Protein", img:"https://m.media-amazon.com/images/I/51QfXPq7ioL._AC_UL320_.jpg", nome:"True Source True Protein (whey + colágeno)", tam:"900 g", preco:198.35, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"whey-true-vegan", cat:"Whey Protein", img:"https://m.media-amazon.com/images/I/71GwNbhEo0L._AC_UL320_.jpg", nome:"True Source True Vegan (proteína vegetal)", tam:"837 g · chocolate com avelã", preco:204.42, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"whey-true-concentrate", cat:"Whey Protein", img:"https://m.media-amazon.com/images/I/516zp1KhX5L._AC_UL320_.jpg", nome:"True Source True Concentrate", tam:"900 g · truffle 70% cacau", preco:242.44, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"pre-diabo-verde", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_775624-MLA99469548050_112025-E.webp", nome:"FTW Diabo Verde", tam:"300 g · morango", preco:68.99},
+  {id:"pre-horus", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_662388-MLA113359614120_072026-E.webp", nome:"Max Titanium Hórus", tam:"300 g · maçã verde", preco:72.90},
+  {id:"pre-evora", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_953067-MLA99497155850_112025-E.webp", nome:"Darkness Évora PW", tam:"300 g · limão", preco:79.09},
+  {id:"pre-venom", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_665577-MLA100021635731_122025-E.webp", nome:"Dark Lab Venom", tam:"300 g · limão", preco:109.89},
+  {id:"pre-exquenta", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_818963-MLA99429360494_112025-E.webp", nome:"+Mu Exquenta", tam:"500 g · limonada", preco:125.29},
+  {id:"pre-bone-crusher", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_871436-MLA99469979612_112025-E.webp", nome:"Black Skull Bone Crusher", tam:"300 g · fruit punch", preco:51.59},
+  {id:"pre-true-energyzer", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_993555-MLA115743111634_092026-E.webp", nome:"True Source Energyzer", tam:"300 g · fruit punch", preco:116.58},
+  {id:"pre-egide", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_648417-MLA113252966538_072026-E.webp", nome:"Max Titanium Égide", tam:"300 g · frutas vermelhas", preco:97.02},
+  {id:"pre-panic", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_687869-MLA118799062691_102026-E.webp", nome:"Adaptogen Panic", tam:"300 g · maçã verde", preco:81.77},
+  {id:"pre-raze", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_810312-MLA99385991414_112025-E.webp", nome:"Dark Lab Raze", tam:"300 g · melancia", preco:86.79},
+  {id:"pre-beast-kaos", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_951975-MLA99492783886_112025-E.webp", nome:"3VS Beast Kaos", tam:"300 g · uva", preco:69.05},
+  {id:"pre-bope-150", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_896865-MLA116615418668_092026-E.webp", nome:"Black Skull Bope", tam:"150 g · limão", preco:24.09},
+  {id:"pre-insane-clown", cat:"Pré-treino", img:"https://http2.mlstatic.com/D_Q_NP_2X_612453-MLA99512927842_112025-E.webp", nome:"Demons Lab Insane Clown", tam:"350 g · doces mastigáveis", preco:126.49},
+  {id:"glut-darklab-300", cat:"Glutamina", img:"https://http2.mlstatic.com/D_Q_NP_2X_733514-MLA99625549234_122025-E.webp", nome:"Glutamina Dark Lab L-Glutamine", tam:"300 g", preco:43.89},
+  {id:"glut-im-300", cat:"Glutamina", img:"https://http2.mlstatic.com/D_Q_NP_2X_672077-MLA101182123490_122025-E.webp", nome:"Glutamina Integralmédica", tam:"300 g", preco:51.44},
+  {id:"glut-darklab-500", cat:"Glutamina", img:"https://http2.mlstatic.com/D_Q_NP_2X_828636-MLA100044091017_122025-E.webp", nome:"Glutamina Dark Lab L-Glutamine (refil)", tam:"500 g", preco:65.89},
+  {id:"glut-maxt-300", cat:"Glutamina", img:"https://http2.mlstatic.com/D_Q_NP_2X_679388-MLA114285583081_072026-E.webp", nome:"Glutamina Max Titanium 100% Pura", tam:"300 g", preco:74.79},
+  {id:"glut-soldiers-1kg", cat:"Glutamina", img:"https://http2.mlstatic.com/D_Q_NP_2X_747003-MLA99963859397_112025-E.webp", nome:"L-Glutamina Soldiers Nutrition", tam:"1 kg", preco:121.00},
+  {id:"glut-soldiers-500", cat:"Glutamina", img:"https://http2.mlstatic.com/D_Q_NP_2X_751338-MLA99524535878_122025-E.webp", nome:"Glutamina Soldiers Nutrition", tam:"500 g", preco:70.40},
+  {id:"glut-vitafor-300", cat:"Glutamina", img:"https://http2.mlstatic.com/D_Q_NP_2X_656390-MLA120820399119_112026-E.webp", nome:"Vitafor Glutamax", tam:"300 g", preco:79.24},
+  {id:"glut-nutrify-500", cat:"Glutamina", img:"https://http2.mlstatic.com/D_Q_NP_2X_660746-MLA99539301574_122025-E.webp", nome:"Glutamina Nutrify Isolada", tam:"500 g", preco:89.67},
+  {id:"bcaa-maxt-2400", cat:"BCAA", img:"https://m.media-amazon.com/images/I/51qug1yoOyL._AC_UL320_.jpg", nome:"Max Titanium BCAA 2400", tam:"100 cápsulas", preco:56.06, fonte:"amazon", prazo_cliente_horas:192},
+  {id:"bcaa-darklab-311", cat:"BCAA", img:"https://m.media-amazon.com/images/I/71stXLxNKZL._AC_UL320_.jpg", nome:"Dark Lab BCAA 3:1:1", tam:"60 cápsulas", preco:43.89, fonte:"amazon", prazo_cliente_horas:192},
+  {id:"bcaa-3vs-attack", cat:"BCAA", img:"https://m.media-amazon.com/images/I/71OepWddhbL._AC_UL320_.jpg", nome:"3VS BCAA Attack", tam:"120 cápsulas", preco:37.29, fonte:"amazon", prazo_cliente_horas:192},
+  {id:"bcaa-3vs-1011", cat:"BCAA", img:"https://m.media-amazon.com/images/I/81MmXQ7eyTL._AC_UL320_.jpg", nome:"3VS BCAA 10:1:1 em pó", tam:"250 g · morango", preco:54.69, fonte:"amazon", prazo_cliente_horas:192},
+  {id:"bcaa-maxt-drink", cat:"BCAA", img:"https://m.media-amazon.com/images/I/61HogFQlCyL._AC_UL320_.jpg", nome:"Max Titanium BCAA 4:1:1 Drink", tam:"280 g · uva", preco:82.43, fonte:"amazon", prazo_cliente_horas:192},
+  {id:"bcaa-on-megasize", cat:"BCAA", img:"https://m.media-amazon.com/images/I/715d8-QNbOL._AC_UL320_.jpg", nome:"Optimum Nutrition BCAA Mega-Size 1000", tam:"200 cápsulas", preco:244.53, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"termo-thermoflame", cat:"Termogênico", img:"https://http2.mlstatic.com/D_Q_NP_2X_623712-MLA99599426228_122025-E.webp", nome:"Black Skull Thermo Flame", tam:"120 tabletes", preco:43.89},
+  {id:"termo-fireblack", cat:"Termogênico", img:"https://http2.mlstatic.com/D_Q_NP_2X_666446-MLA114215555919_072026-E.webp", nome:"Max Titanium Fire Black", tam:"60 cápsulas", preco:47.08},
+  {id:"termo-thermapro", cat:"Termogênico", img:"https://http2.mlstatic.com/D_Q_NP_2X_709745-MLA105010783363_012026-E.webp", nome:"Integralmédica Therma Pro Hardcore", tam:"60 cápsulas", preco:40.96},
+  {id:"termo-thermaburn", cat:"Termogênico", img:"https://http2.mlstatic.com/D_Q_NP_2X_904462-MLB118635653569_102026-E--therma-burn-210mg-de-cafeina-120-caps-dark-lab.webp", nome:"Dark Lab Therma Burn", tam:"120 cápsulas", preco:49.39},
+  {id:"termo-hell", cat:"Termogênico", img:"https://http2.mlstatic.com/D_Q_NP_2X_814701-MLA99498392396_112025-E.webp", nome:"3VS Hell", tam:"120 cápsulas", preco:63.55},
+  {id:"termo-cafeina-soldiers", cat:"Termogênico", img:"https://http2.mlstatic.com/D_Q_NP_2X_904771-MLA99581041994_122025-E.webp", nome:"Soldiers Cafeína 200 mg", tam:"60 cápsulas", preco:35.20},
+  {id:"termo-lipo6", cat:"Termogênico", img:"https://http2.mlstatic.com/D_Q_NP_2X_815672-MLA99458856096_112025-E.webp", nome:"Nutrex Lipo-6 Black Ultra Concentrado", tam:"30 cápsulas", preco:52.80},
+  {id:"termo-kimera", cat:"Termogênico", img:"https://http2.mlstatic.com/D_Q_NP_2X_645988-MLA99401317418_112025-E.webp", nome:"Iridium Labs Kimera Thermo", tam:"60 comprimidos", preco:62.03},
+  {id:"termo-2hot", cat:"Termogênico", img:"https://http2.mlstatic.com/D_Q_NP_2X_971369-MLA112810226766_072026-E.webp", nome:"Max Titanium 2Hot", tam:"200 g · tangerina", preco:75.86},
+  {id:"termo-212", cat:"Termogênico", img:"https://http2.mlstatic.com/D_Q_NP_2X_700838-MLA111134479209_052026-E.webp", nome:"Dark Lab 212 Fahrenheit", tam:"200 g · frutas vermelhas", preco:86.79},
+  {id:"termo-termoplus", cat:"Termogênico", img:"https://http2.mlstatic.com/D_Q_NP_2X_804374-MLA119342092919_102026-E.webp", nome:"Vitafor Termo Plus", tam:"90 cápsulas", preco:131.89},
+  {id:"barra-max-topwhey", cat:"Barra de Proteína", img:"https://http2.mlstatic.com/D_Q_NP_2X_625368-MLA99492778734_112025-E.webp", nome:"Max Titanium Top Whey Bar", tam:"caixa 12 un · chocolate com avelã", preco:76.04},
+  {id:"barra-nutrata-grego", cat:"Barra de Proteína", img:"https://http2.mlstatic.com/D_Q_NP_2X_801971-MLA118690648252_102026-E.webp", nome:"Nutrata Whey Grego Bar Havanna", tam:"caixa 12 un · doce de leite", preco:80.85},
+  {id:"barra-im-crisp-trufa", cat:"Barra de Proteína", img:"https://http2.mlstatic.com/D_Q_NP_2X_757662-MLA99517910371_112025-E.webp", nome:"Integralmédica Protein Crisp Bar", tam:"caixa 12 un · trufa de avelã", preco:87.92},
+  {id:"barra-im-crisp-leite", cat:"Barra de Proteína", img:"https://http2.mlstatic.com/D_Q_NP_2X_923086-MLA112579809718_062026-E.webp", nome:"Integralmédica Protein Crisp Bar", tam:"caixa 12 un · leite em pó c/ creme de avelã", preco:102.54},
+  {id:"barra-bold-mista", cat:"Barra de Proteína", img:"https://http2.mlstatic.com/D_Q_NP_2X_974524-MLA110945015307_042026-E.webp", nome:"Bold Snacks Bold Bar", tam:"caixa 12 un · sabores mistos", preco:149.60},
+  {id:"barra-nutrata-yopro", cat:"Barra de Proteína", img:"https://http2.mlstatic.com/D_Q_NP_2X_935453-MLA116049142712_092026-E.webp", nome:"Nutrata YoPRO Bar", tam:"caixa 12 un · cappuccino", preco:81.51},
+  {id:"barra-im-crisp-cookies", cat:"Barra de Proteína", img:"https://http2.mlstatic.com/D_Q_NP_2X_620754-MLA99513852791_112025-E.webp", nome:"Integralmédica Protein Crisp Bar", tam:"caixa 12 un · cookies and cream", preco:91.95},
+  {id:"barra-im-crisp-duo", cat:"Barra de Proteína", img:"https://http2.mlstatic.com/D_Q_NP_2X_955563-MLA99637540883_112025-E.webp", nome:"Integralmédica Protein Crisp Bar", tam:"caixa 12 un · duo crunch", preco:94.94},
+  {id:"barra-nutrata-choc", cat:"Barra de Proteína", img:"https://http2.mlstatic.com/D_Q_NP_2X_806740-MLA99938937791_112025-E.webp", nome:"Nutrata Protein Bar", tam:"caixa 12 un · chocolate", preco:101.26},
+  {id:"barra-bold-pistache", cat:"Barra de Proteína", img:"https://http2.mlstatic.com/D_Q_NP_2X_653642-MLA108912454188_032026-E.webp", nome:"Bold Snacks Bold Bar", tam:"caixa 12 un · pistache", preco:130.57},
+  {id:"vit-omega-vitafor", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/51lfH7q-tGL._AC_UL320_.jpg", nome:"Vitafor Ômega 3 EPA DHA 1 g", tam:"120 cápsulas", preco:100.62, fonte:"amazon", prazo_cliente_horas:192},
+  {id:"vit-omega-dux", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/61yX0I0zyLL._AC_UL320_.jpg", nome:"Dux Fish Oil Ômega 3", tam:"120 cápsulas", preco:106.59, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"vit-omega-darklab", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/71gfVyJHbpL._AC_UL320_.jpg", nome:"Dark Lab Ômega 3 EPA DHA", tam:"240 cápsulas", preco:109.89, fonte:"amazon", prazo_cliente_horas:192},
+  {id:"vit-omega-nutrify", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/81duqDRpTQL._AC_UL320_.jpg", nome:"Nutrify Ômega 3", tam:"120 cápsulas", preco:119.90, fonte:"amazon", prazo_cliente_horas:192},
+  {id:"vit-omegafor-plus", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/51y-aN4gOuL._AC_UL320_.jpg", nome:"Vitafor Omegafor Plus", tam:"120 cápsulas", preco:142.78, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"vit-omega-true", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/61CtjOIdrHL._AC_UL320_.jpg", nome:"True Source Ômega 3 com Vitamina E", tam:"180 cápsulas", preco:173.47, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"vit-multi-lavitan", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/51ovA4UycqL._AC_UL320_.jpg", nome:"Lavitan Multivitamínico A-Z", tam:"90 comprimidos", preco:25.25, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"vit-multi-centrum", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/61kQx28+1AL._AC_UL320_.jpg", nome:"Centrum Essencial Multivitamínico", tam:"embalagem padrão", preco:32.77, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"vit-multi-revigoran", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/61cUfl2iTHL._AC_UL320_.jpg", nome:"Nutrends Revigoran A-Z Multivitamínico", tam:"120 cápsulas", preco:46.62, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"vit-multi-dux", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/61Kv0ZwtjzL._AC_UL320_.jpg", nome:"Dux Multivitamínico Esportivo", tam:"30 cápsulas softgel", preco:53.57, fonte:"amazon", prazo_cliente_horas:216},
+  {id:"vit-multi-growth", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/71N84SXppyL._AC_UL320_.jpg", nome:"Growth Multivitamínico", tam:"120 cápsulas", preco:58.19, fonte:"amazon", prazo_cliente_horas:192},
+  {id:"vit-dha-true", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/51lZHx8zBCL._AC_UL320_.jpg", nome:"True Source DHA Liquid", tam:"30 ml · laranja", preco:61.55, fonte:"amazon", prazo_cliente_horas:192},
+  {id:"vit-magnesio-true", cat:"Vitaminas e Saúde", img:"https://m.media-amazon.com/images/I/61AyZks7ScL._AC_UL320_.jpg", nome:"True Source Magnésio + Inositol Relief 3.0", tam:"350 g · maracujá", preco:149.90, fonte:"amazon", prazo_cliente_horas:240},
+];
+
+/* ===================================================================== */
+const brl = v => v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+const $ = id => document.getElementById(id);
+let cart = {};
+try { cart = JSON.parse(localStorage.getItem("cart")||"{}") || {}; } catch(e) { cart = {}; }
+const save = () => { try { localStorage.setItem("cart", JSON.stringify(cart)); } catch(e){} };
+
+$("logo").innerHTML = `<img src="logo.png" alt="" width="46" height="43"><span class="nome">${CONFIG.nomeLoja.replace(/(\S+)$/, "<span>$1</span>")}</span>`;
+
+function initials(n){ return n.replace("Creatina","").trim().split(/\s+/).slice(0,2).map(w=>w[0]).join("").toUpperCase(); }
+let ATUALIZADO = null;
+const prazoTxt = h => !h || h <= CONFIG.prazoHoras ? `${CONFIG.prazoHoras}h` : h <= 72 ? `${h}h` : `${Math.ceil(h/24)} dias`;
+const prazoDe = p => p.prazo_cliente_horas || CONFIG.prazoHoras;
+const card = p => `
+  <article class="card${p.disponivel === false ? " off" : ""}">
+    <div class="thumb">${p.img ? `<img src="${p.img}" alt="${p.nome} ${p.tam}" loading="lazy" onerror="this.replaceWith(document.createTextNode('${initials(p.nome)}'))">` : initials(p.nome)}</div>
+    <h3>${p.nome}</h3>
+    <div class="meta">${p.tam} · ${p.disponivel === false ? "indisponível no momento" : (p.fonte === "amazon" ? "sob encomenda · " : "") + "entrega em até " + prazoTxt(prazoDe(p))}</div>
+    <div class="price">${brl(p.preco)}</div>
+    <button class="add" data-id="${p.id}"${p.disponivel === false ? " disabled" : ""}>${p.disponivel === false ? "Indisponível" : "Adicionar"}</button>
+  </article>`;
+const AVISO_CAFEINA = "⚠️ Contém cafeína. Não recomendado para gestantes, lactantes, menores de 18 anos e pessoas com problemas cardíacos ou hipertensão. Consulte um profissional de saúde.";
+const AVISOS = {"Pré-treino": AVISO_CAFEINA, "Termogênico": AVISO_CAFEINA + " Termogênicos não substituem dieta e exercícios."};
+function renderGrid(){
+const cats = [...new Set(PRODUTOS.map(p => p.cat || "Creatina"))];
+$("grid").innerHTML = cats.map(c => `<h2 class="cat">${c}</h2>` + (AVISOS[c] ? `<p class="aviso">${AVISOS[c]}</p>` : "") + PRODUTOS.filter(p => (p.cat || "Creatina") === c).map(card).join("")).join("");
+const fone = CONFIG.whatsapp.replace(/^55(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+$("foot").innerHTML = `<strong>${CONFIG.nomeLoja}</strong> · CNPJ ${CONFIG.cnpj} · Salvador – BA<br>WhatsApp: <a href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener">${fone}</a>${CONFIG.email ? ` · E-mail: <a href="mailto:${CONFIG.email}">${CONFIG.email}</a>` : ""}${CONFIG.instagram ? ` · Instagram: <a href="https://www.instagram.com/${CONFIG.instagram}/" target="_blank" rel="noopener">@${CONFIG.instagram}</a>` : ""}${ATUALIZADO ? `<br>Preços e prazos atualizados em ${new Date(ATUALIZADO).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}` : ""}`;
+}
+renderGrid();
+
+document.addEventListener("click", e => {
+  const add = e.target.closest(".add");
+  if (add && !add.disabled) { cart[add.dataset.id] = (cart[add.dataset.id]||0)+1; save(); render(); openPanel(); }
+  const q = e.target.closest("[data-q]");
+  if (q) { const id=q.dataset.id; cart[id]=(cart[id]||0)+Number(q.dataset.q); if(cart[id]<=0) delete cart[id]; save(); render(); }
+});
+
+function items(){ return Object.entries(cart).map(([id,q])=>({...PRODUTOS.find(p=>p.id===id),q})).filter(i=>i.nome && i.disponivel !== false); }
+function calc(){
+  const its = items(), sub = its.reduce((s,i)=>s+i.preco*i.q,0);
+  const ssa = $("cidade").value.trim().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"") === "salvador";
+  const ret = retirada();
+  let frete = ret ? 0 : (ssa ? CONFIG.taxaEntregaSalvador : null);
+  if (!ret && ssa && CONFIG.freteGratisAcimaDe > 0 && sub >= CONFIG.freteGratisAcimaDe) frete = 0;
+  return {its, sub, frete, total: sub + (frete||0), ssa, ret};
+}
+function render(){
+  const {its, sub, frete, total, ssa, ret} = calc();
+  $("count").textContent = its.reduce((s,i)=>s+i.q,0);
+  $("lines").innerHTML = its.length ? its.map(i=>`
+    <div class="line"><div><strong>${i.nome}</strong><div class="meta">${i.tam} · ${brl(i.preco)}</div></div>
+    <div class="qty"><button data-id="${i.id}" data-q="-1" aria-label="Menos">−</button><span>${i.q}</span><button data-id="${i.id}" data-q="1" aria-label="Mais">+</button></div></div>`).join("")
+    : `<p class="meta">Seu carrinho está vazio.</p>`;
+  $("totals").innerHTML = its.length ? `
+    <div><span>Produtos</span><span>${brl(sub)}</span></div>
+    <div><span>${ret ? "Retirada no local" : "Entrega via delivery"}</span><span>${ret ? "Grátis" : ssa ? (frete===0?"Grátis":brl(frete)) : "A combinar (fora de Salvador)"}</span></div>
+    <div class="big"><span>Total</span><span>${brl(total)}</span></div>` : "";
+  $("send").disabled = !its.length;
+}
+function openPanel(){ document.body.classList.add("open"); }
+function closePanel(){ document.body.classList.remove("open"); }
+$("openCart").onclick = openPanel; $("closeCart").onclick = closePanel; $("overlay").onclick = closePanel;
+$("cidade").addEventListener("input", render);
+$("lblEntrega").textContent = `${brl(CONFIG.taxaEntregaSalvador)} por pedido, em Salvador`;
+$("lblRetirada").textContent = CONFIG.enderecoRetirada;
+const retirada = () => document.querySelector('input[name="receb"]:checked').value === "retirada";
+document.querySelectorAll('input[name="receb"]').forEach(r => r.addEventListener("change", () => {
+  $("endereco").style.display = retirada() ? "none" : "";
+  $("fichaTitulo").textContent = retirada() ? "Seus dados para retirada" : "Ficha de entrega";
+  render();
+}));
+
+/* Busca de endereço pelo CEP (ViaCEP, serviço público gratuito) */
+$("cep").addEventListener("input", async e => {
+  let v = e.target.value.replace(/\D/g,"").slice(0,8);
+  e.target.value = v.length>5 ? v.slice(0,5)+"-"+v.slice(5) : v;
+  if (v.length !== 8) return;
+  try {
+    const r = await fetch(`https://viacep.com.br/ws/${v}/json/`); const d = await r.json();
+    if (d.erro) return;
+    if (d.logradouro) $("rua").value = d.logradouro;
+    if (d.bairro) $("bairro").value = d.bairro;
+    if (d.localidade) $("cidade").value = d.localidade;
+    if (d.uf) $("uf").value = d.uf;
+    render(); $("num").focus();
+  } catch(_) {}
+});
+
+function pedidoId(){
+  const d = new Date(), p = n => String(n).padStart(2,"0");
+  return `MS-${d.getFullYear()%100}${p(d.getMonth()+1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}-${Math.floor(Math.random()*90+10)}`;
+}
+
+$("form").addEventListener("submit", e => {
+  e.preventDefault();
+  const req = retirada() ? ["nome","tel"] : ["nome","tel","cep","bairro","rua","num","cidade"];
+  const falta = req.filter(id => !$(id).value.trim());
+  if (falta.length) { $("err").textContent = "Preencha os campos com *."; $(falta[0]).focus(); return; }
+  if ($("tel").value.replace(/\D/g,"").length < 10) { $("err").textContent = "Confira o número de WhatsApp (com DDD)."; $("tel").focus(); return; }
+  $("err").textContent = "";
+
+  const {its, sub, frete, total, ssa, ret} = calc();
+  const prazoPedido = Math.max(CONFIG.prazoHoras, ...its.map(prazoDe));
+  const id = pedidoId(), agora = new Date(), limite = new Date(agora.getTime()+prazoPedido*3600e3);
+  const fmt = d => d.toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"});
+  const v = id => $(id).value.trim();
+
+  const msg = [
+`🧾 *NOVO PEDIDO ${id}*`,
+`Data: ${fmt(agora)}`,
+`${ret ? "Disponível para retirada até" : "Entregar até"}: *${fmt(limite)}* (${prazoPedido}h)`,
+``,
+`*ITENS*`,
+...its.map(i => `• ${i.q}x ${i.nome} ${i.tam} — ${brl(i.preco*i.q)}`),
+``,
+`Produtos: ${brl(sub)}`,
+ret ? `Retirada no local: Grátis` : `Entrega via delivery: ${ssa ? (frete===0?"Grátis":brl(frete)) : "A combinar (fora de Salvador)"}`,
+`*TOTAL: ${brl(total)}*`,
+`Pagamento: ${v("pag")}`,
+``,
+ret ? `🏢 *RETIRADA NO LOCAL*` : `📦 *FICHA DE ENTREGA*`,
+`Nome: ${v("nome")}`,
+`WhatsApp: ${v("tel")}`,
+...(ret ? [`Local: ${CONFIG.enderecoRetirada}`] : [`Endereço: ${v("rua")}, ${v("num")}${v("comp")?" – "+v("comp"):""}`,
+`Bairro: ${v("bairro")}`,
+`Cidade: ${v("cidade")} – ${v("uf")}`,
+`CEP: ${v("cep")}`,
+v("ref") ? `Referência: ${v("ref")}` : null]),
+`Horário: ${v("janela")}`,
+v("obs") ? `Obs.: ${v("obs")}` : null,
+  ].filter(l => l !== null).join("\n");
+
+  window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`, "_blank");
+
+  $("panelTitle").textContent = "Pedido enviado";
+  $("panelBody").innerHTML = `
+    <div class="done">
+      <h3>Pedido ${id}</h3>
+      <p>Se o WhatsApp não abriu, <a href="https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener">toque aqui</a>.</p>
+      <p>Total: <strong>${brl(total)}</strong></p>
+      ${v("pag")==="Pix" ? `<p>Pague com Pix na chave abaixo e mande o comprovante no WhatsApp:</p><div class="pix">Chave Pix (CNPJ): ${CONFIG.chavePix}<br><small>O Pix aparece no nome SUPPLEMENT ONE LTDA, empresa responsável pela Mascarenhas Suplementos.</small></div><button type="button" class="add" id="copiarPix">Copiar chave Pix</button>` : `<p>Vamos te enviar o link de pagamento do cartão no WhatsApp.</p>`}
+      <p class="note">${ret ? `Retirada em: ${CONFIG.enderecoRetirada}. Avisamos no WhatsApp quando estiver pronto.` : `A entrega em até ${CONFIG.prazoHoras}h conta a partir da confirmação do pagamento.`}</p>
+    </div>`;
+  cart = {}; save(); $("count").textContent = 0;
+  const cp = $("copiarPix");
+  if (cp) cp.onclick = () => navigator.clipboard.writeText(CONFIG.chavePix).then(() => { cp.textContent = "Chave copiada ✓"; }).catch(() => {});
+});
+
+render();
+
+fetch("produtos.json", {cache: "no-store"})
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(d => { if (Array.isArray(d.produtos) && d.produtos.length) { PRODUTOS = d.produtos; ATUALIZADO = d.atualizado_em; renderGrid(); render(); } })
+  .catch(() => {});
+</script>
+</body>
+</html>
