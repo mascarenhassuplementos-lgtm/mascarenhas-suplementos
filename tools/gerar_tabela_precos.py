@@ -62,7 +62,9 @@ def altura(l):
     txt = len(l[1]["nome"]) + len(tam(l[1])) + 3
     return 3.2 + 9.6 * (1 + txt // 58)
 
-LIMITE_1, LIMITE = 690, 745   # pontos disponíveis por coluna (1ª página tem o cabeçalho)
+import sys
+AJUSTE = int(sys.argv[1]) if len(sys.argv) > 1 else 0   # reduz os limites se a coluna transbordar
+LIMITE_1, LIMITE = 720 - AJUSTE, 772 - AJUSTE   # pontos disponíveis por coluna (1ª página tem o cabeçalho)
 colunas, atual, usado, cat_atual = [], [], 0, None
 for l in linhas:
     limite = LIMITE_1 if len(colunas) < 2 else LIMITE
@@ -114,5 +116,11 @@ for k in range(0, len(colunas), 2):
 story += [Spacer(1, 4),
           Paragraph("Preços sujeitos a alteração e à disponibilidade de estoque. Pré-treinos e termogênicos contêm cafeína: "
                     "não indicados para gestantes, menores de 18 anos, cardíacos e hipertensos.", S)]
-doc.build(story)
+from reportlab.platypus.doctemplate import LayoutError
+try:
+    doc.build(story)
+except LayoutError:  # alguma coluna ficou alta demais: tenta de novo com colunas mais curtas
+    if AJUSTE >= 100:
+        raise
+    os.execv(sys.executable, [sys.executable, os.path.abspath(__file__), str(AJUSTE + 10)])
 print(sum(len(v) for v in cats.values()), "produtos")
