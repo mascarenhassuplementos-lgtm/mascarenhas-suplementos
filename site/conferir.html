@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Conferir pedido – Mascarenhas</title>
+<link rel="icon" href="logo.png">
+<style>
+:root{--verde:#14894a;--escuro:#14201b;--cinza:#5b6b64;--linha:#dbe3df;--ouro:#b07d00;--verm:#c0392b;--fundo:#f4f7f5}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--fundo);color:var(--escuro)}
+header{background:var(--escuro);color:#fff;padding:14px 16px;display:flex;align-items:center;gap:10px}
+header img{width:36px;height:36px;border-radius:8px;background:#fff}
+header h1{font-size:18px;margin:0}
+main{max-width:760px;margin:0 auto;padding:16px}
+p.dica{color:var(--cinza);font-size:14px;margin:0 0 10px}
+textarea{width:100%;min-height:150px;padding:10px;border:1px solid var(--linha);border-radius:10px;font:inherit;font-size:14px}
+button{background:var(--verde);color:#fff;border:0;border-radius:10px;padding:12px 16px;font-size:16px;font-weight:600;margin-top:10px;width:100%}
+.item{background:#fff;border:1px solid var(--linha);border-radius:12px;padding:12px;margin-top:12px;display:grid;grid-template-columns:64px 1fr;gap:12px}
+.item img{width:64px;height:64px;object-fit:contain}
+.nome{font-weight:700}
+.sub{color:var(--cinza);font-size:13px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.links a{font-size:14px;font-weight:600;color:#fff;background:#232f3e;padding:7px 10px;border-radius:8px;text-decoration:none}
+.links a.ml{background:#2d3277;color:#ffe600}
+label{font-size:14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+input{width:120px;padding:8px;border:1px solid var(--linha);border-radius:8px;font-size:16px}
+.res{margin-top:8px;font-size:14px;font-weight:600}
+.ok{color:var(--verde)} .alerta{color:var(--ouro)} .ruim{color:var(--verm)}
+.nao{border-color:var(--verm)}
+#total{background:#fff;border:2px solid var(--verde);border-radius:12px;padding:12px;margin-top:16px;font-size:15px;display:none}
+</style>
+</head>
+<body>
+<header><img src="logo.png" alt=""><h1>Conferir pedido antes de comprar</h1></header>
+<main>
+  <p class="dica">Cole aqui a mensagem do pedido que chegou no WhatsApp. Para cada item aparece o link de compra. Abra o link, veja o preço de hoje e digite no campo: a página mostra quanto você vai ganhar.</p>
+  <textarea id="msg" placeholder="🧾 *NOVO PEDIDO MS-...*&#10;...&#10;*ITENS*&#10;• 1x Max Titanium Mass Titanium 3 kg · chocolate — R$ 91,51"></textarea>
+  <button id="ir">Conferir itens</button>
+  <div id="lista"></div>
+  <div id="total"></div>
+</main>
+<script>
+const brl = v => v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+const num = s => parseFloat(String(s).replace(/[^\d,.-]/g,"").replace(/\.(?=\d{3}(\D|$))/g,"").replace(",", "."));
+const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/\s+/g," ").trim();
+const MIN = 5;           // lucro mínimo por item (R$)
+let PRODUTOS = [];
+fetch("produtos.json?" + Date.now()).then(r => r.json()).then(d => PRODUTOS = d.produtos);
+
+function linkML(id){ return id.startsWith("MLBU") ? `https://www.mercadolivre.com.br/up/${id}` : `https://www.mercadolivre.com.br/p/${id}`; }
+
+document.getElementById("ir").onclick = () => {
+  const linhas = document.getElementById("msg").value.split("\n").filter(l => /^\s*[•\-*]\s*\d+\s*x\s/i.test(l));
+  const lista = document.getElementById("lista"); lista.innerHTML = "";
+  if (!linhas.length) { lista.innerHTML = `<p class="res ruim">Não achei itens. Cole a mensagem inteira do pedido (com as linhas que começam com •).</p>`; return; }
+  linhas.forEach((l, n) => {
+    const m = l.match(/^\s*[•\-*]\s*(\d+)\s*x\s+(.+?)\s+[—–-]\s+R\$\s*([\d.,]+)\s*$/i);
+    if (!m) return;
+    const q = +m[1], texto = norm(m[2]), cobrado = num(m[3]);
+    const p = PRODUTOS.filter(p => texto === norm(p.nome + " " + p.tam) || texto.startsWith(norm(p.nome)) && texto.endsWith(norm(p.tam)))[0];
+    const div = document.createElement("div");
+    if (!p) { div.className = "item nao"; div.innerHTML = `<div></div><div><div class="nome">${m[2]}</div><div class="res ruim">Produto não encontrado no site (pode ter mudado de nome). Procure manualmente.</div></div>`; lista.appendChild(div); return; }
+    const custo = p.fonte === "amazon" ? p.amazon_preco : (p.preco_ml ?? p.amazon_preco);
+    const links = [];
+    if (p.ml_id) links.push(`<a class="ml" href="${linkML(p.ml_id)}" target="_blank" rel="noopener">Comprar no Mercado Livre</a>`);
+    if (p.amazon_asin) links.push(`<a href="https://www.amazon.com.br/dp/${p.amazon_asin}" target="_blank" rel="noopener">Comprar na Amazon</a>`);
+    if (!links.length) links.push(`<a class="ml" href="https://lista.mercadolivre.com.br/${encodeURIComponent(p.nome + " " + p.tam)}" target="_blank" rel="noopener">Buscar no Mercado Livre</a>`);
+    div.className = "item";
+    div.innerHTML = `<img src="${p.img}" alt="">
+      <div><div class="nome">${q}x ${p.nome}</div>
+      <div class="sub">${p.tam} · cliente pagou ${brl(cobrado)}${q>1?` (${brl(cobrado/q)} cada)`:""}${custo?` · custo cadastrado ${brl(custo)}`:""}</div>
+      <div class="links">${links.join("")}</div>
+      <label>Preço de hoje (cada): R$ <input inputmode="decimal" data-n="${n}" data-q="${q}" data-cobrado="${cobrado}" value="${custo ? custo.toFixed(2).replace(".", ",") : ""}"></label>
+      <div class="res"></div></div>`;
+    lista.appendChild(div);
+  });
+  lista.querySelectorAll("input").forEach(i => { i.oninput = calcular; });
+  calcular();
+};
+
+function calcular(){
+  let pago = 0, gasto = 0, faltam = 0;
+  document.querySelectorAll("#lista input").forEach(i => {
+    const q = +i.dataset.q, cobrado = +i.dataset.cobrado, hoje = num(i.value);
+    const res = i.closest(".item").querySelector(".res");
+    pago += cobrado;
+    if (!(hoje > 0)) { res.className = "res"; res.textContent = "Digite o preço que está no link."; faltam++; return; }
+    gasto += hoje * q;
+    const lucro = cobrado - hoje * q, porItem = lucro / q;
+    if (lucro < 0) { res.className = "res ruim"; res.textContent = `PREJUÍZO de ${brl(-lucro)}. Fale com o cliente antes de comprar ou procure outra oferta.`; }
+    else if (porItem < MIN - 0.01) { res.className = "res alerta"; res.textContent = `Lucro baixo: ${brl(lucro)} (${brl(porItem)} por unidade). O preço subiu desde o cadastro.`; }
+    else { res.className = "res ok"; res.textContent = `OK, pode comprar. Lucro: ${brl(lucro)}`; }
+  });
+  const t = document.getElementById("total");
+  t.style.display = "block";
+  t.innerHTML = faltam ? `Preencha o preço de hoje de ${faltam} item(ns) para ver o total.` :
+    `Produtos pagos pelo cliente: <b>${brl(pago)}</b><br>Você vai gastar: <b>${brl(gasto)}</b><br>Seu lucro nos produtos: <b class="${pago-gasto<0?"ruim":"ok"}">${brl(pago-gasto)}</b><br><span class="sub">A taxa de entrega (R$ 15) não entra nessa conta.</span>`;
+}
+</script>
+</body>
+</html>
