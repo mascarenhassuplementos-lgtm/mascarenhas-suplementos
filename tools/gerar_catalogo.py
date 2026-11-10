@@ -32,7 +32,8 @@ for p in d["produtos"]:
     if p.get("disponivel", True):
         cats.setdefault(p["cat"], []).append(p)
 EMO = {"Creatina": "💪", "Whey Protein": "🥛", "Pré-treino": "⚡", "Glutamina": "🔄",
-       "Termogênico": "🔥", "Vitaminas e Saúde": "💊", "Acessórios": "🏋️", "Barra de Proteína": "🍫", "BCAA": "🧬"}
+       "Termogênico": "🔥", "Vitaminas e Saúde": "💊", "Acessórios": "🏋️", "Barra de Proteína": "🍫", "BCAA": "🧬",
+       "Hipercalórico": "🍚", "Albumina": "🥚", "Aminoácidos": "🧪", "Hidratação": "💧", "Colágeno": "✨", "Alimentos Fit": "🥜"}
 CAF = "Contém cafeína. Não indicado para gestantes, menores de 18 anos, cardíacos e hipertensos."
 AVISO = {"Pré-treino": CAF, "Termogênico": CAF}
 ENTREGA = "🚚 Entrega via delivery em Salvador: *R$ 15,00* (até 48h após o pagamento)"
