@@ -102,3 +102,16 @@ No rodapé do site aparece "Preços e prazos atualizados em …".
 Edite `site/produtos.json`. Cada produto precisa de `id`, `cat`, `nome`, `tam`, `img` e
 `ml_id` (o código `MLB…` que aparece no link do produto no ML, depois de `/p/`).
 O resto o atualizador preenche.
+
+## Antes de comprar para um cliente (produtos da Amazon e do ML)
+
+Os preços da Amazon não se atualizam sozinhos. Sempre que chegar um pedido:
+
+1. Abra **https://mascarenhassuplementos-lgtm.github.io/mascarenhas-suplementos/conferir.html** (salve nos favoritos do celular).
+2. Cole a mensagem inteira do pedido que chegou no WhatsApp e toque em **Conferir itens**.
+3. Para cada item, toque em **Comprar na Amazon** / **Comprar no Mercado Livre**, veja o preço de hoje e digite no campo.
+4. A página mostra:
+   - verde **"OK, pode comprar"**: lucro de pelo menos R$ 5 por unidade;
+   - amarelo **"Lucro baixo"**: o preço subiu, mas ainda não dá prejuízo;
+   - vermelho **"PREJUÍZO"**: fale com o cliente antes de comprar (ou procure outra oferta).
+5. Se um produto subiu de vez, me peça para atualizar o preço no site.
