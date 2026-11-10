@@ -3,5 +3,6 @@
  "cep_entrega": "41771080",
  "tempo_proprio_horas": 24,
  "prazo_max_ml_horas": 24,
- "prazo_max_cliente_horas": 48
+ "prazo_max_cliente_horas": 48,
+ "margem_minima_reais": 5.0
 }

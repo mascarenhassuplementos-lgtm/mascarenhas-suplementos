@@ -4,7 +4,7 @@ Atualiza preços, frete e prazo de entrega dos produtos do site
 consultando a API oficial do Mercado Livre.
 
 Lê e reescreve: site/produtos.json
-Configuração:   tools/config.json  (margem, CEP, prazos)
+Configuração:   tools/config.json  (margem %, margem mínima em R$, CEP, prazos)
 
 Variáveis de ambiente (segredos — nunca coloque no código):
   ML_CLIENT_ID, ML_CLIENT_SECRET, ML_REFRESH_TOKEN
@@ -145,7 +145,7 @@ def main():
             continue
         p["ml_item_id"] = item_id
         p["preco_ml"] = round(preco_ml, 2)
-        p["preco"] = round(preco_ml * (1 + cfg["margem_sobre_ml"]), 2)
+        p["preco"] = round(max(preco_ml * (1 + cfg["margem_sobre_ml"]), preco_ml + cfg.get("margem_minima_reais", 0)), 2)
         try:
             frete, horas = frete_e_prazo(token, item_id, cep)
         except Exception as e:

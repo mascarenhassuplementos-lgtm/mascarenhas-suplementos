@@ -1,15 +1,16 @@
-#!/usr/bin/env python3
+            #!/usr/bin/env python3
 """
 Adiciona ao site/produtos.json os produtos listados em tools/dados/novos.txt
 (formato: Categoria|Nome|tamanho|ASIN|preço Amazon|dias de entrega Amazon|id da imagem)
 e regenera a lista reserva dentro de site/index.html.
-Preço de venda = preço Amazon + 10%; prazo ao cliente = prazo Amazon + 24 h.
+Preço de venda = preço Amazon + 10% (mínimo de R$ margem_minima_reais de lucro); prazo ao cliente = prazo Amazon + 24 h.
 Uso (na pasta da loja):  python3 tools/adicionar_amazon.py
 """
 import json, os, re, unicodedata
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(RAIZ)
 cfg = json.load(open("tools/config.json"))
 MARGEM = cfg.get("margem_sobre_ml", 0.10)
+MINIMO = cfg.get("margem_minima_reais", 0)
 CAT = {"Vitaminas": "Vitaminas e Saúde"}
 # categoria nova -> entra logo depois desta categoria existente
 ANCORA = {"Hipercalórico": "Whey Protein", "Albumina": "Hipercalórico", "Aminoácidos": "BCAA",
@@ -36,8 +37,12 @@ for l in open("tools/dados/novos.txt", encoding="utf-8"):
         "id": pid, "cat": cat, "nome": nome, "tam": tam,
         "img": "https://m.media-amazon.com/images/I/" + img,
         "fonte": "amazon", "amazon_asin": asin, "ml_id": None, "amazon_preco": preco, "preco_ml": None,
-        "prazo_ml_horas": h, "preco": round(preco * (1 + MARGEM), 2),
+        "prazo_ml_horas": h, "preco": round(max(preco * (1 + MARGEM), preco + MINIMO), 2),
         "prazo_cliente_horas": h + cfg.get("tempo_proprio_horas", 24), "disponivel": True})
+
+for p in ps:
+    base = p.get("amazon_preco") or p.get("preco_ml")
+    if base: p["preco"] = round(max(base * (1 + MARGEM), base + MINIMO), 2)
 
 # monta a nova ordem: cada categoria com seus novos itens no fim, categorias novas depois da âncora
 ordem = []
