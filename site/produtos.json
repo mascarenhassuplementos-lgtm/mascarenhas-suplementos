@@ -11,7 +11,7 @@
    "ml_id": "MLB19603205",
    "preco_ml": 37.9,
    "prazo_ml_horas": 12,
-   "preco": 41.69,
+   "preco": 44.9,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 39.9,
@@ -27,7 +27,7 @@
    "ml_id": "MLBU5177324326",
    "preco_ml": 62.9,
    "prazo_ml_horas": 12,
-   "preco": 69.19,
+   "preco": 76.89,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 69.9,
@@ -43,7 +43,7 @@
    "ml_id": "MLB32081918",
    "preco_ml": 39.9,
    "prazo_ml_horas": 12,
-   "preco": 43.89,
+   "preco": 44.9,
    "prazo_cliente_horas": 36,
    "disponivel": true
   },
@@ -56,7 +56,7 @@
    "ml_id": "MLB18725308",
    "preco_ml": 44.9,
    "prazo_ml_horas": 12,
-   "preco": 49.39,
+   "preco": 49.9,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 44.9,
@@ -88,7 +88,7 @@
    "ml_id": "MLB19506691",
    "preco_ml": 36.64,
    "prazo_ml_horas": 12,
-   "preco": 40.3,
+   "preco": 40.89,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 35.89,
@@ -104,7 +104,7 @@
    "ml_id": "MLB26796581",
    "preco_ml": 44.99,
    "prazo_ml_horas": 12,
-   "preco": 49.49,
+   "preco": 49.89,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 44.89,
@@ -120,7 +120,7 @@
    "ml_id": "MLB25929487",
    "preco_ml": 69.99,
    "prazo_ml_horas": 12,
-   "preco": 76.99,
+   "preco": 76.88,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 69.89,
@@ -136,7 +136,7 @@
    "ml_id": "MLB6204289",
    "preco_ml": 35.8,
    "prazo_ml_horas": 12,
-   "preco": 39.38,
+   "preco": 40.8,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 35.8,
@@ -165,7 +165,7 @@
    "ml_id": "MLB6104856",
    "preco_ml": 40.1,
    "prazo_ml_horas": 12,
-   "preco": 44.11,
+   "preco": 38.37,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 33.37,
@@ -181,7 +181,7 @@
    "ml_id": "MLB46235017",
    "preco_ml": 37.9,
    "prazo_ml_horas": 12,
-   "preco": 41.69,
+   "preco": 42.9,
    "prazo_cliente_horas": 36,
    "disponivel": true
   },
@@ -258,7 +258,7 @@
    "amazon_preco": 33.15,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 36.47,
+   "preco": 38.15,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -306,7 +306,7 @@
    "amazon_preco": 34.0,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 37.4,
+   "preco": 39.0,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -322,7 +322,7 @@
    "amazon_preco": 19.99,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 21.99,
+   "preco": 24.99,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -338,7 +338,7 @@
    "amazon_preco": 24.31,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 26.74,
+   "preco": 29.31,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -386,7 +386,7 @@
    "amazon_preco": 37.14,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 40.85,
+   "preco": 42.14,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -402,7 +402,7 @@
    "amazon_preco": 30.4,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 33.44,
+   "preco": 35.4,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -418,7 +418,7 @@
    "amazon_preco": 37.61,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 41.37,
+   "preco": 42.61,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -434,7 +434,7 @@
    "amazon_preco": 49.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 54.89,
+   "preco": 54.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -527,7 +527,7 @@
    "ml_id": "MLB74125006",
    "preco_ml": 78.9,
    "prazo_ml_horas": 12,
-   "preco": 86.79,
+   "preco": 75.46,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 68.6,
@@ -556,7 +556,7 @@
    "ml_id": "MLB40367709",
    "preco_ml": 149.92,
    "prazo_ml_horas": 12,
-   "preco": 164.91,
+   "preco": 150.59,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 136.9,
@@ -572,7 +572,7 @@
    "ml_id": "MLB59080441",
    "preco_ml": 149.9,
    "prazo_ml_horas": 12,
-   "preco": 164.89,
+   "preco": 153.88,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 139.89,
@@ -588,7 +588,7 @@
    "ml_id": "MLB51868297",
    "preco_ml": 137.62,
    "prazo_ml_horas": 12,
-   "preco": 151.38,
+   "preco": 146.19,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 132.9,
@@ -1024,7 +1024,7 @@
    "amazon_preco": 49.04,
    "preco_ml": null,
    "prazo_ml_horas": 216,
-   "preco": 53.94,
+   "preco": 54.04,
    "prazo_cliente_horas": 240,
    "disponivel": true
   },
@@ -1632,7 +1632,7 @@
    "amazon_preco": 37.0,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 40.7,
+   "preco": 42.0,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -1680,7 +1680,7 @@
    "amazon_preco": 49.39,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 54.33,
+   "preco": 54.39,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -1725,7 +1725,7 @@
    "ml_id": "MLB61451631",
    "preco_ml": 62.72,
    "prazo_ml_horas": 12,
-   "preco": 68.99,
+   "preco": 73.14,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 66.49,
@@ -1741,7 +1741,7 @@
    "ml_id": "MLB26862831",
    "preco_ml": 66.27,
    "prazo_ml_horas": 12,
-   "preco": 72.9,
+   "preco": 62.91,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 57.19,
@@ -1799,7 +1799,7 @@
    "ml_id": "MLB42448337",
    "preco_ml": 46.9,
    "prazo_ml_horas": 12,
-   "preco": 51.59,
+   "preco": 51.9,
    "prazo_cliente_horas": 36,
    "disponivel": true
   },
@@ -1877,7 +1877,7 @@
    "ml_id": "MLB69956959",
    "preco_ml": 21.9,
    "prazo_ml_horas": 12,
-   "preco": 24.09,
+   "preco": 26.9,
    "prazo_cliente_horas": 36,
    "disponivel": true
   },
@@ -1967,7 +1967,7 @@
    "amazon_preco": 44.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 49.39,
+   "preco": 49.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -1983,7 +1983,7 @@
    "amazon_preco": 37.29,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 41.02,
+   "preco": 42.29,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -1999,7 +1999,7 @@
    "amazon_preco": 47.74,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 52.51,
+   "preco": 52.74,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -2015,7 +2015,7 @@
    "amazon_preco": 48.09,
    "preco_ml": null,
    "prazo_ml_horas": 216,
-   "preco": 52.9,
+   "preco": 53.09,
    "prazo_cliente_horas": 240,
    "disponivel": true
   },
@@ -2271,7 +2271,7 @@
    "amazon_preco": 30.87,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 33.96,
+   "preco": 35.87,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -2319,7 +2319,7 @@
    "amazon_preco": 31.8,
    "preco_ml": null,
    "prazo_ml_horas": 336,
-   "preco": 34.98,
+   "preco": 36.8,
    "prazo_cliente_horas": 360,
    "disponivel": true
   },
@@ -2364,7 +2364,7 @@
    "ml_id": "MLB19481867",
    "preco_ml": 39.9,
    "prazo_ml_horas": 12,
-   "preco": 43.89,
+   "preco": 49.9,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 44.9,
@@ -2380,7 +2380,7 @@
    "ml_id": "MLB23613075",
    "preco_ml": 46.76,
    "prazo_ml_horas": 12,
-   "preco": 51.44,
+   "preco": 51.76,
    "prazo_cliente_horas": 36,
    "disponivel": true
   },
@@ -2409,7 +2409,7 @@
    "ml_id": "MLB6099982",
    "preco_ml": 67.99,
    "prazo_ml_horas": 12,
-   "preco": 74.79,
+   "preco": 70.77,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 64.34,
@@ -2425,7 +2425,7 @@
    "ml_id": "MLB18930516",
    "preco_ml": 110.0,
    "prazo_ml_horas": 12,
-   "preco": 121.0,
+   "preco": 115.72,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 105.2,
@@ -2483,7 +2483,7 @@
    "amazon_preco": 24.17,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 26.59,
+   "preco": 29.17,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -2515,7 +2515,7 @@
    "amazon_preco": 39.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 43.89,
+   "preco": 44.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -2531,7 +2531,7 @@
    "amazon_preco": 33.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 37.29,
+   "preco": 38.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -2547,7 +2547,7 @@
    "amazon_preco": 49.72,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 54.69,
+   "preco": 54.72,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -2624,7 +2624,7 @@
    "amazon_preco": 38.7,
    "preco_ml": null,
    "prazo_ml_horas": 264,
-   "preco": 42.57,
+   "preco": 43.7,
    "prazo_cliente_horas": 288,
    "disponivel": true
   },
@@ -2688,7 +2688,7 @@
    "amazon_preco": 40.24,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 44.26,
+   "preco": 45.24,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -2720,7 +2720,7 @@
    "amazon_preco": 36.67,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 40.34,
+   "preco": 41.67,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -2736,7 +2736,7 @@
    "amazon_preco": 48.35,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 53.19,
+   "preco": 53.35,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -2752,7 +2752,7 @@
    "amazon_preco": 38.47,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 42.32,
+   "preco": 43.47,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -2768,7 +2768,7 @@
    "amazon_preco": 39.73,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 43.7,
+   "preco": 44.73,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -2784,7 +2784,7 @@
    "amazon_preco": 43.22,
    "preco_ml": null,
    "prazo_ml_horas": 336,
-   "preco": 47.54,
+   "preco": 48.22,
    "prazo_cliente_horas": 360,
    "disponivel": true
   },
@@ -2800,7 +2800,7 @@
    "amazon_preco": 36.18,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 39.8,
+   "preco": 41.18,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -2845,7 +2845,7 @@
    "ml_id": "MLB13312706",
    "preco_ml": 39.9,
    "prazo_ml_horas": 12,
-   "preco": 43.89,
+   "preco": 37.5,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 32.5,
@@ -2861,7 +2861,7 @@
    "ml_id": "MLB29432022",
    "preco_ml": 42.8,
    "prazo_ml_horas": 24,
-   "preco": 47.08,
+   "preco": 37.48,
    "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 32.48,
@@ -2877,7 +2877,7 @@
    "ml_id": "MLB64370375",
    "preco_ml": 37.24,
    "prazo_ml_horas": 24,
-   "preco": 40.96,
+   "preco": 38.7,
    "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 33.7,
@@ -2893,7 +2893,7 @@
    "ml_id": "MLBU5379550132",
    "preco_ml": 44.9,
    "prazo_ml_horas": 12,
-   "preco": 49.39,
+   "preco": 49.9,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 44.9,
@@ -2909,7 +2909,7 @@
    "ml_id": "MLB23409637",
    "preco_ml": 57.77,
    "prazo_ml_horas": 12,
-   "preco": 63.55,
+   "preco": 58.41,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 53.1,
@@ -2925,7 +2925,7 @@
    "ml_id": "MLB19721765",
    "preco_ml": 32.0,
    "prazo_ml_horas": 12,
-   "preco": 35.2,
+   "preco": 37.0,
    "prazo_cliente_horas": 36,
    "disponivel": true
   },
@@ -2938,7 +2938,7 @@
    "ml_id": "MLB53911626",
    "preco_ml": 48.0,
    "prazo_ml_horas": 24,
-   "preco": 52.8,
+   "preco": 53.0,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -3019,7 +3019,7 @@
    "ml_id": "MLBU2358055339",
    "preco_ml": 42.38,
    "prazo_ml_horas": 24,
-   "preco": 46.62,
+   "preco": 47.38,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -3051,7 +3051,7 @@
    "amazon_preco": 47.4,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 52.14,
+   "preco": 52.4,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -3067,7 +3067,7 @@
    "amazon_preco": 39.99,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 43.99,
+   "preco": 44.99,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -3083,7 +3083,7 @@
    "amazon_preco": 39.99,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 43.99,
+   "preco": 44.99,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -3099,7 +3099,7 @@
    "amazon_preco": 25.71,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 28.28,
+   "preco": 30.71,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3131,7 +3131,7 @@
    "amazon_preco": 29.5,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 32.45,
+   "preco": 34.5,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -3147,7 +3147,7 @@
    "amazon_preco": 36.79,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 40.47,
+   "preco": 41.79,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -3163,7 +3163,7 @@
    "amazon_preco": 34.95,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 38.45,
+   "preco": 39.95,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3179,7 +3179,7 @@
    "amazon_preco": 29.63,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 32.59,
+   "preco": 34.63,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -3405,7 +3405,7 @@
    "amazon_preco": 34.93,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 38.42,
+   "preco": 39.93,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3421,7 +3421,7 @@
    "amazon_preco": 40.69,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 44.76,
+   "preco": 45.69,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3517,7 +3517,7 @@
    "amazon_preco": 46.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 51.59,
+   "preco": 51.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3533,7 +3533,7 @@
    "amazon_preco": 42.28,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 46.51,
+   "preco": 47.28,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3661,7 +3661,7 @@
    "amazon_preco": 15.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 17.49,
+   "preco": 20.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3677,7 +3677,7 @@
    "amazon_preco": 15.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 17.49,
+   "preco": 20.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3693,7 +3693,7 @@
    "amazon_preco": 18.88,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 20.77,
+   "preco": 23.88,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3725,7 +3725,7 @@
    "amazon_preco": 26.1,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 28.71,
+   "preco": 31.1,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3741,7 +3741,7 @@
    "amazon_preco": 23.75,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 26.13,
+   "preco": 28.75,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3757,7 +3757,7 @@
    "amazon_preco": 34.2,
    "preco_ml": null,
    "prazo_ml_horas": 216,
-   "preco": 37.62,
+   "preco": 39.2,
    "prazo_cliente_horas": 240,
    "disponivel": true
   },
@@ -3773,7 +3773,7 @@
    "amazon_preco": 14.89,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 16.38,
+   "preco": 19.89,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3789,7 +3789,7 @@
    "amazon_preco": 17.99,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 19.79,
+   "preco": 22.99,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3805,7 +3805,7 @@
    "amazon_preco": 17.99,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 19.79,
+   "preco": 22.99,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -3821,7 +3821,7 @@
    "amazon_preco": 37.59,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 41.35,
+   "preco": 42.59,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3837,7 +3837,7 @@
    "amazon_preco": 38.94,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 42.83,
+   "preco": 43.94,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3853,7 +3853,7 @@
    "amazon_preco": 25.2,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 27.72,
+   "preco": 30.2,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3869,7 +3869,7 @@
    "amazon_preco": 15.5,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 17.05,
+   "preco": 20.5,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3885,7 +3885,7 @@
    "amazon_preco": 37.96,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 41.76,
+   "preco": 42.96,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3901,7 +3901,7 @@
    "amazon_preco": 39.27,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 43.2,
+   "preco": 44.27,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3917,7 +3917,7 @@
    "amazon_preco": 19.05,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 20.96,
+   "preco": 24.05,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3933,7 +3933,7 @@
    "amazon_preco": 21.74,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 23.91,
+   "preco": 26.74,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3949,7 +3949,7 @@
    "amazon_preco": 38.69,
    "preco_ml": null,
    "prazo_ml_horas": 216,
-   "preco": 42.56,
+   "preco": 43.69,
    "prazo_cliente_horas": 240,
    "disponivel": true
   },
@@ -3965,7 +3965,7 @@
    "amazon_preco": 20.99,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 23.09,
+   "preco": 25.99,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -3981,7 +3981,7 @@
    "amazon_preco": 17.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 19.69,
+   "preco": 22.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4010,7 +4010,7 @@
    "ml_id": "MLB77717359",
    "preco_ml": 29.9,
    "prazo_ml_horas": 24,
-   "preco": 32.89,
+   "preco": 34.9,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -4023,7 +4023,7 @@
    "ml_id": "MLB24160723",
    "preco_ml": 39.9,
    "prazo_ml_horas": 24,
-   "preco": 43.89,
+   "preco": 44.9,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -4036,7 +4036,7 @@
    "ml_id": "MLB73071892",
    "preco_ml": 43.0,
    "prazo_ml_horas": 24,
-   "preco": 47.3,
+   "preco": 48.0,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -4187,7 +4187,7 @@
    "amazon_preco": 22.95,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 25.25,
+   "preco": 27.95,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -4203,7 +4203,7 @@
    "amazon_preco": 29.79,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 32.77,
+   "preco": 34.79,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -4219,7 +4219,7 @@
    "amazon_preco": 42.38,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 46.62,
+   "preco": 47.38,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -4235,7 +4235,7 @@
    "amazon_preco": 48.7,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 53.57,
+   "preco": 53.7,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -4282,7 +4282,7 @@
    "amazon_preco": 136.27,
    "preco_ml": 131.1,
    "prazo_ml_horas": 24,
-   "preco": 144.21,
+   "preco": 149.9,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -4430,7 +4430,7 @@
    "ml_id": "MLB49296469",
    "preco_ml": 37.43,
    "prazo_ml_horas": 24,
-   "preco": 41.17,
+   "preco": 42.43,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -4488,7 +4488,7 @@
    "amazon_preco": 32.8,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 36.08,
+   "preco": 37.8,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -4520,7 +4520,7 @@
    "amazon_preco": 25.63,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 28.19,
+   "preco": 30.63,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4536,7 +4536,7 @@
    "amazon_preco": 22.23,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 24.45,
+   "preco": 27.23,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4552,7 +4552,7 @@
    "amazon_preco": 39.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 43.89,
+   "preco": 44.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4584,7 +4584,7 @@
    "amazon_preco": 42.4,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 46.64,
+   "preco": 47.4,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4600,7 +4600,7 @@
    "amazon_preco": 34.9,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 38.39,
+   "preco": 39.9,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -4648,7 +4648,7 @@
    "amazon_preco": 46.39,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 51.03,
+   "preco": 51.39,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4664,7 +4664,7 @@
    "amazon_preco": 38.39,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 42.23,
+   "preco": 43.39,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4680,7 +4680,7 @@
    "amazon_preco": 13.99,
    "preco_ml": null,
    "prazo_ml_horas": 216,
-   "preco": 15.39,
+   "preco": 18.99,
    "prazo_cliente_horas": 240,
    "disponivel": true
   },
@@ -4696,7 +4696,7 @@
    "amazon_preco": 24.68,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 27.15,
+   "preco": 29.68,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4712,7 +4712,7 @@
    "amazon_preco": 18.8,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 20.68,
+   "preco": 23.8,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4728,7 +4728,7 @@
    "amazon_preco": 37.0,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 40.7,
+   "preco": 42.0,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -4744,7 +4744,7 @@
    "amazon_preco": 39.9,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 43.89,
+   "preco": 44.9,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -4760,7 +4760,7 @@
    "amazon_preco": 24.98,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 27.48,
+   "preco": 29.98,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4776,7 +4776,7 @@
    "amazon_preco": 20.56,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 22.62,
+   "preco": 25.56,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4792,7 +4792,7 @@
    "amazon_preco": 28.4,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 31.24,
+   "preco": 33.4,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -4808,7 +4808,7 @@
    "amazon_preco": 46.54,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 51.19,
+   "preco": 51.54,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4824,7 +4824,7 @@
    "amazon_preco": 42.65,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 46.91,
+   "preco": 47.65,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -4872,7 +4872,7 @@
    "amazon_preco": 47.83,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 52.61,
+   "preco": 52.83,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4920,7 +4920,7 @@
    "amazon_preco": 26.45,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 29.1,
+   "preco": 31.45,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4952,7 +4952,7 @@
    "amazon_preco": 40.82,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 44.9,
+   "preco": 45.82,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -4968,7 +4968,7 @@
    "amazon_preco": 44.95,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 49.45,
+   "preco": 49.95,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5016,7 +5016,7 @@
    "amazon_preco": 26.86,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 29.55,
+   "preco": 31.86,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5064,7 +5064,7 @@
    "amazon_preco": 35.82,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 39.4,
+   "preco": 40.82,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5128,7 +5128,7 @@
    "amazon_preco": 46.4,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 51.04,
+   "preco": 51.4,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5192,7 +5192,7 @@
    "amazon_preco": 36.3,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 39.93,
+   "preco": 41.3,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5224,7 +5224,7 @@
    "amazon_preco": 43.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 48.29,
+   "preco": 48.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5368,7 +5368,7 @@
    "amazon_preco": 47.87,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 52.66,
+   "preco": 52.87,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5381,7 +5381,7 @@
    "ml_id": "MLB38399644",
    "preco_ml": 19.79,
    "prazo_ml_horas": 24,
-   "preco": 21.77,
+   "preco": 24.79,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -5394,7 +5394,7 @@
    "ml_id": "MLB36118110",
    "preco_ml": 19.8,
    "prazo_ml_horas": 24,
-   "preco": 21.78,
+   "preco": 24.8,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -5407,7 +5407,7 @@
    "ml_id": "MLB48945960",
    "preco_ml": 19.89,
    "prazo_ml_horas": 24,
-   "preco": 21.88,
+   "preco": 24.89,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -5420,7 +5420,7 @@
    "ml_id": "MLB65143675",
    "preco_ml": 28.39,
    "prazo_ml_horas": 24,
-   "preco": 31.23,
+   "preco": 33.39,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -5433,7 +5433,7 @@
    "ml_id": "MLB43890815",
    "preco_ml": 36.9,
    "prazo_ml_horas": 24,
-   "preco": 40.59,
+   "preco": 41.9,
    "prazo_cliente_horas": 48,
    "disponivel": true
   },
@@ -5462,7 +5462,7 @@
    "amazon_preco": 25.76,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 28.34,
+   "preco": 30.76,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5478,7 +5478,7 @@
    "amazon_preco": 25.0,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 27.5,
+   "preco": 30.0,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -5494,7 +5494,7 @@
    "amazon_preco": 20.9,
    "preco_ml": null,
    "prazo_ml_horas": 216,
-   "preco": 22.99,
+   "preco": 25.9,
    "prazo_cliente_horas": 240,
    "disponivel": true
   },
@@ -5510,7 +5510,7 @@
    "amazon_preco": 21.72,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 23.89,
+   "preco": 26.72,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5526,7 +5526,7 @@
    "amazon_preco": 19.9,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 21.89,
+   "preco": 24.9,
    "prazo_cliente_horas": 216,
    "disponivel": true
   },
@@ -5542,7 +5542,7 @@
    "amazon_preco": 26.93,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 29.62,
+   "preco": 31.93,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5558,7 +5558,7 @@
    "amazon_preco": 26.0,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 28.6,
+   "preco": 31.0,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5574,7 +5574,7 @@
    "amazon_preco": 26.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 29.59,
+   "preco": 31.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5686,7 +5686,7 @@
    "amazon_preco": 19.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 21.89,
+   "preco": 24.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5718,7 +5718,7 @@
    "amazon_preco": 37.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 41.69,
+   "preco": 42.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5734,7 +5734,7 @@
    "amazon_preco": 23.49,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 25.84,
+   "preco": 28.49,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5750,7 +5750,7 @@
    "amazon_preco": 28.99,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 31.89,
+   "preco": 33.99,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5814,7 +5814,7 @@
    "amazon_preco": 42.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 47.19,
+   "preco": 47.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5830,7 +5830,7 @@
    "amazon_preco": 45.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 50.49,
+   "preco": 50.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5846,7 +5846,7 @@
    "amazon_preco": 12.89,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 14.18,
+   "preco": 17.89,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5862,7 +5862,7 @@
    "amazon_preco": 25.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 28.49,
+   "preco": 30.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5878,7 +5878,7 @@
    "amazon_preco": 21.9,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 24.09,
+   "preco": 26.9,
    "prazo_cliente_horas": 192,
    "disponivel": true
   },
@@ -5910,7 +5910,7 @@
    "amazon_preco": 28.48,
    "preco_ml": null,
    "prazo_ml_horas": 168,
-   "preco": 31.33,
+   "preco": 33.48,
    "prazo_cliente_horas": 192,
    "disponivel": true
   }
