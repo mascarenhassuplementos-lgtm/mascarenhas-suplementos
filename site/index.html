@@ -7,20 +7,21 @@
 <link rel="icon" type="image/png" href="logo.png">
 <link rel="apple-touch-icon" href="logo.png">
 <meta property="og:image" content="logo.png">
+<meta name="theme-color" content="#000000">
 <meta name="description" content="Creatina, whey protein, pré-treino, glutamina, termogênicos, BCAA, barras de proteína e vitaminas com entrega em até 48h em Salvador. Peça pelo site e receba a confirmação no WhatsApp.">
 <style>
 /* =====================================================================
    CONFIGURAÇÃO DA LOJA — edite os valores em CONFIG e PRODUTOS (no <script>)
    ===================================================================== */
 :root{
-  --bg:#0f1412; --surface:#171e1b; --surface-2:#1f2824; --text:#eef3f0; --muted:#9fb0a8;
-  --accent:#3ddc84; --accent-ink:#06210f; --line:#2a3530; --warn:#ffcc66; --danger:#ff7a7a;
+  --bg:#0a0a0a; --surface:#151515; --surface-2:#1e1e1e; --text:#f5f5f5; --muted:#a8a8a8;
+  --accent:#f5b800; --accent-ink:#0a0a0a; --line:#2a2a2a; --warn:#ffcc66; --danger:#ff7a7a;
   --radius:14px;
 }
 @media (prefers-color-scheme: light){
   :root:not([data-theme="dark"]){
-    --bg:#f5f7f6; --surface:#ffffff; --surface-2:#eef2f0; --text:#14201b; --muted:#5b6b64;
-    --accent:#14894a; --accent-ink:#ffffff; --line:#dbe3df; --warn:#8a5a00; --danger:#b42318;
+    --bg:#f6f6f6; --surface:#ffffff; --surface-2:#efefef; --text:#141414; --muted:#5c5c5c;
+    --accent:#9a5b00; --accent-ink:#ffffff; --line:#dedede; --warn:#8a5a00; --danger:#b42318;
   }
 }
 *{box-sizing:border-box}
@@ -28,12 +29,12 @@ html,body{margin:0}
 body{background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
 a{color:var(--accent)}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+header{position:sticky;top:0;z-index:10;background:#000;border-bottom:1px solid #2a2a2a}
+.bar{display:flex;align-items:center;justify-content:space-between;height:76px;gap:12px}
 .logo{font-weight:800;letter-spacing:.5px;font-size:20px;display:flex;align-items:center;gap:10px}
-.logo img{width:46px;height:43px;flex:none;object-fit:contain}
+.logo img{height:64px;width:auto;flex:none;display:block}
 .logo .nome span{color:var(--accent)}
-.cart-btn{background:var(--accent);color:var(--accent-ink);border:0;border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer;font-size:15px}
+.cart-btn{background:#f5b800;color:#0a0a0a;border:0;border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer;font-size:15px}
 .hero{padding:40px 0 24px}
 .hero h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0 0 12px}
 .hero p{color:var(--muted);margin:0;max-width:640px}
@@ -635,7 +636,7 @@ let cart = {};
 try { cart = JSON.parse(localStorage.getItem("cart")||"{}") || {}; } catch(e) { cart = {}; }
 const save = () => { try { localStorage.setItem("cart", JSON.stringify(cart)); } catch(e){} };
 
-$("logo").innerHTML = `<img src="logo.png" alt="" width="46" height="43"><span class="nome">${CONFIG.nomeLoja.replace(/(\S+)$/, "<span>$1</span>")}</span>`;
+$("logo").innerHTML = `<img src="logo-horizontal.png" alt="${CONFIG.nomeLoja}" width="97" height="64">`;
 
 function initials(n){ return n.replace("Creatina","").trim().split(/\s+/).slice(0,2).map(w=>w[0]).join("").toUpperCase(); }
 let ATUALIZADO = null;
