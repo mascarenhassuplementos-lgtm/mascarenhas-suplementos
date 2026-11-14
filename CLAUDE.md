@@ -3,7 +3,7 @@
 > Arquivo de memória do projeto. Numa conversa nova com o Claude, envie este arquivo
 > (ou conecte o repositório) e diga: **"Leia o CLAUDE.md e continue de onde paramos."**
 > Atualize a seção "Histórico" ao fim de cada sessão.
-> Última atualização: **14/11/2026, 19h05**.
+> Última atualização: **14/11/2026, 19h20**.
 
 ## A loja
 
@@ -68,7 +68,8 @@
 | Mercado Livre — 104 | 14/11 | 66 mudaram. Dux Cafeína 90 cáps fora do ar. |
 | Amazon — Whey e Creatina (58) | 14/11 | 39 mudaram; combo Black Skull fora do ar. |
 | Amazon — Hipercalórico, Albumina, Pré-treino, Hidratação, Glutamina, BCAA, Aminoácidos, parte de Termogênico (128) | 14/11 | 60 mudaram; 13 estavam abaixo do custo (corrigidos); 3 fora do ar. |
-| Amazon — resto de Termogênico, Vitaminas, Colágeno, Barras, Alimentos Fit, Acessórios (166) | **9/11** | Falta conferir. |
+| Amazon — resto de Termogênico, Barras, Alimentos Fit, parte de Vitaminas (113) | 14/11 (19h) | 50 mudaram; 7 estavam abaixo do custo (corrigidos); 5 fora do ar (sem preço na Amazon). |
+| Amazon — Vitaminas e Saúde, Colágeno, Acessórios (54) | **9/11** | Falta conferir (CAPTCHA no 114º). |
 
 ## Identidade visual
 
@@ -97,7 +98,7 @@
 - [ ] **Instagram:** excluir os 24 posts antigos pelo app do celular (os 9 novos já estão publicados).
 - [ ] Windsor.ai está em **Trial** — ver plano antes de vencer, se quiser continuar publicando pelo Claude.
 - [ ] **Segredos do Mercado Livre no GitHub** (`GUIA-ATUALIZACAO.md`, Passos 3 a 6) e rodar "Run workflow". O `GH_PAT` vence em 1 ano.
-- [ ] **Amazon:** conferir os 166 produtos que faltaram.
+- [ ] **Amazon:** conferir os 54 produtos que faltaram (Vitaminas e Saúde, Colágeno, Acessórios).
 - [ ] **Painel com a logo nova:** abrir conversa a partir da página do Painel, anexar `painel-administrativo-logo-nova.html` e pedir para publicar.
 - [ ] Refazer catálogo em PDF e textos de WhatsApp (`catalogo/`) com os preços novos.
 - [ ] Liberar a "Área da loja" (senha 813125) no celular da loja.
@@ -105,6 +106,8 @@
 - [ ] Conseguir a logo em alta resolução. Decidir se a Shopify continua.
 
 ## Histórico
+
+- **14/11/2026 (19h20)** — Conferidos mais 113 produtos da Amazon: 50 preços mudaram, 5 produtos fora do ar; faltam 54 (CAPTCHA).
 
 - **14/11/2026 (19h05)** — **Site novo publicado** no endereço principal (visual Ouro Estrutural, Pix antecipado, ficha do pedido, email automático); página de teste `index-novo.html` apagada.
 
