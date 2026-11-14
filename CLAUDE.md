@@ -3,7 +3,7 @@
 > Arquivo de memória do projeto. Numa conversa nova com o Claude, envie este arquivo
 > (ou conecte o repositório) e diga: **"Leia o CLAUDE.md e continue de onde paramos."**
 > Atualize a seção "Histórico" ao fim de cada sessão.
-> Última atualização: **14/11/2026, 19h20**.
+> Última atualização: **14/11/2026, 19h30**.
 
 ## A loja
 
@@ -76,10 +76,10 @@
 - **Logo:** casa prata + casa dourada com haltere, "MASCARENHAS SUPLEMENTOS". Sempre sobre preto.
   Arquivos: `site/logo.png` (512) e `site/logo-horizontal.png` (664×438). Melhor cópia local: `mascarenhas-instagram-1080.png` (Área de Trabalho).
 - **Cores:** preto `#0A0A0A` · dourado `#F5B800` · âmbar `#E8941A` · prata `#C9CDD2` · osso `#F2EFE8`.
-- **Site novo ("Ouro Estrutural"):** títulos Big Shoulders Display, textos Instrument Sans, legendas Geist Mono,
+- **Site (visual "Ouro Estrutural", no ar desde 14/11):** títulos Big Shoulders Display, textos Instrument Sans, legendas Geist Mono,
   versículo em Instrument Serif. Desenho das duas casas no topo, régua de 48h, categorias como anilhas,
   cartões escuros com linha dourada. Manifesto: `design-site/filosofia-ouro-estrutural.md`.
-- **Posts:** Inter 900/800 sobre preto com dourado (9 posts prontos).
+- **Posts:** Inter 900/800 sobre preto com dourado (9 posts publicados no Instagram em 14/11).
 
 ## Outros lugares com dados da loja
 
