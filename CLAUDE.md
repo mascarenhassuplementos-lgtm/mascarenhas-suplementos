@@ -3,7 +3,7 @@
 > Arquivo de memória do projeto. Numa conversa nova com o Claude, envie este arquivo
 > (ou conecte o repositório) e diga: **"Leia o CLAUDE.md e continue de onde paramos."**
 > Atualize a seção "Histórico" ao fim de cada sessão.
-> Última atualização: **14/11/2026, 16h50**.
+> Última atualização: **14/11/2026, 19h**.
 
 ## A loja
 
@@ -87,16 +87,17 @@
   - Planilha "Revisão de preços Amazon — 14/11/2026" — https://claude.ai/artifact/Pwni5DxB2xa3R84cRFbcpX
   - "Nova Identidade Visual" (marca, banner, posts), "Painel Administrativo" (**logo antiga no ar**),
     "Plano de lançamento", "Quiz", quadros antigos verdes.
-- **Instagram:** 24 posts antigos ainda no ar (decidido **excluir**); 9 posts novos prontos para publicar
-  (ordem 09 → 01, legendas em `legendas.txt`). Excluir exige entrar na conta no navegador do app Claude
-  (a senha é digitada por você); publicar é pelo celular.
+- **Instagram:** **9 posts novos publicados em 14/11** pelo conector **Windsor.ai for Social Media**
+  (conta Windsor em plano Trial; imagens hospedadas em `site/instagram/*.jpg`). Os 24 posts antigos ainda estão
+  no ar: o conector **não exclui posts** (só cria posts/stories e gerencia comentários) — excluir pelo app do celular.
 - **Shopify** (mbses5-e7.myshopify.com): só teste, trial — não é a loja oficial.
 - **Google:** Perfil da Empresa (9/11). **Asana:** "Rastreador de fornecedores".
 
 ## Pendências
 
 - [ ] **Publicar o site novo**: dizer "pode publicar" → `index-novo.html` vira o `index.html` e a página de teste é apagada.
-- [ ] **Instagram:** entrar na conta no navegador do app Claude para eu excluir os 24 posts antigos; depois publicar os 9 novos pelo celular.
+- [ ] **Instagram:** excluir os 24 posts antigos pelo app do celular (os 9 novos já estão publicados).
+- [ ] Windsor.ai está em **Trial** — ver plano antes de vencer, se quiser continuar publicando pelo Claude.
 - [ ] **Segredos do Mercado Livre no GitHub** (`GUIA-ATUALIZACAO.md`, Passos 3 a 6) e rodar "Run workflow". O `GH_PAT` vence em 1 ano.
 - [ ] **Amazon:** conferir os 166 produtos que faltaram.
 - [ ] **Painel com a logo nova:** abrir conversa a partir da página do Painel, anexar `painel-administrativo-logo-nova.html` e pedir para publicar.
@@ -106,6 +107,8 @@
 - [ ] Conseguir a logo em alta resolução. Decidir se a Shopify continua.
 
 ## Histórico
+
+- **14/11/2026 (19h)** — 9 posts novos publicados no Instagram via Windsor.ai (ordem 09 → 01, com legendas).
 
 - **14/11/2026 (16h)** —
   - Proposta visual "Ouro Estrutural" (imagem + manifesto) e site novo montado em `index-novo.html`.
