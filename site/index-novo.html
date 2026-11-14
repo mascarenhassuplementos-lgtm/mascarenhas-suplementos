@@ -258,6 +258,7 @@ const CONFIG = {
   cnpj: "",                      // preencher quando o CNPJ novo for aberto
   email: "mascarenhassuplementos@gmail.com",
   instagram: "mascarenhassuplementos",
+  emailPedidos: "mascarenhassuplementos@gmail.com", // recebe cada pedido com os links de compra do estoque (o cliente não vê)
   enderecoRetirada: "Loteamento Aquarius, Rua Magno Valente, 484 – Edf. Georges Pompidou – Salvador/BA"
 };
 
@@ -867,6 +868,7 @@ v("ref") ? `Referência: ${v("ref")}` : null]),
 v("obs") ? `Obs.: ${v("obs")}` : null,
   ].filter(l => l !== null).join("\n");
 
+  avisarLoja(id, ficha, fichaLink, its, total, ret);
   const waLink = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
   const pix = v("pag") === "Pix" && CONFIG.chavePix;
   cart = {}; save(); $("count").textContent = 0;
@@ -912,6 +914,30 @@ v("obs") ? `Obs.: ${v("obs")}` : null,
   copiar("copiarChave", CONFIG.chavePix, "Copiada ✓");
   $("jaPaguei").addEventListener("click", () => { $("jaPaguei").textContent = "Pedido enviado ✓ mande o comprovante"; });
 });
+
+/* Envia um email automático para a loja com os itens, os links de compra do estoque e a ficha de entrega.
+   Usa o FormSubmit (gratuito). Na 1ª vez, o FormSubmit manda um email pedindo para ATIVAR — é só clicar. */
+function avisarLoja(id, f, fichaLink, its, total, ret){
+  if (!CONFIG.emailPedidos) return;
+  const estoque = p => p.fonte === "amazon" && p.amazon_asin ? "Amazon: https://www.amazon.com.br/dp/" + p.amazon_asin
+    : p.ml_id ? "Mercado Livre: https://www.mercadolivre.com.br/" + (p.ml_id.startsWith("MLBU") ? "up/" : "p/") + p.ml_id : "sem link";
+  const custo = p => p.fonte === "amazon" ? p.amazon_preco : (p.preco_ml ?? p.amazon_preco);
+  const itens = its.map(i => `${i.q}x ${i.nome} ${i.tam} — ${brl(i.preco*i.q)}\n   Comprar no estoque → ${estoque(i)}${custo(i) ? "\n   Custo de referência: " + brl(custo(i)) + " cada" : ""}`).join("\n\n");
+  const e = f.e;
+  const dados = {
+    _subject: `Novo pedido ${id} — ${brl(total)} — ${e.n}`,
+    _template: "box", _captcha: "false",
+    "Pedido": id, "Data": f.d, "Pagamento": f.pg, "Total": brl(total),
+    "Itens e links de compra": itens,
+    "Recebimento": ret ? "Retirada no local" : "Entrega via delivery",
+    "Nome": e.n, "WhatsApp": e.w,
+    ...(ret ? {} : {"Endereço": e.a, "Bairro": e.b, "Cidade": e.c, "CEP": e.cep, "Referência": e.ref || "-"}),
+    "Horário": e.h, "Observações": e.o || "-",
+    "Ficha do pedido": fichaLink
+  };
+  try { fetch("https://formsubmit.co/ajax/" + CONFIG.emailPedidos, {method: "POST", keepalive: true,
+    headers: {"Content-Type": "application/json", "Accept": "application/json"}, body: JSON.stringify(dados)}).catch(() => {}); } catch (_) {}
+}
 
 /* Gera o código Pix "copia e cola" (padrão EMV do Banco Central) com o valor do pedido */
 function pixPayload(valor, txid){
