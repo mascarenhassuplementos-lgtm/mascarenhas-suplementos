@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ficha do pedido · Mascarenhas Suplementos</title>
+<link rel="icon" type="image/png" href="logo.png">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800&family=Geist+Mono:wght@400&family=Instrument+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070707;--surface:#111;--surface-2:#181818;--text:#f2efe8;--muted:#9a9a9a;--silver:#c9cdd2;--accent:#f5b800;--amber:#e8941a;--line:#1f1f1f;--line-2:#2c2c2c;
+--f-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;--f-sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--f-mono:"Geist Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--text);font:16px/1.55 var(--f-sans);-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{border-bottom:1px solid var(--line);background:#0a0a0a}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+header img{height:52px}
+.mono{font:12px var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:#8a8a8a}
+h1{font:800 clamp(40px,8vw,64px)/.95 var(--f-display);text-transform:uppercase;margin:36px 0 6px}
+h1 span{color:var(--accent)}
+h2{font:400 30px/1 var(--f-display);text-transform:uppercase;letter-spacing:.03em;margin:40px 0 14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.box{background:var(--surface);border-top:2px solid var(--accent);padding:18px 20px}
+.it{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line-2)}
+.it:last-child{border-bottom:0}
+.it img{width:64px;height:64px;object-fit:contain;background:#f2efe8;border-radius:4px;padding:4px}
+.it b{display:block;font-weight:700;line-height:1.3}
+.it small{font:11px/1.6 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:#8a8a8a}
+.it .r{text-align:right;font:700 24px var(--f-display);color:var(--accent);white-space:nowrap}
+.dono{grid-column:1/-1;display:none;gap:10px;flex-wrap:wrap;align-items:center;background:rgba(245,184,0,.07);border-left:2px solid var(--accent);padding:10px 12px;font-size:14px}
+.on .dono{display:flex}
+.comprar{background:var(--accent);color:#0a0a0a;text-decoration:none;font-weight:700;border-radius:999px;padding:9px 16px;font-size:14px}
+.tot div{display:flex;justify-content:space-between;padding:4px 0}
+.tot .big{font:700 34px var(--f-display);color:var(--accent);border-top:1px solid var(--line-2);margin-top:8px;padding-top:10px}
+.ficha div{display:grid;grid-template-columns:130px 1fr;gap:10px;padding:7px 0;border-bottom:1px solid var(--line-2)}
+.ficha div:last-child{border-bottom:0}
+.ficha span{color:var(--muted);font-size:14px}
+.btn{display:inline-block;border:1px solid #444;color:var(--text);background:transparent;border-radius:999px;padding:12px 20px;font:500 15px var(--f-sans);cursor:pointer;text-decoration:none;margin:18px 10px 0 0}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.aviso{margin-top:24px;padding:14px 16px;border-left:2px solid var(--accent);background:rgba(245,184,0,.06);color:#d9c58a;font-size:15px}
+footer{padding:48px 0;text-align:center}
+.lock{background:none;border:0;color:#555;font:11px var(--f-mono);letter-spacing:.2em;text-transform:uppercase;cursor:pointer}
+.pinbox{display:none;margin-top:12px;gap:8px;justify-content:center}
+.pinbox.show{display:flex}
+.pinbox input{width:150px;padding:10px 12px;border-radius:4px;border:1px solid var(--line-2);background:var(--surface-2);color:var(--text);font:16px var(--f-mono);text-align:center;letter-spacing:.3em}
+.erro{color:#ff7a7a;text-align:center;margin-top:60px}
+@media print{body{background:#fff;color:#000}.box{background:#fff}header,footer,.btn,.dono{display:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="./"><img src="logo-horizontal.png" alt="Mascarenhas Suplementos"></a><span class="mono" id="topo">Ficha do pedido</span></div></header>
+<main class="wrap" id="app"></main>
+<footer class="wrap">
+  <button class="lock" id="lock" type="button">Área da loja</button>
+  <form class="pinbox" id="pinbox"><input id="pin" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="senha"><button class="btn" style="margin:0" type="submit">Entrar</button></form>
+</footer>
+<script>
+/* Ficha do pedido: o cliente vê só o resumo; no aparelho da loja (liberado com a senha)
+   aparecem o link de compra do estoque (Amazon / Mercado Livre) e o custo de cada item. */
+const HASH_SENHA = "3237a952bb544f64747eb5bc06fb97919dc1ac7aacaa79f89392ff6762f3c305";
+const brl = v => Number(v).toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const $ = id => document.getElementById(id);
+let dono = false; try { dono = localStorage.getItem("mx_dono") === HASH_SENHA; } catch(e) {}
+
+function ler(){
+  try {
+    const h = location.hash.replace(/^#p=/, "");
+    const b = atob(h.replace(/-/g,"+").replace(/_/g,"/"));
+    return JSON.parse(decodeURIComponent(escape(b)));
+  } catch(e) { return null; }
+}
+const linkEstoque = p => p.fonte === "amazon" && p.amazon_asin ? ["Amazon", `https://www.amazon.com.br/dp/${p.amazon_asin}`]
+  : p.ml_id ? ["Mercado Livre", `https://www.mercadolivre.com.br/${p.ml_id.startsWith("MLBU") ? "up" : "p"}/${p.ml_id}`] : null;
+const custo = p => p.fonte === "amazon" ? p.amazon_preco : (p.preco_ml ?? p.amazon_preco);
+
+async function montar(){
+  const d = ler();
+  if (!d) { $("app").innerHTML = `<p class="erro">Link do pedido inválido ou incompleto.</p>`; return; }
+  let prods = [];
+  try { prods = (await (await fetch("produtos.json", {cache:"no-store"})).json()).produtos || []; } catch(e) {}
+  const by = Object.fromEntries(prods.map(p => [p.id, p]));
+  const its = d.i.map(([id, q, preco, nome]) => ({...(by[id] || {}), id, q, precoPedido: preco, nomePedido: nome}));
+  document.body.classList.toggle("on", dono);
+  const e = d.e || {};
+  const custoTotal = its.reduce((s,i) => s + (custo(i) || 0) * i.q, 0);
+  $("app").innerHTML = `
+    <div class="mono" style="margin-top:28px">${esc(d.d)}</div>
+    <h1>Pedido <span>${esc(d.id)}</span></h1>
+    <div class="mono">${d.r ? "Retirada no local" : "Entrega via delivery"} · ${esc(d.pg)}</div>
+    <h2>Itens</h2>
+    <div class="box">${its.map(i => {
+      const l = linkEstoque(i), c = custo(i);
+      return `<div class="it">${i.img ? `<img src="${esc(i.img)}" alt="">` : `<span></span>`}
+        <div><b>${i.q}× ${esc(i.nomePedido || i.nome)}</b><small>${i.tam ? esc(i.tam) + " · " : ""}${brl(i.precoPedido)} cada</small></div>
+        <div class="r">${brl(i.precoPedido * i.q)}</div>
+        <div class="dono">${l ? `<a class="comprar" href="${l[1]}" target="_blank" rel="noopener">Comprar ${i.q}× no ${l[0]}</a>` : "Sem link de estoque"}
+          ${c ? `<span>Custo de referência: <b>${brl(c)}</b> cada (consulte o preço de hoje)</span>` : ""}</div>
+      </div>`; }).join("")}</div>
+    <div class="box tot" style="margin-top:14px">
+      <div><span>Produtos</span><span>${brl(d.s)}</span></div>
+      <div><span>${d.r ? "Retirada no local" : "Entrega"}</span><span>${d.f === null ? "A combinar" : d.f ? brl(d.f) : "Grátis"}</span></div>
+      <div class="big"><span>Total</span><span>${brl(d.t)}</span></div>
+      <div class="dono" style="margin-top:12px">Custo estimado dos itens: <b>${brl(custoTotal)}</b> · margem estimada: <b>${brl(d.s - custoTotal)}</b></div>
+    </div>
+    <h2>${d.r ? "Dados para retirada" : "Ficha de entrega"}</h2>
+    <div class="box ficha">
+      <div><span>Nome</span><b>${esc(e.n)}</b></div>
+      <div><span>WhatsApp</span><b>${esc(e.w)}</b></div>
+      ${d.r ? "" : `<div><span>Endereço</span><b>${esc(e.a)}</b></div><div><span>Bairro</span><b>${esc(e.b)}</b></div><div><span>Cidade</span><b>${esc(e.c)}</b></div><div><span>CEP</span><b>${esc(e.cep)}</b></div>${e.ref ? `<div><span>Referência</span><b>${esc(e.ref)}</b></div>` : ""}`}
+      <div><span>Horário</span><b>${esc(e.h)}</b></div>
+      ${e.o ? `<div><span>Observações</span><b>${esc(e.o)}</b></div>` : ""}
+    </div>
+    ${d.pg && d.pg.startsWith("Pix") ? `<div class="aviso">Pagamento via Pix antecipado. O comprovante é enviado na conversa do WhatsApp.</div>` : ""}
+    <button class="btn" type="button" onclick="window.print()">Imprimir / salvar PDF</button>
+    ${dono ? `<button class="btn" type="button" id="sair">Sair da área da loja</button>` : ""}`;
+  if ($("sair")) $("sair").onclick = () => { try { localStorage.removeItem("mx_dono"); } catch(e) {} location.reload(); };
+  $("topo").textContent = dono ? "Área da loja" : "Ficha do pedido";
+}
+
+$("lock").onclick = () => $("pinbox").classList.toggle("show");
+$("pinbox").onsubmit = async ev => {
+  ev.preventDefault();
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode("mascarenhas:" + $("pin").value.trim()));
+  const h = [...new Uint8Array(buf)].map(x => x.toString(16).padStart(2,"0")).join("");
+  if (h === HASH_SENHA) { try { localStorage.setItem("mx_dono", h); } catch(e) {} dono = true; $("pinbox").classList.remove("show"); $("lock").style.display = "none"; montar(); }
+  else { $("pin").value = ""; $("pin").placeholder = "senha errada"; }
+};
+if (dono) $("lock").style.display = "none";
+window.addEventListener("hashchange", montar);
+montar();
+</script>
+</body>
+</html>
