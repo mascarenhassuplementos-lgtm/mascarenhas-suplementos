@@ -3,7 +3,7 @@
 > Arquivo de memória do projeto. Numa conversa nova com o Claude, envie este arquivo
 > (ou conecte o repositório) e diga: **"Leia o CLAUDE.md e continue de onde paramos."**
 > Atualize a seção "Histórico" ao fim de cada sessão.
-> Última atualização: **14/11/2026, 19h**.
+> Última atualização: **14/11/2026, 19h05**.
 
 ## A loja
 
@@ -23,7 +23,6 @@
 | O quê | Onde |
 |---|---|
 | **Site oficial** | https://mascarenhassuplementos-lgtm.github.io/mascarenhas-suplementos/ (GitHub Pages) |
-| **Site novo (prévia)** | `.../index-novo.html` — visual "Ouro Estrutural" + Pix antecipado + ficha + email. **Ainda não está no endereço principal.** |
 | Ficha do pedido | `site/pedido.html` — aberta pelo link que vem em cada pedido |
 | Repositório | github.com/mascarenhassuplementos-lgtm/mascarenhas-suplementos (login: "Continue with Google" com o Gmail da loja) |
 | Página principal | `site/index.html` (configuração no objeto `CONFIG`; a lista `let PRODUTOS = [...]` é só reserva) |
@@ -36,7 +35,7 @@
 | Cópia local | Área de Trabalho › `Mascarenhas Suplementos` (desatualizada — o GitHub vale) |
 | Imagens novas | Área de Trabalho › `Mascarenhas Suplementos - Imagens` › `instagram-nova-logo/` (9 posts + legendas) e `design-site/` (proposta visual) |
 
-## Como funciona um pedido (site novo)
+## Como funciona um pedido
 
 1. Cliente monta o carrinho, preenche a ficha e escolhe **Pix antecipado** ou cartão.
 2. **Pix:** aparece o valor, o **QR Code** e o **Pix copia e cola** já com o valor exato (padrão EMV do Banco Central,
@@ -49,7 +48,7 @@
      o botão **"Comprar no Amazon / Mercado Livre"** de cada item, o custo de referência e a margem estimada.
 4. Ao mesmo tempo, chega um **email automático** em mascarenhassuplementos@gmail.com (via **FormSubmit**, gratuito,
    **ativado em 14/11**) com itens, links de compra do estoque e ficha de entrega. O cliente não vê.
-   - Configuração: `CONFIG.emailPedidos` no `index-novo.html`. O email da loja aparece no código da página;
+   - Configuração: `CONFIG.emailPedidos` no `site/index.html`. O email da loja aparece no código da página;
      o FormSubmit oferece um código aleatório para esconder o endereço (trocar quando quiser).
 
 ## Como os preços funcionam
@@ -95,7 +94,6 @@
 
 ## Pendências
 
-- [ ] **Publicar o site novo**: dizer "pode publicar" → `index-novo.html` vira o `index.html` e a página de teste é apagada.
 - [ ] **Instagram:** excluir os 24 posts antigos pelo app do celular (os 9 novos já estão publicados).
 - [ ] Windsor.ai está em **Trial** — ver plano antes de vencer, se quiser continuar publicando pelo Claude.
 - [ ] **Segredos do Mercado Livre no GitHub** (`GUIA-ATUALIZACAO.md`, Passos 3 a 6) e rodar "Run workflow". O `GH_PAT` vence em 1 ano.
@@ -107,6 +105,8 @@
 - [ ] Conseguir a logo em alta resolução. Decidir se a Shopify continua.
 
 ## Histórico
+
+- **14/11/2026 (19h05)** — **Site novo publicado** no endereço principal (visual Ouro Estrutural, Pix antecipado, ficha do pedido, email automático); página de teste `index-novo.html` apagada.
 
 - **14/11/2026 (19h)** — 9 posts novos publicados no Instagram via Windsor.ai (ordem 09 → 01, com legendas).
 

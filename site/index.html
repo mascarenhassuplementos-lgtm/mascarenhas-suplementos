@@ -7,104 +7,195 @@
 <link rel="icon" type="image/png" href="logo.png">
 <link rel="apple-touch-icon" href="logo.png">
 <meta property="og:image" content="logo.png">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#0a0a0a">
 <meta name="description" content="Creatina, whey protein, pré-treino, glutamina, termogênicos, BCAA, barras de proteína e vitaminas com entrega em até 48h em Salvador. Peça pelo site e receba a confirmação no WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800&family=Geist+Mono:wght@400&family=Instrument+Sans:wght@400;500;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
 <style>
 /* =====================================================================
-   CONFIGURAÇÃO DA LOJA — edite os valores em CONFIG e PRODUTOS (no <script>)
+   VISUAL "OURO ESTRUTURAL" — preto, dourado e prata da logo nova.
+   Dados da loja: edite CONFIG e PRODUTOS (no <script>)
    ===================================================================== */
 :root{
-  --bg:#0a0a0a; --surface:#151515; --surface-2:#1e1e1e; --text:#f5f5f5; --muted:#a8a8a8;
-  --accent:#f5b800; --accent-ink:#0a0a0a; --line:#2a2a2a; --warn:#ffcc66; --danger:#ff7a7a;
-  --radius:14px;
-}
-@media (prefers-color-scheme: light){
-  :root:not([data-theme="dark"]){
-    --bg:#f6f6f6; --surface:#ffffff; --surface-2:#efefef; --text:#141414; --muted:#5c5c5c;
-    --accent:#9a5b00; --accent-ink:#ffffff; --line:#dedede; --warn:#8a5a00; --danger:#b42318;
-  }
+  --bg:#070707; --ink:#0a0a0a; --surface:#111; --surface-2:#181818; --text:#f2efe8; --muted:#9a9a9a; --silver:#c9cdd2;
+  --accent:#f5b800; --amber:#e8941a; --accent-ink:#0a0a0a; --line:#1f1f1f; --line-2:#2c2c2c; --warn:#f5b800; --danger:#ff7a7a;
+  --radius:4px;
+  --f-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --f-sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --f-mono:"Geist Mono",ui-monospace,Menlo,monospace;
+  --f-serif:"Instrument Serif",Georgia,serif;
 }
 *{box-sizing:border-box}
+html{scroll-behavior:smooth;color-scheme:dark}
 html,body{margin:0}
-body{background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+body{background:var(--bg);color:var(--text);font:16px/1.55 var(--f-sans);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:40px 40px}
+header,main,footer,.trust{position:relative;z-index:1}
 a{color:var(--accent)}
-.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-header{position:sticky;top:0;z-index:10;background:#000;border-bottom:1px solid #2a2a2a}
-.bar{display:flex;align-items:center;justify-content:space-between;height:76px;gap:12px}
-.logo{font-weight:800;letter-spacing:.5px;font-size:20px;display:flex;align-items:center;gap:10px}
-.logo img{height:64px;width:auto;flex:none;display:block}
-.logo .nome span{color:var(--accent)}
-.cart-btn{background:#f5b800;color:#0a0a0a;border:0;border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer;font-size:15px}
-.hero{padding:40px 0 24px}
-.hero h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0 0 12px}
-.hero p{color:var(--muted);margin:0;max-width:640px}
-.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.badge{background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;padding:16px 0 48px}
-.cat{grid-column:1/-1;margin:16px 0 0;font-size:22px}
-.aviso{grid-column:1/-1;margin:0;padding:10px 12px;border-radius:10px;border:1px solid var(--warn);color:var(--warn);font-size:14px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:8px}
-.thumb{height:180px;border-radius:10px;background:#fff;overflow:hidden;display:grid;place-items:center;font-weight:800;font-size:28px;color:var(--accent)}
-.thumb img{width:100%;height:100%;object-fit:contain;padding:8px}
-.card h3{font-size:16px;margin:4px 0 0}
-.meta{color:var(--muted);font-size:14px}
-.price{font-size:22px;font-weight:800;margin-top:auto}
-.add{background:transparent;border:1.5px solid var(--accent);color:var(--accent);border-radius:10px;padding:10px;font-weight:700;cursor:pointer}
-.add:disabled{opacity:.5;cursor:not-allowed;border-color:var(--line);color:var(--muted)}
-.off .thumb{opacity:.5}
-.add:not(:disabled):hover{background:var(--accent);color:var(--accent-ink)}
-/* painel */
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;z-index:20}
-.panel{position:fixed;top:0;right:0;height:100%;width:min(480px,100%);background:var(--surface);border-left:1px solid var(--line);z-index:30;transform:translateX(100%);transition:transform .25s;display:flex;flex-direction:column}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8a8a8a}
+/* cabeçalho */
+header{position:sticky;top:0;z-index:10;background:rgba(10,10,10,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:80px;gap:24px}
+.logo{display:flex;align-items:center}
+.logo img{height:60px;width:auto;flex:none;display:block}
+.nav{display:flex;gap:32px;font-size:15px;letter-spacing:.02em}
+.nav a{color:var(--silver);text-decoration:none;transition:color .2s}
+.nav a:hover{color:var(--accent)}
+.cart-btn{background:transparent;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:11px 20px;font:13px var(--f-mono);letter-spacing:.16em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:background .2s,color .2s}
+.cart-btn:hover{background:var(--accent);color:var(--accent-ink)}
+/* chegada */
+.hero{position:relative;padding:88px 0 40px;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-10%;top:0;width:70%;height:100%;background:radial-gradient(closest-side,rgba(245,184,0,.11),transparent);pointer-events:none}
+.kick{font:13px var(--f-mono);letter-spacing:.32em;color:var(--accent);text-transform:uppercase}
+.hero h1{font-family:var(--f-display);font-weight:800;font-size:clamp(58px,11vw,140px);line-height:.88;letter-spacing:-.005em;text-transform:uppercase;margin:24px 0 0;position:relative;z-index:1}
+.hero h1 .gd{background:linear-gradient(180deg,#ffd24a,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{color:var(--silver);font-size:clamp(17px,2vw,21px);max-width:480px;margin:30px 0 0;position:relative;z-index:1}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px;position:relative;z-index:1}
+.btn{display:inline-block;border-radius:999px;padding:17px 32px;font:700 16px var(--f-sans);text-decoration:none;transition:transform .2s,background .2s,color .2s}
+.btn-gold{background:var(--accent);color:var(--accent-ink)}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-line{border:1px solid #4a4a4a;color:var(--text);font-weight:500}
+.btn-line:hover{border-color:var(--accent);color:var(--accent)}
+.casas{position:absolute;right:0;top:110px;width:min(44%,520px);height:auto;z-index:0}
+.regua{display:block;width:100%;height:auto;margin-top:72px;overflow:visible}
+.regua text{font:12px var(--f-mono);letter-spacing:.2em;fill:#8a8a8a}
+.regua .g{fill:var(--accent)}
+/* categorias */
+.sec{padding:72px 0 8px;border-top:1px solid var(--line)}
+.sh{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:36px}
+.sh h2{font:400 clamp(34px,4vw,46px)/1 var(--f-display);text-transform:uppercase;letter-spacing:.02em;margin:0}
+.plates{display:flex;gap:16px;overflow-x:auto;padding-bottom:12px;scrollbar-width:thin}
+.plate{flex:0 0 150px;text-align:center;text-decoration:none;color:var(--text)}
+.plate svg{display:block;margin:0 auto;transition:transform .3s}
+.plate:hover svg{transform:rotate(30deg)}
+.plate:hover .ring{stroke:var(--accent)}
+.plate b{display:block;font:500 15px var(--f-sans);margin-top:14px}
+.plate i{display:block;font:normal 11px var(--f-mono);letter-spacing:.2em;color:#777;margin-top:4px}
+/* vitrine */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;padding:8px 0 72px}
+.cat{grid-column:1/-1;margin:56px 0 4px;font:400 clamp(32px,4vw,44px)/1 var(--f-display);text-transform:uppercase;letter-spacing:.02em;display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:16px;border-bottom:1px solid var(--line);scroll-margin-top:100px}
+.cat small{font:12px var(--f-mono);letter-spacing:.2em;color:#777}
+.aviso{grid-column:1/-1;margin:0;padding:12px 16px;border-left:2px solid var(--accent);background:rgba(245,184,0,.06);color:#d9c58a;font-size:14px}
+.card{background:var(--surface);border-top:2px solid var(--accent);border-radius:0 0 var(--radius) var(--radius);padding:20px;display:flex;flex-direction:column;gap:8px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -20px rgba(245,184,0,.35)}
+.thumb{height:220px;border-radius:var(--radius);background:#f2efe8;overflow:hidden;display:grid;place-items:center;font:800 36px var(--f-display);color:var(--amber)}
+.thumb img{width:100%;height:100%;object-fit:contain;padding:12px;mix-blend-mode:multiply}
+.card h3{font:700 17px/1.3 var(--f-sans);margin:14px 0 0}
+.meta{font:11px/1.6 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:#8a8a8a}
+.buy{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:14px}
+.price{font:700 40px/1 var(--f-display);color:var(--accent);white-space:nowrap}
+.price span{font:12px var(--f-mono);letter-spacing:.14em;margin-right:5px;position:relative;top:-14px}
+.add{background:transparent;border:1px solid #444;color:var(--text);border-radius:999px;padding:10px 16px;font:500 14px var(--f-sans);cursor:pointer;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+.add:disabled{opacity:.45;cursor:not-allowed}
+.off .thumb{opacity:.45}
+.off .price{color:#666}
+.add:not(:disabled):hover{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+/* pilares */
+.trust{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink)}
+.trust div{padding:48px 40px;border-right:1px solid var(--line)}
+.trust div:last-child{border-right:0}
+.trust b{display:block;font:400 30px/1.1 var(--f-display);text-transform:uppercase;letter-spacing:.03em;margin-top:20px}
+.trust p{color:var(--muted);margin:8px 0 0;font-size:15px}
+/* carrinho */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;z-index:20}
+.panel{position:fixed;top:0;right:0;height:100%;width:min(480px,100%);background:var(--surface);border-left:1px solid var(--line-2);z-index:30;transform:translateX(100%);transition:transform .25s;display:flex;flex-direction:column}
 .open .overlay{display:block}.open .panel{transform:none}
-.panel-head{display:flex;justify-content:space-between;align-items:center;padding:16px;border-bottom:1px solid var(--line)}
-.panel-body{padding:16px;overflow:auto;flex:1}
-.x{background:none;border:0;color:var(--text);font-size:26px;cursor:pointer;line-height:1}
-.line{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
-.qty{display:flex;align-items:center;gap:6px}
-.qty button{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);color:var(--text);cursor:pointer;font-size:16px}
+.panel-head{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid var(--line-2);font:400 26px var(--f-display);text-transform:uppercase;letter-spacing:.03em}
+.panel-body{padding:20px;overflow:auto;flex:1}
+.x{background:none;border:0;color:var(--text);font-size:28px;cursor:pointer;line-height:1}
+.line{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line-2)}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{width:32px;height:32px;border-radius:50%;border:1px solid var(--line-2);background:var(--surface-2);color:var(--text);cursor:pointer;font-size:16px}
 .totals{padding:12px 0}
-.totals div{display:flex;justify-content:space-between;padding:3px 0}
-.totals .big{font-weight:800;font-size:19px}
-h4{margin:18px 0 8px}
+.totals div{display:flex;justify-content:space-between;padding:4px 0}
+.totals .big{font:700 30px var(--f-display);color:var(--accent)}
+h4{margin:22px 0 8px;font:12px var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
 label{display:block;font-size:14px;color:var(--muted);margin:10px 0 4px}
-input,select,textarea{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--surface-2);color:var(--text);font:inherit}
+input,select,textarea{width:100%;padding:12px 14px;border-radius:var(--radius);border:1px solid var(--line-2);background:var(--surface-2);color:var(--text);font:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .opts{display:grid;gap:8px}
-.opt{display:flex;gap:10px;align-items:flex-start;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:0;color:var(--text);cursor:pointer}
-.opt input{width:auto;margin-top:4px}
+.opt{display:flex;gap:10px;align-items:flex-start;background:var(--surface-2);border:1px solid var(--line-2);border-radius:var(--radius);padding:12px 14px;margin:0;color:var(--text);cursor:pointer}
+.opt input{width:auto;margin-top:4px;accent-color:var(--accent)}
 .opt small{color:var(--muted)}
-.send{width:100%;margin-top:16px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;padding:14px;font-weight:800;font-size:16px;cursor:pointer}
+.send{width:100%;margin-top:18px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:999px;padding:16px;font:700 16px var(--f-sans);cursor:pointer}
 .send:disabled{opacity:.5;cursor:not-allowed}
 .note{font-size:13px;color:var(--muted);margin-top:8px}
 .err{color:var(--danger);font-size:14px;margin-top:8px;min-height:1em}
 .done{text-align:center;padding:24px 8px}
-.done .pix{background:var(--surface-2);border:1px dashed var(--accent);border-radius:12px;padding:12px;margin:12px 0;word-break:break-all;font-weight:700}
-footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px}
+.done .pix{background:var(--surface-2);border:1px dashed var(--accent);border-radius:var(--radius);padding:12px;margin:12px 0;word-break:break-all;font-weight:700}
+/* rodapé */
+footer{padding:56px 0 64px;color:var(--muted);font-size:14px;text-align:center}
+footer .verso{font:italic 30px/1.2 var(--f-serif);color:var(--silver);margin:0 0 6px}
+footer .ref{margin-bottom:28px}
+footer a{text-decoration:none}
+.pixpay{text-align:center}
+.pixval{font:700 64px/1 var(--f-display);color:var(--accent);margin:10px 0 6px}
+.pixval span{font:13px var(--f-mono);letter-spacing:.14em;margin-right:6px;position:relative;top:-24px}
+.pixtip{color:var(--silver);font-size:15px;margin:0 0 18px}
+.qr{display:inline-block;background:#f2efe8;padding:14px;border-radius:var(--radius);border-top:2px solid var(--accent)}
+.qr img,.qr canvas{display:block}
+.pixpay h4,.pixpay .note{text-align:left}
+.pixpay textarea{font:12px/1.4 var(--f-mono);word-break:break-all;resize:none}
+.pixkey{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--surface-2);border:1px dashed var(--accent);border-radius:var(--radius);padding:10px 12px;font:700 18px var(--f-mono)}
+.pixok{display:block;text-decoration:none;text-align:center}
+.pixkey .add{width:auto;flex:none}
+@media (max-width:820px){
+  .nav{display:none}
+  .casas{opacity:.28;width:78%;right:-18%;top:150px}
+  .hero{padding-top:56px}
+  .regua .mid{display:none}
+  .trust{grid-template-columns:1fr}
+  .trust div{border-right:0;border-bottom:1px solid var(--line);padding:36px 24px}
+  .trust div:last-child{border-bottom:0}
+  .wrap{padding:0 18px}
+  .bar{height:72px}.logo img{height:52px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+  .thumb{height:160px}
+  .card{padding:14px}
+  .price{font-size:32px}
+  .buy{flex-direction:column;align-items:stretch}
+  .add{width:100%}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
 </head>
 <body>
 <header><div class="wrap bar">
-  <div class="logo" id="logo"></div>
-  <button class="cart-btn" id="openCart">🛒 Carrinho (<span id="count">0</span>)</button>
+  <a class="logo" id="logo" href="#topo" aria-label="Mascarenhas Suplementos"></a>
+  <nav class="nav" id="nav" aria-label="Categorias"></nav>
+  <button class="cart-btn" id="openCart">Carrinho · <span id="count">0</span></button>
 </div></header>
 
-<main class="wrap">
-  <section class="hero">
-    <h1>Suplementos com entrega em até 48h em Salvador</h1>
-    <p>Escolha seu produto, preencha o endereço e o pedido chega direto no nosso WhatsApp. Confirmamos o pagamento e entregamos em até 48 horas.</p>
-    <div class="badges">
-      <span class="badge">🚚 Entrega em até 48h em Salvador</span>
-      <span class="badge">🏢 Retirada grátis no Aquarius</span>
-      <span class="badge">💸 Pix ou cartão</span>
-      <a class="badge" href="https://www.instagram.com/mascarenhassuplementos/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">📸 @mascarenhassuplementos</a>
-      <span class="badge">✅ Marcas originais</span>
-    </div>
-  </section>
-  <section class="grid" id="grid" aria-label="Produtos"></section>
+<main id="topo">
+  <section class="hero"><div class="wrap" style="position:relative">
+    <svg class="casas" viewBox="0 0 640 560" aria-hidden="true"><defs><linearGradient id="gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd24a"/><stop offset="1" stop-color="#e8941a"/></linearGradient></defs>
+      <g fill="none"><path d="M40 520V300L190 170L340 300V520" stroke="#c9cdd2" stroke-width="1.5" opacity=".5"/><path d="M200 520V240L410 50L620 240V520" stroke="url(#gd)" stroke-width="2.5"/><path d="M500 132V70H540V168" stroke="url(#gd)" stroke-width="2.5"/><line x1="0" y1="520" x2="640" y2="520" stroke="#333"/><rect x="388" y="300" width="44" height="44" stroke="url(#gd)" stroke-width="1.5"/><path d="M410 300v44M388 322h44" stroke="url(#gd)"/><rect x="172" y="350" width="36" height="36" stroke="#c9cdd2" opacity=".5"/></g>
+      <g stroke="#444" fill="none"><path d="M630 50V520" stroke-dasharray="2 5"/><path d="M624 50h12M624 520h12"/></g></svg>
+    <div class="kick">Salvador · Bahia</div>
+    <h1>Suplementos<br>originais<br><span class="gd">em 48 horas</span></h1>
+    <p class="lead">Escolha, mande o pedido pelo WhatsApp e receba em casa. Ou retire grátis no Aquarius.</p>
+    <div class="ctas"><a class="btn btn-gold" href="#produtos">Ver produtos</a><a class="btn btn-line" id="ctaWhats" href="#" target="_blank" rel="noopener">Pedir no WhatsApp</a></div>
+    <svg class="regua" viewBox="0 -2 1200 60" aria-hidden="true"><line x1="0" y1="0" x2="0" y2="26" stroke="#f5b800" stroke-width="1.5"/><line x1="25" y1="14" x2="25" y2="26" stroke="#555" stroke-width="1"/><line x1="50" y1="14" x2="50" y2="26" stroke="#555" stroke-width="1"/><line x1="75" y1="14" x2="75" y2="26" stroke="#555" stroke-width="1"/><line x1="100" y1="14" x2="100" y2="26" stroke="#555" stroke-width="1"/><line x1="125" y1="14" x2="125" y2="26" stroke="#555" stroke-width="1"/><line x1="150" y1="8" x2="150" y2="26" stroke="#555" stroke-width="1"/><line x1="175" y1="14" x2="175" y2="26" stroke="#555" stroke-width="1"/><line x1="200" y1="14" x2="200" y2="26" stroke="#555" stroke-width="1"/><line x1="225" y1="14" x2="225" y2="26" stroke="#555" stroke-width="1"/><line x1="250" y1="14" x2="250" y2="26" stroke="#555" stroke-width="1"/><line x1="275" y1="14" x2="275" y2="26" stroke="#555" stroke-width="1"/><line x1="300" y1="0" x2="300" y2="26" stroke="#f5b800" stroke-width="1.5"/><line x1="325" y1="14" x2="325" y2="26" stroke="#555" stroke-width="1"/><line x1="350" y1="14" x2="350" y2="26" stroke="#555" stroke-width="1"/><line x1="375" y1="14" x2="375" y2="26" stroke="#555" stroke-width="1"/><line x1="400" y1="14" x2="400" y2="26" stroke="#555" stroke-width="1"/><line x1="425" y1="14" x2="425" y2="26" stroke="#555" stroke-width="1"/><line x1="450" y1="8" x2="450" y2="26" stroke="#555" stroke-width="1"/><line x1="475" y1="14" x2="475" y2="26" stroke="#555" stroke-width="1"/><line x1="500" y1="14" x2="500" y2="26" stroke="#555" stroke-width="1"/><line x1="525" y1="14" x2="525" y2="26" stroke="#555" stroke-width="1"/><line x1="550" y1="14" x2="550" y2="26" stroke="#555" stroke-width="1"/><line x1="575" y1="14" x2="575" y2="26" stroke="#555" stroke-width="1"/><line x1="600" y1="0" x2="600" y2="26" stroke="#f5b800" stroke-width="1.5"/><line x1="625" y1="14" x2="625" y2="26" stroke="#555" stroke-width="1"/><line x1="650" y1="14" x2="650" y2="26" stroke="#555" stroke-width="1"/><line x1="675" y1="14" x2="675" y2="26" stroke="#555" stroke-width="1"/><line x1="700" y1="14" x2="700" y2="26" stroke="#555" stroke-width="1"/><line x1="725" y1="14" x2="725" y2="26" stroke="#555" stroke-width="1"/><line x1="750" y1="8" x2="750" y2="26" stroke="#555" stroke-width="1"/><line x1="775" y1="14" x2="775" y2="26" stroke="#555" stroke-width="1"/><line x1="800" y1="14" x2="800" y2="26" stroke="#555" stroke-width="1"/><line x1="825" y1="14" x2="825" y2="26" stroke="#555" stroke-width="1"/><line x1="850" y1="14" x2="850" y2="26" stroke="#555" stroke-width="1"/><line x1="875" y1="14" x2="875" y2="26" stroke="#555" stroke-width="1"/><line x1="900" y1="0" x2="900" y2="26" stroke="#f5b800" stroke-width="1.5"/><line x1="925" y1="14" x2="925" y2="26" stroke="#555" stroke-width="1"/><line x1="950" y1="14" x2="950" y2="26" stroke="#555" stroke-width="1"/><line x1="975" y1="14" x2="975" y2="26" stroke="#555" stroke-width="1"/><line x1="1000" y1="14" x2="1000" y2="26" stroke="#555" stroke-width="1"/><line x1="1025" y1="14" x2="1025" y2="26" stroke="#555" stroke-width="1"/><line x1="1050" y1="8" x2="1050" y2="26" stroke="#555" stroke-width="1"/><line x1="1075" y1="14" x2="1075" y2="26" stroke="#555" stroke-width="1"/><line x1="1100" y1="14" x2="1100" y2="26" stroke="#555" stroke-width="1"/><line x1="1125" y1="14" x2="1125" y2="26" stroke="#555" stroke-width="1"/><line x1="1150" y1="14" x2="1150" y2="26" stroke="#555" stroke-width="1"/><line x1="1175" y1="14" x2="1175" y2="26" stroke="#555" stroke-width="1"/><line x1="1200" y1="0" x2="1200" y2="26" stroke="#f5b800" stroke-width="1.5"/><text x="0" y="50">00H</text><text class="mid" x="300" y="50" text-anchor="middle">12H</text><text class="mid" x="600" y="50" text-anchor="middle">24H</text><text class="mid" x="900" y="50" text-anchor="middle">36H</text><text class="g" x="1200" y="50" text-anchor="end">48H · NA SUA PORTA</text></svg>
+  </div></section>
+
+  <section class="sec"><div class="wrap">
+    <div class="sh"><h2>Categorias</h2><span class="mono" id="catCount"></span></div>
+    <div class="plates" id="plates"></div>
+  </div></section>
+
+  <div class="wrap" id="produtos"><section class="grid" id="grid" aria-label="Produtos"></section></div>
 </main>
 
-<footer><div class="wrap" id="foot"></div></footer>
+<section class="trust" aria-label="Como funciona">
+  <div><svg width="56" height="40" viewBox="0 0 56 40" fill="none" stroke="#f5b800" stroke-width="1.5"><path d="M2 6h32v24H2zM34 14h12l8 8v8H34z"/><circle cx="14" cy="32" r="5"/><circle cx="44" cy="32" r="5"/></svg><b>Entrega em 48h</b><p>Em toda Salvador. Taxa única de R$ 15.</p></div>
+  <div><svg width="56" height="40" viewBox="0 0 56 40" fill="none" stroke="#f5b800" stroke-width="1.5"><path d="M10 38V18L28 3l18 15v20zM22 38V26h12v12"/></svg><b>Retirada grátis</b><p>Rua Magno Valente, 484 · Loteamento Aquarius.</p></div>
+  <div><svg width="56" height="40" viewBox="0 0 56 40" fill="none" stroke="#f5b800" stroke-width="1.5"><rect x="6" y="4" width="44" height="32" rx="4"/><path d="M6 13h44M14 26h12"/></svg><b>Pix ou cartão</b><p>Pague como preferir. Confirmação pelo WhatsApp.</p></div>
+</section>
+
+<footer><div class="wrap"><p class="verso">A glória da segunda casa será maior</p><div class="mono ref">Ageu 2:9</div><div id="foot"></div></div></footer>
 
 <div class="overlay" id="overlay"></div>
 <aside class="panel" aria-label="Carrinho e entrega">
@@ -141,11 +232,11 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
       <label for="janela">Melhor horário para receber / retirar</label>
       <select id="janela"><option>Qualquer horário</option><option>Manhã (8h–12h)</option><option>Tarde (12h–18h)</option><option>Noite (18h–21h)</option></select>
       <label for="pag">Forma de pagamento *</label>
-      <select id="pag"><option value="Pix">Pix (antes da entrega)</option><option value="Cartão (link de pagamento)">Cartão (enviamos um link)</option></select>
+      <select id="pag"><option value="Pix">Pix antecipado (QR Code na hora)</option><option value="Cartão (link de pagamento)">Cartão (enviamos um link)</option></select>
       <label for="obs">Observações</label><textarea id="obs" rows="2"></textarea>
       <div class="err" id="err"></div>
-      <button class="send" id="send" type="submit">Enviar pedido pelo WhatsApp</button>
-      <p class="note">Ao enviar, o WhatsApp abre com o seu pedido e a ficha de entrega já preenchidos. É só tocar em enviar.</p>
+      <button class="send" id="send" type="submit">Finalizar pedido</button>
+      <p class="note">No Pix, você paga primeiro pelo QR Code e depois envia o pedido com o comprovante pelo WhatsApp.</p>
     </form>
   </div>
 </aside>
@@ -157,13 +248,17 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
 const CONFIG = {
   nomeLoja: "Mascarenhas Suplementos",
   whatsapp: "5571997044675",     // WhatsApp de atendimento (71) 99704-4675
-  chavePix: "",                  // nova chave Pix (CNPJ novo) — vazio: a chave é enviada pelo WhatsApp
+  chavePix: "+5571997044675",    // chave Pix (celular) usada no QR Code e no copia e cola
+  chavePixExibir: "(71) 99704-4675",
+  pixNome: "Mascarenhas Suplementos", // nome que aparece no Pix (até 25 letras)
+  pixCidade: "Salvador",
   taxaEntregaSalvador: 15.00,     // R$ por pedido — entrega via delivery em Salvador
   freteGratisAcimaDe: 0,          // 0 = sem frete grátis; ex.: 150
   prazoHoras: 48,
   cnpj: "",                      // preencher quando o CNPJ novo for aberto
   email: "mascarenhassuplementos@gmail.com",
   instagram: "mascarenhassuplementos",
+  emailPedidos: "mascarenhassuplementos@gmail.com", // recebe cada pedido com os links de compra do estoque (o cliente não vê)
   enderecoRetirada: "Loteamento Aquarius, Rua Magno Valente, 484 – Edf. Georges Pompidou – Salvador/BA"
 };
 
@@ -636,7 +731,9 @@ let cart = {};
 try { cart = JSON.parse(localStorage.getItem("cart")||"{}") || {}; } catch(e) { cart = {}; }
 const save = () => { try { localStorage.setItem("cart", JSON.stringify(cart)); } catch(e){} };
 
-$("logo").innerHTML = `<img src="logo-horizontal.png" alt="${CONFIG.nomeLoja}" width="97" height="64">`;
+$("logo").innerHTML = `<img src="logo-horizontal.png" alt="${CONFIG.nomeLoja}" width="91" height="60">`;
+$("ctaWhats").href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Olá! Vim pelo site e quero fazer um pedido.")}`;
+const slug = c => "cat-" + c.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-");
 
 function initials(n){ return n.replace("Creatina","").trim().split(/\s+/).slice(0,2).map(w=>w[0]).join("").toUpperCase(); }
 let ATUALIZADO = null;
@@ -647,14 +744,17 @@ const card = p => `
     <div class="thumb">${p.img ? `<img src="${p.img}" alt="${p.nome} ${p.tam}" loading="lazy" onerror="this.replaceWith(document.createTextNode('${initials(p.nome)}'))">` : initials(p.nome)}</div>
     <h3>${p.nome}</h3>
     <div class="meta">${p.tam} · ${p.disponivel === false ? "indisponível no momento" : (p.fonte === "amazon" ? "sob encomenda · " : "") + "entrega em até " + prazoTxt(prazoDe(p))}</div>
-    <div class="price">${brl(p.preco)}</div>
-    <button class="add" data-id="${p.id}"${p.disponivel === false ? " disabled" : ""}>${p.disponivel === false ? "Indisponível" : "Adicionar"}</button>
+    <div class="buy"><div class="price">${brl(p.preco).replace(/^R\$\s?/, "<span>R$</span>")}</div>
+    <button class="add" data-id="${p.id}"${p.disponivel === false ? " disabled" : ""}>${p.disponivel === false ? "Indisponível" : "+ Adicionar"}</button></div>
   </article>`;
 const AVISO_CAFEINA = "⚠️ Contém cafeína. Não recomendado para gestantes, lactantes, menores de 18 anos e pessoas com problemas cardíacos ou hipertensão. Consulte um profissional de saúde.";
 const AVISOS = {"Pré-treino": AVISO_CAFEINA, "Termogênico": AVISO_CAFEINA + " Termogênicos não substituem dieta e exercícios."};
 function renderGrid(){
 const cats = [...new Set(PRODUTOS.map(p => p.cat || "Creatina"))];
-$("grid").innerHTML = cats.map(c => `<h2 class="cat">${c}</h2>` + (AVISOS[c] ? `<p class="aviso">${AVISOS[c]}</p>` : "") + PRODUTOS.filter(p => (p.cat || "Creatina") === c).map(card).join("")).join("");
+$("grid").innerHTML = cats.map(c => `<h2 class="cat" id="${slug(c)}">${c}<small>${String(PRODUTOS.filter(p => (p.cat || "Creatina") === c).length).padStart(2,"0")} itens</small></h2>` + (AVISOS[c] ? `<p class="aviso">${AVISOS[c]}</p>` : "") + PRODUTOS.filter(p => (p.cat || "Creatina") === c).map(card).join("")).join("");
+$("plates").innerHTML = cats.map((c,i) => `<a class="plate" href="#${slug(c)}"><svg width="130" height="130" viewBox="0 0 150 150" aria-hidden="true"><circle cx="75" cy="75" r="72" fill="none" stroke="#333"/><circle class="ring" cx="75" cy="75" r="60" fill="none" stroke="${i===0?"#f5b800":"#2c2c2c"}" stroke-width="${i===0?2:1}"/><circle cx="75" cy="75" r="14" fill="none" stroke="#333"/><circle cx="75" cy="75" r="4" fill="${i===0?"#f5b800":"#3a3a3a"}"/></svg><b>${c}</b><i>${String(i+1).padStart(2,"0")}</i></a>`).join("");
+$("catCount").textContent = String(cats.length).padStart(2,"0") + " categorias";
+$("nav").innerHTML = cats.slice(0,5).map(c => `<a href="#${slug(c)}">${c}</a>`).join("");
 const fone = CONFIG.whatsapp.replace(/^55(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
 $("foot").innerHTML = `<strong>${CONFIG.nomeLoja}</strong>${CONFIG.cnpj ? ` · CNPJ ${CONFIG.cnpj}` : ""} · Salvador – BA<br>WhatsApp: <a href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener">${fone}</a>${CONFIG.email ? ` · E-mail: <a href="mailto:${CONFIG.email}">${CONFIG.email}</a>` : ""}${CONFIG.instagram ? ` · Instagram: <a href="https://www.instagram.com/${CONFIG.instagram}/" target="_blank" rel="noopener">@${CONFIG.instagram}</a>` : ""}${ATUALIZADO ? `<br>Preços e prazos atualizados em ${new Date(ATUALIZADO).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}` : ""}`;
 }
@@ -737,9 +837,15 @@ $("form").addEventListener("submit", e => {
   const fmt = d => d.toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"});
   const v = id => $(id).value.trim();
 
+  /* Ficha do pedido (pedido.html): resumo para o cliente; na área da loja mostra o link de compra do estoque */
+  const ficha = {id, d: fmt(agora), r: ret, pg: v("pag")==="Pix" ? "Pix antecipado" : v("pag"), s: sub, f: ret ? 0 : (ssa ? frete : null), t: total,
+    i: its.map(i => [i.id, i.q, i.preco, i.nome]),
+    e: {n: v("nome"), w: v("tel"), a: `${v("rua")}, ${v("num")}${v("comp") ? " – " + v("comp") : ""}`, b: v("bairro"), c: `${v("cidade")} – ${v("uf")}`, cep: v("cep"), ref: v("ref"), h: v("janela"), o: v("obs")}};
+  const fichaLink = new URL("pedido.html", location.href).href + "#p=" + btoa(unescape(encodeURIComponent(JSON.stringify(ficha)))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
   const msg = [
 `🧾 *NOVO PEDIDO ${id}*`,
 `Data: ${fmt(agora)}`,
+`📄 Ficha do pedido: ${fichaLink}`,
 `${ret ? "Disponível para retirada até" : "Entregar até"}: *${fmt(limite)}* (${prazoPedido}h)`,
 ``,
 `*ITENS*`,
@@ -748,7 +854,7 @@ $("form").addEventListener("submit", e => {
 `Produtos: ${brl(sub)}`,
 ret ? `Retirada no local: Grátis` : `Entrega via delivery: ${ssa ? (frete===0?"Grátis":brl(frete)) : "A combinar (fora de Salvador)"}`,
 `*TOTAL: ${brl(total)}*`,
-`Pagamento: ${v("pag")}`,
+`Pagamento: ${v("pag")==="Pix" ? "Pix ANTECIPADO (comprovante em anexo)" : v("pag")}`,
 ``,
 ret ? `🏢 *RETIRADA NO LOCAL*` : `📦 *FICHA DE ENTREGA*`,
 `Nome: ${v("nome")}`,
@@ -762,21 +868,89 @@ v("ref") ? `Referência: ${v("ref")}` : null]),
 v("obs") ? `Obs.: ${v("obs")}` : null,
   ].filter(l => l !== null).join("\n");
 
-  window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`, "_blank");
+  avisarLoja(id, ficha, fichaLink, its, total, ret);
+  const waLink = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
+  const pix = v("pag") === "Pix" && CONFIG.chavePix;
+  cart = {}; save(); $("count").textContent = 0;
 
-  $("panelTitle").textContent = "Pedido enviado";
-  $("panelBody").innerHTML = `
+  if (!pix) {
+    window.open(waLink, "_blank");
+    $("panelTitle").textContent = "Pedido enviado";
+    $("panelBody").innerHTML = `
     <div class="done">
       <h3>Pedido ${id}</h3>
-      <p>Se o WhatsApp não abriu, <a href="https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener">toque aqui</a>.</p>
+      <p>Se o WhatsApp não abriu, <a href="${waLink}" target="_blank" rel="noopener">toque aqui</a>.</p>
       <p>Total: <strong>${brl(total)}</strong></p>
-      ${v("pag")==="Pix" ? (CONFIG.chavePix ? `<p>Pague com Pix na chave abaixo e mande o comprovante no WhatsApp:</p><div class="pix">Chave Pix: ${CONFIG.chavePix}<br><small>Mascarenhas Suplementos</small></div><button type="button" class="add" id="copiarPix">Copiar chave Pix</button>` : `<p>Vamos te enviar a <b>chave Pix</b> pelo WhatsApp para você pagar e mandar o comprovante.</p>`) : `<p>Vamos te enviar o link de pagamento do cartão no WhatsApp.</p>`}
+      <p>Vamos te enviar o link de pagamento do cartão no WhatsApp.</p>
       <p class="note">${ret ? `Retirada em: ${CONFIG.enderecoRetirada}. Avisamos no WhatsApp quando estiver pronto.` : `A entrega em até ${CONFIG.prazoHoras}h conta a partir da confirmação do pagamento.`}</p>
     </div>`;
-  cart = {}; save(); $("count").textContent = 0;
-  const cp = $("copiarPix");
-  if (cp) cp.onclick = () => navigator.clipboard.writeText(CONFIG.chavePix).then(() => { cp.textContent = "Chave copiada ✓"; }).catch(() => {});
+    return;
+  }
+
+  /* PIX ANTECIPADO: o cliente paga primeiro e depois envia o pedido + comprovante */
+  const copiaECola = pixPayload(total, id.replace(/[^A-Za-z0-9]/g, ""));
+  $("panelTitle").textContent = "Pagamento via Pix";
+  $("panelBody").innerHTML = `
+    <div class="pixpay">
+      <div class="mono">Pedido ${id}</div>
+      <div class="pixval"><span>R$</span>${brl(total).replace(/^R\$\s?/, "")}</div>
+      <p class="pixtip">Pague agora para confirmar o seu pedido. A ${ret ? "separação" : "entrega em até " + CONFIG.prazoHoras + "h"} começa assim que o pagamento cair.</p>
+      <div class="qr" id="pixQr" aria-label="QR Code Pix"></div>
+      <h4>1 · Pix copia e cola</h4>
+      <textarea id="pixCode" rows="3" readonly>${copiaECola}</textarea>
+      <button type="button" class="send" id="copiarCodigo">Copiar código Pix</button>
+      <p class="note">No app do seu banco: Pix → Pix copia e cola → cole o código. O valor já vem preenchido.</p>
+      <h4>Ou use a chave Pix (celular)</h4>
+      <div class="pixkey"><span>${CONFIG.chavePixExibir}</span><button type="button" class="add" id="copiarChave">Copiar</button></div>
+      <p class="note">Favorecido: ${CONFIG.pixNome}. Confira o valor: <b>${brl(total)}</b>.</p>
+      <h4>2 · Já pagou?</h4>
+      <a class="send pixok" href="${waLink}" target="_blank" rel="noopener" id="jaPaguei">Já paguei · enviar pedido pelo WhatsApp</a>
+      <p class="note">Mande o comprovante na conversa que vai abrir. Pedidos sem pagamento não são separados.</p>
+    </div>`;
+  try { new QRCode($("pixQr"), {text: copiaECola, width: 220, height: 220, colorDark: "#0a0a0a", colorLight: "#f2efe8", correctLevel: QRCode.CorrectLevel.M}); }
+  catch (_) { $("pixQr").style.display = "none"; }
+  const copiar = (btnId, texto, ok) => { const b = $(btnId); b.onclick = () => navigator.clipboard.writeText(texto).then(() => { b.textContent = ok; }).catch(() => { $("pixCode").select(); }); };
+  copiar("copiarCodigo", copiaECola, "Código copiado ✓");
+  copiar("copiarChave", CONFIG.chavePix, "Copiada ✓");
+  $("jaPaguei").addEventListener("click", () => { $("jaPaguei").textContent = "Pedido enviado ✓ mande o comprovante"; });
 });
+
+/* Envia um email automático para a loja com os itens, os links de compra do estoque e a ficha de entrega.
+   Usa o FormSubmit (gratuito). Na 1ª vez, o FormSubmit manda um email pedindo para ATIVAR — é só clicar. */
+function avisarLoja(id, f, fichaLink, its, total, ret){
+  if (!CONFIG.emailPedidos) return;
+  const estoque = p => p.fonte === "amazon" && p.amazon_asin ? "Amazon: https://www.amazon.com.br/dp/" + p.amazon_asin
+    : p.ml_id ? "Mercado Livre: https://www.mercadolivre.com.br/" + (p.ml_id.startsWith("MLBU") ? "up/" : "p/") + p.ml_id : "sem link";
+  const custo = p => p.fonte === "amazon" ? p.amazon_preco : (p.preco_ml ?? p.amazon_preco);
+  const itens = its.map(i => `${i.q}x ${i.nome} ${i.tam} — ${brl(i.preco*i.q)}\n   Comprar no estoque → ${estoque(i)}${custo(i) ? "\n   Custo de referência: " + brl(custo(i)) + " cada" : ""}`).join("\n\n");
+  const e = f.e;
+  const dados = {
+    _subject: `Novo pedido ${id} — ${brl(total)} — ${e.n}`,
+    _template: "box", _captcha: "false",
+    "Pedido": id, "Data": f.d, "Pagamento": f.pg, "Total": brl(total),
+    "Itens e links de compra": itens,
+    "Recebimento": ret ? "Retirada no local" : "Entrega via delivery",
+    "Nome": e.n, "WhatsApp": e.w,
+    ...(ret ? {} : {"Endereço": e.a, "Bairro": e.b, "Cidade": e.c, "CEP": e.cep, "Referência": e.ref || "-"}),
+    "Horário": e.h, "Observações": e.o || "-",
+    "Ficha do pedido": fichaLink
+  };
+  try { fetch("https://formsubmit.co/ajax/" + CONFIG.emailPedidos, {method: "POST", keepalive: true,
+    headers: {"Content-Type": "application/json", "Accept": "application/json"}, body: JSON.stringify(dados)}).catch(() => {}); } catch (_) {}
+}
+
+/* Gera o código Pix "copia e cola" (padrão EMV do Banco Central) com o valor do pedido */
+function pixPayload(valor, txid){
+  const f = (id, v) => id + String(v.length).padStart(2, "0") + v;
+  const limpa = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
+  const conta = f("00", "br.gov.bcb.pix") + f("01", CONFIG.chavePix);
+  let p = f("00", "01") + f("26", conta) + f("52", "0000") + f("53", "986") + f("54", valor.toFixed(2)) +
+          f("58", "BR") + f("59", limpa(CONFIG.pixNome).slice(0, 25)) + f("60", limpa(CONFIG.pixCidade).slice(0, 15)) +
+          f("62", f("05", (txid || "***").slice(0, 25))) + "6304";
+  let crc = 0xFFFF;
+  for (let i = 0; i < p.length; i++) { crc ^= p.charCodeAt(i) << 8; for (let j = 0; j < 8; j++) crc = (crc & 0x8000) ? ((crc << 1) ^ 0x1021) & 0xFFFF : (crc << 1) & 0xFFFF; }
+  return p + crc.toString(16).toUpperCase().padStart(4, "0");
+}
 
 render();
 
