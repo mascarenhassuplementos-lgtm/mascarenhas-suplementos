@@ -737,6 +737,10 @@ const slug = c => "cat-" + c.toLowerCase().normalize("NFD").replace(/[\u0300-\u0
 
 function initials(n){ return n.replace("Creatina","").trim().split(/\s+/).slice(0,2).map(w=>w[0]).join("").toUpperCase(); }
 let ATUALIZADO = null;
+/* Só aparecem no site os produtos que o fornecedor (ML/Amazon) entrega hoje ou amanhã no CEP da loja.
+   O campo entrega_rapida é calculado pelo atualizador de preços (tools/atualizar_precos.py). */
+const chegaRapido = p => p.disponivel !== false && (p.entrega_rapida === undefined ? p.fonte !== "amazon" : p.entrega_rapida === true);
+PRODUTOS = PRODUTOS.filter(chegaRapido);
 const prazoTxt = h => !h || h <= CONFIG.prazoHoras ? `${CONFIG.prazoHoras}h` : h <= 72 ? `${h}h` : `${Math.ceil(h/24)} dias`;
 const prazoDe = p => p.prazo_cliente_horas || CONFIG.prazoHoras;
 const card = p => `
@@ -956,7 +960,7 @@ render();
 
 fetch("produtos.json", {cache: "no-store"})
   .then(r => r.ok ? r.json() : Promise.reject())
-  .then(d => { if (Array.isArray(d.produtos) && d.produtos.length) { PRODUTOS = d.produtos; ATUALIZADO = d.atualizado_em; renderGrid(); render(); } })
+  .then(d => { if (Array.isArray(d.produtos) && d.produtos.length) { PRODUTOS = d.produtos.filter(chegaRapido); ATUALIZADO = d.atualizado_em; renderGrid(); render(); } })
   .catch(() => {});
 </script>
 </body>

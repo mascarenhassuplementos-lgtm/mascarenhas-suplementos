@@ -16,7 +16,8 @@
    "disponivel": true,
    "amazon_preco": 39.9,
    "amazon_entrega": "16/11",
-   "mais_barato": "Empate"
+   "mais_barato": "Empate",
+   "entrega_rapida": true
   },
   {
    "id": "growth-500p",
@@ -32,7 +33,8 @@
    "disponivel": true,
    "amazon_preco": 69.9,
    "amazon_entrega": "16/11",
-   "mais_barato": "ML"
+   "mais_barato": "ML",
+   "entrega_rapida": true
   },
   {
    "id": "soldiers-300",
@@ -45,7 +47,8 @@
    "prazo_ml_horas": 12,
    "preco": 43.89,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "soldiers-500",
@@ -61,7 +64,8 @@
    "disponivel": true,
    "amazon_preco": 44.9,
    "amazon_entrega": "16/11",
-   "mais_barato": "Empate"
+   "mais_barato": "Empate",
+   "entrega_rapida": true
   },
   {
    "id": "soldiers-1kg",
@@ -77,7 +81,8 @@
    "disponivel": true,
    "amazon_preco": 68.9,
    "amazon_entrega": "16/11",
-   "mais_barato": "Empate"
+   "mais_barato": "Empate",
+   "entrega_rapida": true
   },
   {
    "id": "darklab-300",
@@ -93,7 +98,8 @@
    "disponivel": true,
    "amazon_preco": 35.89,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "darklab-500",
@@ -109,7 +115,8 @@
    "disponivel": true,
    "amazon_preco": 44.89,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "darklab-1kg",
@@ -125,7 +132,8 @@
    "disponivel": true,
    "amazon_preco": 69.89,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "im-300",
@@ -141,7 +149,8 @@
    "disponivel": true,
    "amazon_preco": 35.8,
    "amazon_entrega": "16/11",
-   "mais_barato": "Empate"
+   "mais_barato": "Empate",
+   "entrega_rapida": true
   },
   {
    "id": "im-1kg",
@@ -154,7 +163,8 @@
    "prazo_ml_horas": 12,
    "preco": 113.29,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "maxt-300",
@@ -170,7 +180,8 @@
    "disponivel": true,
    "amazon_preco": 33.37,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "bskull-300",
@@ -183,7 +194,8 @@
    "prazo_ml_horas": 12,
    "preco": 41.14,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "creat-true",
@@ -199,7 +211,8 @@
    "prazo_ml_horas": 192,
    "preco": 54.34,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-vitafor-300",
@@ -210,12 +223,13 @@
    "fonte": "amazon",
    "amazon_asin": "B07LCTTF8V",
    "ml_id": null,
-   "amazon_preco": 66.0,
+   "amazon_preco": 66,
    "preco_ml": null,
    "prazo_ml_horas": 168,
    "preco": 72.6,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-vitafor-creafort",
@@ -231,7 +245,8 @@
    "prazo_ml_horas": 168,
    "preco": 169.8,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-dux-creapure-kit2",
@@ -244,7 +259,8 @@
    "prazo_ml_horas": 24,
    "preco": 351.99,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "creat-b07mpzlm1n",
@@ -260,7 +276,8 @@
    "prazo_ml_horas": 168,
    "preco": 36.47,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b0bz14j63f",
@@ -276,7 +293,8 @@
    "prazo_ml_horas": 168,
    "preco": 49.97,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b0859glp74",
@@ -292,7 +310,8 @@
    "prazo_ml_horas": 168,
    "preco": 156.81,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b07cv3sdpy",
@@ -303,12 +322,13 @@
    "fonte": "amazon",
    "amazon_asin": "B07CV3SDPY",
    "ml_id": null,
-   "amazon_preco": 35.0,
+   "amazon_preco": 35,
    "preco_ml": null,
    "prazo_ml_horas": 192,
    "preco": 38.5,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b0d3wqszcb",
@@ -324,7 +344,8 @@
    "prazo_ml_horas": 168,
    "preco": 21.99,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b07l5vvj83",
@@ -340,7 +361,8 @@
    "prazo_ml_horas": 168,
    "preco": 26.74,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b0g6g4wfq3",
@@ -356,7 +378,8 @@
    "prazo_ml_horas": 192,
    "preco": 85.69,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b07jhh3wjb",
@@ -372,7 +395,8 @@
    "prazo_ml_horas": 312,
    "preco": 135.74,
    "prazo_cliente_horas": 336,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b08fv44pj3",
@@ -388,7 +412,8 @@
    "prazo_ml_horas": 168,
    "preco": 41.69,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b081vvj9fw",
@@ -404,7 +429,8 @@
    "prazo_ml_horas": 168,
    "preco": 33.44,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b07m6v6wqf",
@@ -420,7 +446,8 @@
    "prazo_ml_horas": 168,
    "preco": 39.19,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b0d71hd612",
@@ -436,7 +463,8 @@
    "prazo_ml_horas": 168,
    "preco": 54.03,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b0dp36dfmf",
@@ -452,7 +480,8 @@
    "prazo_ml_horas": 168,
    "preco": 59.29,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b0d2ds8qh6",
@@ -468,7 +497,8 @@
    "prazo_ml_horas": 168,
    "preco": 131.54,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b0dh68x2px",
@@ -484,7 +514,8 @@
    "prazo_ml_horas": 192,
    "preco": 65.51,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "creat-b0ckfl1j32",
@@ -500,7 +531,8 @@
    "prazo_ml_horas": 192,
    "preco": 67.45,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-growth-basic",
@@ -516,7 +548,8 @@
    "disponivel": true,
    "amazon_preco": 74.9,
    "amazon_entrega": "16/11",
-   "mais_barato": "Empate"
+   "mais_barato": "Empate",
+   "entrega_rapida": true
   },
   {
    "id": "whey-soldiers-core",
@@ -532,7 +565,8 @@
    "disponivel": true,
    "amazon_preco": 68.6,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "whey-maxt-super",
@@ -541,11 +575,12 @@
    "tam": "900 g · chocolate",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_766899-MLA112393880407_052026-E.webp",
    "ml_id": "MLB19549587",
-   "preco_ml": 77.0,
+   "preco_ml": 77,
    "prazo_ml_horas": 12,
    "preco": 84.7,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-darklab-1kg",
@@ -561,7 +596,8 @@
    "disponivel": true,
    "amazon_preco": 136.9,
    "amazon_entrega": "16/11",
-   "mais_barato": "Empate"
+   "mais_barato": "Empate",
+   "entrega_rapida": true
   },
   {
    "id": "whey-im-pure",
@@ -577,7 +613,8 @@
    "disponivel": true,
    "amazon_preco": 139.89,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "whey-vitafor-wpc",
@@ -593,7 +630,8 @@
    "disponivel": true,
    "amazon_preco": 132.9,
    "amazon_entrega": "18/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "whey-growth-conc",
@@ -602,11 +640,12 @@
    "tam": "1 kg · baunilha",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_824274-MLA98770399871_112025-E.webp",
    "ml_id": "MLB18953093",
-   "preco_ml": 166.0,
+   "preco_ml": 166,
    "prazo_ml_horas": 12,
    "preco": 182.6,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-true-iso",
@@ -615,11 +654,12 @@
    "tam": "837 g",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_903408-MLB95659677863_102025-E--whey-isolada-hidrolisada-gourmet-837g-true-source-brinde.webp",
    "ml_id": "MLBU2046004806",
-   "preco_ml": 339.0,
+   "preco_ml": 339,
    "prazo_ml_horas": 12,
    "preco": 372.9,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-dux-conc",
@@ -632,7 +672,8 @@
    "prazo_ml_horas": 12,
    "preco": 183.25,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-dux-sache",
@@ -645,7 +686,8 @@
    "prazo_ml_horas": 12,
    "preco": 87.99,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-dux-conc-450",
@@ -658,7 +700,8 @@
    "prazo_ml_horas": 12,
    "preco": 159.04,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-dux-fresh-450",
@@ -667,11 +710,12 @@
    "tam": "450 g · chocolate e amendoim",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_824219-MLA110863132598_052026-E.webp",
    "ml_id": "MLB69936986",
-   "preco_ml": 168.0,
+   "preco_ml": 168,
    "prazo_ml_horas": 12,
    "preco": 184.8,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-dux-iso",
@@ -684,7 +728,8 @@
    "prazo_ml_horas": 12,
    "preco": 345.2,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-dux-conc-18",
@@ -693,11 +738,12 @@
    "tam": "1,8 kg · baunilha",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_778817-MLA114107313188_082026-E.webp",
    "ml_id": "MLB15067115",
-   "preco_ml": 405.0,
+   "preco_ml": 405,
    "prazo_ml_horas": 12,
    "preco": 445.5,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-dux-iso-18",
@@ -706,11 +752,12 @@
    "tam": "1,8 kg · baunilha",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_701908-MLA99505330570_112025-E.webp",
    "ml_id": "MLB18512115",
-   "preco_ml": 648.0,
+   "preco_ml": 648,
    "prazo_ml_horas": 12,
    "preco": 712.8,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-ftw-1kg",
@@ -723,7 +770,8 @@
    "prazo_ml_horas": 48,
    "preco": 82.45,
    "prazo_cliente_horas": 72,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "whey-im-pure-pouch",
@@ -736,7 +784,8 @@
    "prazo_ml_horas": 24,
    "preco": 166.72,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-mu-pacoquinha",
@@ -749,7 +798,8 @@
    "prazo_ml_horas": 12,
    "preco": 168.26,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-vitafor-3w",
@@ -762,7 +812,8 @@
    "prazo_ml_horas": 12,
    "preco": 200.11,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-adaptogen-tasty",
@@ -771,11 +822,12 @@
    "tam": "900 g",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_786360-MLA117211810828_102026-E.webp",
    "ml_id": "MLB61630221",
-   "preco_ml": 220.0,
+   "preco_ml": 220,
    "prazo_ml_horas": 12,
-   "preco": 242.0,
+   "preco": 242,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-im-iso-triple",
@@ -784,11 +836,12 @@
    "tam": "900 g · baunilha",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_645191-MLA119102284218_112026-E.webp",
    "ml_id": "MLB13088510",
-   "preco_ml": 308.0,
+   "preco_ml": 308,
    "prazo_ml_horas": 12,
    "preco": 338.8,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-growth-iso",
@@ -801,7 +854,8 @@
    "prazo_ml_horas": 12,
    "preco": 439.89,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-true-protein",
@@ -817,7 +871,8 @@
    "prazo_ml_horas": 192,
    "preco": 194.04,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-true-vegan",
@@ -833,7 +888,8 @@
    "prazo_ml_horas": 192,
    "preco": 208.89,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-true-concentrate",
@@ -849,7 +905,8 @@
    "prazo_ml_horas": 192,
    "preco": 229.68,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-vitafor-isofort",
@@ -865,7 +922,8 @@
    "prazo_ml_horas": 216,
    "preco": 313.39,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-vitafor-isofort-beauty",
@@ -881,7 +939,8 @@
    "prazo_ml_horas": 192,
    "preco": 153.86,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-dux-fresh-pistache",
@@ -894,7 +953,8 @@
    "prazo_ml_horas": 24,
    "preco": 109.89,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-dux-fresh-sache6",
@@ -903,11 +963,12 @@
    "tam": "chocolate e pasta de amendoim",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_770195-MLA117760807147_092026-E.webp",
    "ml_id": "MLB79423835",
-   "preco_ml": 94.0,
+   "preco_ml": 94,
    "prazo_ml_horas": 24,
    "preco": 103.4,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-dux-power-810",
@@ -920,7 +981,8 @@
    "prazo_ml_horas": 24,
    "preco": 243.12,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-true-baunilha900",
@@ -929,11 +991,12 @@
    "tam": "900 g · baunilha",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_631990-MLA114253563822_082026-E.webp",
    "ml_id": "MLB51917857",
-   "preco_ml": 214.0,
+   "preco_ml": 214,
    "prazo_ml_horas": 24,
    "preco": 235.4,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-true-beef",
@@ -946,7 +1009,8 @@
    "prazo_ml_horas": 24,
    "preco": 483.89,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "whey-probiotica-pure",
@@ -957,12 +1021,13 @@
    "fonte": "amazon",
    "amazon_asin": "B07G7JXJCG",
    "ml_id": null,
-   "amazon_preco": 152.0,
+   "amazon_preco": 152,
    "preco_ml": null,
    "prazo_ml_horas": 168,
    "preco": 167.2,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-probiotica-zero-lactose",
@@ -973,12 +1038,13 @@
    "fonte": "amazon",
    "amazon_asin": "B08GQG7CD7",
    "ml_id": null,
-   "amazon_preco": 185.0,
+   "amazon_preco": 185,
    "preco_ml": null,
    "prazo_ml_horas": 240,
    "preco": 203.5,
    "prazo_cliente_horas": 264,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-probiotica-iso-blend",
@@ -994,7 +1060,8 @@
    "prazo_ml_horas": 216,
    "preco": 153.02,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-probiotica-massa-nitro",
@@ -1010,7 +1077,8 @@
    "prazo_ml_horas": 336,
    "preco": 94.04,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-bskull-turbo",
@@ -1026,7 +1094,8 @@
    "prazo_ml_horas": 216,
    "preco": 56.95,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-bskull-hd-gourmet",
@@ -1042,7 +1111,8 @@
    "prazo_ml_horas": 192,
    "preco": 106.92,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-bskull-hd-choc",
@@ -1058,7 +1128,8 @@
    "prazo_ml_horas": 192,
    "preco": 101.82,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-bskull-hd-cookies",
@@ -1074,7 +1145,8 @@
    "prazo_ml_horas": 192,
    "preco": 101.44,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-bskull-combo",
@@ -1090,7 +1162,8 @@
    "prazo_ml_horas": 216,
    "preco": 118.69,
    "prazo_cliente_horas": 240,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "whey-bskull-hd-18",
@@ -1106,7 +1179,8 @@
    "prazo_ml_horas": 192,
    "preco": 227.6,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b07mc18q4p",
@@ -1122,7 +1196,8 @@
    "prazo_ml_horas": 168,
    "preco": 166.72,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b07m79gtyk",
@@ -1138,7 +1213,8 @@
    "prazo_ml_horas": 192,
    "preco": 189.07,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b08n36cbx3",
@@ -1154,7 +1230,8 @@
    "prazo_ml_horas": 192,
    "preco": 184.25,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0cmqw46zw",
@@ -1170,7 +1247,8 @@
    "prazo_ml_horas": 168,
    "preco": 165.99,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b09yz2y1w3",
@@ -1186,7 +1264,8 @@
    "prazo_ml_horas": 168,
    "preco": 200.86,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0c3bfc86y",
@@ -1202,7 +1281,8 @@
    "prazo_ml_horas": 168,
    "preco": 200.86,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0f22g5xxk",
@@ -1218,7 +1298,8 @@
    "prazo_ml_horas": 168,
    "preco": 160.38,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0g1652gkd",
@@ -1234,7 +1315,8 @@
    "prazo_ml_horas": 168,
    "preco": 98.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0drts8kkk",
@@ -1250,7 +1332,8 @@
    "prazo_ml_horas": 168,
    "preco": 135.74,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0d8bxw5td",
@@ -1266,7 +1349,8 @@
    "prazo_ml_horas": 192,
    "preco": 214.23,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b07l5t82td",
@@ -1282,7 +1366,8 @@
    "prazo_ml_horas": 168,
    "preco": 103.84,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b089pfjg5h",
@@ -1298,7 +1383,8 @@
    "prazo_ml_horas": 336,
    "preco": 213.18,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0fpbsvj2v",
@@ -1314,7 +1400,8 @@
    "prazo_ml_horas": 168,
    "preco": 145.05,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0c83b55t2",
@@ -1330,7 +1417,8 @@
    "prazo_ml_horas": 192,
    "preco": 162.91,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0fb15jxp9",
@@ -1346,7 +1434,8 @@
    "prazo_ml_horas": 192,
    "preco": 138.49,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0dxlkrdsy",
@@ -1362,7 +1451,8 @@
    "prazo_ml_horas": 192,
    "preco": 122.93,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b09bxkdpr2",
@@ -1378,7 +1468,8 @@
    "prazo_ml_horas": 192,
    "preco": 101.92,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b09bxn1qhd",
@@ -1394,7 +1485,8 @@
    "prazo_ml_horas": 192,
    "preco": 115.67,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0c9sfwdtx",
@@ -1410,7 +1502,8 @@
    "prazo_ml_horas": 168,
    "preco": 76.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0c9v4qc6f",
@@ -1426,7 +1519,8 @@
    "prazo_ml_horas": 168,
    "preco": 146.19,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b08bzsrzgs",
@@ -1442,7 +1536,8 @@
    "prazo_ml_horas": 192,
    "preco": 323.96,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0d1vvbsrs",
@@ -1458,7 +1553,8 @@
    "prazo_ml_horas": 192,
    "preco": 89.76,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0d1m1yx74",
@@ -1474,7 +1570,8 @@
    "prazo_ml_horas": 168,
    "preco": 98.9,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "whey-b0b642rm47",
@@ -1490,7 +1587,8 @@
    "prazo_ml_horas": 192,
    "preco": 207.81,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b0779lhl2v",
@@ -1501,12 +1599,13 @@
    "fonte": "amazon",
    "amazon_asin": "B0779LHL2V",
    "ml_id": null,
-   "amazon_preco": 83.0,
+   "amazon_preco": 83,
    "preco_ml": null,
    "prazo_ml_horas": 168,
    "preco": 91.3,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b0779mygdg",
@@ -1522,7 +1621,8 @@
    "prazo_ml_horas": 168,
    "preco": 98.99,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b0779lqhmp",
@@ -1538,7 +1638,8 @@
    "prazo_ml_horas": 168,
    "preco": 111.2,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b076x7f3fg",
@@ -1554,7 +1655,8 @@
    "prazo_ml_horas": 168,
    "preco": 69.18,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b076x7bwvr",
@@ -1570,7 +1672,8 @@
    "prazo_ml_horas": 168,
    "preco": 69.18,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b0851d4dht",
@@ -1581,12 +1684,13 @@
    "fonte": "amazon",
    "amazon_asin": "B0851D4DHT",
    "ml_id": null,
-   "amazon_preco": 103.0,
+   "amazon_preco": 103,
    "preco_ml": null,
    "prazo_ml_horas": 216,
    "preco": 113.3,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b09rckz11t",
@@ -1602,7 +1706,8 @@
    "prazo_ml_horas": 192,
    "preco": 86.79,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b09rcfm529",
@@ -1618,7 +1723,8 @@
    "prazo_ml_horas": 168,
    "preco": 86.79,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b0cp65ryjb",
@@ -1634,7 +1740,8 @@
    "prazo_ml_horas": 192,
    "preco": 82.45,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b07s2tcyyw",
@@ -1650,7 +1757,8 @@
    "prazo_ml_horas": 192,
    "preco": 82.54,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b0c1dv4xvw",
@@ -1666,7 +1774,8 @@
    "prazo_ml_horas": 168,
    "preco": 82.45,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b0d2z4pnf6",
@@ -1682,7 +1791,8 @@
    "prazo_ml_horas": 168,
    "preco": 99.19,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b0d2zbnvf5",
@@ -1698,7 +1808,8 @@
    "prazo_ml_horas": 216,
    "preco": 103.25,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b0d2zm3yb5",
@@ -1714,7 +1825,8 @@
    "prazo_ml_horas": 168,
    "preco": 90.44,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b09dgzkgn3",
@@ -1730,7 +1842,8 @@
    "prazo_ml_horas": 168,
    "preco": 61.61,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b09dh4c4yr",
@@ -1746,7 +1859,8 @@
    "prazo_ml_horas": 168,
    "preco": 86.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b07mqvg9jh",
@@ -1762,7 +1876,8 @@
    "prazo_ml_horas": 312,
    "preco": 114.84,
    "prazo_cliente_horas": 336,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b08y6273qh",
@@ -1778,7 +1893,8 @@
    "prazo_ml_horas": 192,
    "preco": 99.68,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b07mbh8qhh",
@@ -1794,7 +1910,8 @@
    "prazo_ml_horas": 192,
    "preco": 69.18,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b076x776xx",
@@ -1810,7 +1927,8 @@
    "prazo_ml_horas": 192,
    "preco": 65.71,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b07mncj4lq",
@@ -1826,7 +1944,8 @@
    "prazo_ml_horas": 336,
    "preco": 120.18,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hiper-b07mcwdr4k",
@@ -1842,7 +1961,8 @@
    "prazo_ml_horas": 336,
    "preco": 114.84,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "albu-b0bftmp2fc",
@@ -1858,7 +1978,8 @@
    "prazo_ml_horas": 168,
    "preco": 40.69,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "albu-b08z15kjpm",
@@ -1874,7 +1995,8 @@
    "prazo_ml_horas": 168,
    "preco": 78.27,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "albu-b08z15gx17",
@@ -1890,7 +2012,8 @@
    "prazo_ml_horas": 192,
    "preco": 104.39,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "albu-b0cjvklk38",
@@ -1906,7 +2029,8 @@
    "prazo_ml_horas": 168,
    "preco": 54.33,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "albu-b0f5dtbsxt",
@@ -1922,7 +2046,8 @@
    "prazo_ml_horas": 312,
    "preco": 83.49,
    "prazo_cliente_horas": 336,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "albu-b0f5dwjnm5",
@@ -1938,7 +2063,8 @@
    "prazo_ml_horas": 312,
    "preco": 83.49,
    "prazo_cliente_horas": 336,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "albu-b07tznbdh1",
@@ -1954,7 +2080,8 @@
    "prazo_ml_horas": 192,
    "preco": 67.82,
    "prazo_cliente_horas": 216,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "albu-b0bft99vd9",
@@ -1970,7 +2097,8 @@
    "prazo_ml_horas": 312,
    "preco": 70.95,
    "prazo_cliente_horas": 336,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-diabo-verde",
@@ -1986,7 +2114,8 @@
    "disponivel": true,
    "amazon_preco": 66.49,
    "amazon_entrega": "17/11",
-   "mais_barato": "ML"
+   "mais_barato": "ML",
+   "entrega_rapida": true
   },
   {
    "id": "pre-horus",
@@ -2002,7 +2131,8 @@
    "disponivel": true,
    "amazon_preco": 57.19,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "pre-evora",
@@ -2015,7 +2145,8 @@
    "prazo_ml_horas": 12,
    "preco": 77.09,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "pre-venom",
@@ -2031,7 +2162,8 @@
    "disponivel": true,
    "amazon_preco": 99.9,
    "amazon_entrega": "16/11",
-   "mais_barato": "Empate"
+   "mais_barato": "Empate",
+   "entrega_rapida": true
   },
   {
    "id": "pre-exquenta",
@@ -2044,7 +2176,8 @@
    "prazo_ml_horas": 12,
    "preco": 125.29,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "pre-bone-crusher",
@@ -2057,7 +2190,8 @@
    "prazo_ml_horas": 12,
    "preco": 54.99,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "pre-true-energyzer",
@@ -2070,7 +2204,8 @@
    "prazo_ml_horas": 12,
    "preco": 132.99,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "pre-egide",
@@ -2079,11 +2214,12 @@
    "tam": "300 g · frutas vermelhas",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_648417-MLA113252966538_072026-E.webp",
    "ml_id": "MLB18996066",
-   "preco_ml": 98.0,
+   "preco_ml": 98,
    "prazo_ml_horas": 12,
    "preco": 107.8,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "pre-panic",
@@ -2096,7 +2232,8 @@
    "prazo_ml_horas": 12,
    "preco": 81.77,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "pre-raze",
@@ -2109,7 +2246,8 @@
    "prazo_ml_horas": 12,
    "preco": 86.79,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "pre-beast-kaos",
@@ -2122,7 +2260,8 @@
    "prazo_ml_horas": 12,
    "preco": 69.05,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "pre-bope-150",
@@ -2135,7 +2274,8 @@
    "prazo_ml_horas": 12,
    "preco": 28.12,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "pre-insane-clown",
@@ -2148,7 +2288,8 @@
    "prazo_ml_horas": 24,
    "preco": 126.49,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "pre-vitafor-vfort",
@@ -2164,7 +2305,8 @@
    "prazo_ml_horas": 240,
    "preco": 100.87,
    "prazo_cliente_horas": 264,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-dux-hydrolite",
@@ -2177,7 +2319,8 @@
    "prazo_ml_horas": 24,
    "preco": 81.95,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "pre-probiotica-epic",
@@ -2193,7 +2336,8 @@
    "prazo_ml_horas": 216,
    "preco": 73.3,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-probiotica-carbup",
@@ -2209,7 +2353,8 @@
    "prazo_ml_horas": 168,
    "preco": 71.08,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b087ngx6nx",
@@ -2225,7 +2370,8 @@
    "prazo_ml_horas": 168,
    "preco": 49.56,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b087n69nj3",
@@ -2241,7 +2387,8 @@
    "prazo_ml_horas": 168,
    "preco": 38.86,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b087pqxl27",
@@ -2257,7 +2404,8 @@
    "prazo_ml_horas": 168,
    "preco": 52.51,
    "prazo_cliente_horas": 192,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b07l5x2g4n",
@@ -2273,7 +2421,8 @@
    "prazo_ml_horas": 216,
    "preco": 52.9,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b07rwp37b5",
@@ -2289,7 +2438,8 @@
    "prazo_ml_horas": 168,
    "preco": 71.65,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0fkhkzkx5",
@@ -2305,7 +2455,8 @@
    "prazo_ml_horas": 192,
    "preco": 94.84,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b08th7g87s",
@@ -2321,7 +2472,8 @@
    "prazo_ml_horas": 192,
    "preco": 83.49,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0bztgg2cq",
@@ -2337,7 +2489,8 @@
    "prazo_ml_horas": 168,
    "preco": 74.67,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0b3sbwhfy",
@@ -2353,7 +2506,8 @@
    "prazo_ml_horas": 168,
    "preco": 94.05,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0b3sgjvv7",
@@ -2369,7 +2523,8 @@
    "prazo_ml_horas": 168,
    "preco": 97.23,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b09z1hfzw1",
@@ -2385,7 +2540,8 @@
    "prazo_ml_horas": 192,
    "preco": 73.14,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0d7f67h3b",
@@ -2401,7 +2557,8 @@
    "prazo_ml_horas": 168,
    "preco": 80.47,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b09yz2tbzd",
@@ -2412,12 +2569,13 @@
    "fonte": "amazon",
    "amazon_asin": "B09YZ2TBZD",
    "ml_id": null,
-   "amazon_preco": 74.0,
+   "amazon_preco": 74,
    "preco_ml": null,
    "prazo_ml_horas": 192,
    "preco": 81.4,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b09yz518xh",
@@ -2433,7 +2591,8 @@
    "prazo_ml_horas": 168,
    "preco": 87.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b09yfj7qdp",
@@ -2444,12 +2603,13 @@
    "fonte": "amazon",
    "amazon_asin": "B09YFJ7QDP",
    "ml_id": null,
-   "amazon_preco": 77.0,
+   "amazon_preco": 77,
    "preco_ml": null,
    "prazo_ml_horas": 168,
    "preco": 84.7,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b09b1xxss9",
@@ -2465,7 +2625,8 @@
    "prazo_ml_horas": 168,
    "preco": 57.48,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b09rntrjdy",
@@ -2481,7 +2642,8 @@
    "prazo_ml_horas": 192,
    "preco": 76.44,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0fmzqb3zg",
@@ -2497,7 +2659,8 @@
    "prazo_ml_horas": 168,
    "preco": 59.29,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b082wk5pxn",
@@ -2513,7 +2676,8 @@
    "prazo_ml_horas": 216,
    "preco": 58.19,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b09sjt773x",
@@ -2529,7 +2693,8 @@
    "prazo_ml_horas": 192,
    "preco": 68.06,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b07g67t3c6",
@@ -2545,7 +2710,8 @@
    "prazo_ml_horas": 168,
    "preco": 45.98,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b09sjt7n3t",
@@ -2561,7 +2727,8 @@
    "prazo_ml_horas": 192,
    "preco": 45.98,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0953yflr6",
@@ -2577,7 +2744,8 @@
    "prazo_ml_horas": 192,
    "preco": 41.43,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b09vjkqcsb",
@@ -2593,7 +2761,8 @@
    "prazo_ml_horas": 192,
    "preco": 94.12,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0b1pcd9gx",
@@ -2609,7 +2778,8 @@
    "prazo_ml_horas": 192,
    "preco": 52.79,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0bcxf4cdm",
@@ -2625,7 +2795,8 @@
    "prazo_ml_horas": 192,
    "preco": 50.59,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0bcxfsdqx",
@@ -2641,7 +2812,8 @@
    "prazo_ml_horas": 168,
    "preco": 44.07,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b08tgtpp6b",
@@ -2657,7 +2829,8 @@
    "prazo_ml_horas": 168,
    "preco": 76.88,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0d4zlysbh",
@@ -2673,7 +2846,8 @@
    "prazo_ml_horas": 192,
    "preco": 88.1,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b0b198k8w9",
@@ -2689,7 +2863,8 @@
    "prazo_ml_horas": 192,
    "preco": 73.14,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b09gppxv4c",
@@ -2705,7 +2880,8 @@
    "prazo_ml_horas": 192,
    "preco": 103.18,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "pre-b07l5wckw9",
@@ -2721,7 +2897,8 @@
    "prazo_ml_horas": 192,
    "preco": 50.49,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hidra-b07mc12svt",
@@ -2737,7 +2914,8 @@
    "prazo_ml_horas": 168,
    "preco": 33.96,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hidra-b0cj4fz13x",
@@ -2753,7 +2931,8 @@
    "prazo_ml_horas": 168,
    "preco": 60.39,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hidra-b0ckwgfbc9",
@@ -2769,7 +2948,8 @@
    "prazo_ml_horas": 336,
    "preco": 57.37,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hidra-b08hvvgm63",
@@ -2785,7 +2965,8 @@
    "prazo_ml_horas": 336,
    "preco": 34.98,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hidra-b0ch3p8kxn",
@@ -2801,7 +2982,8 @@
    "prazo_ml_horas": 336,
    "preco": 58.28,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hidra-b08nf6776q",
@@ -2817,7 +2999,8 @@
    "prazo_ml_horas": 336,
    "preco": 55.28,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hidra-b07mpyq2v8",
@@ -2833,7 +3016,8 @@
    "prazo_ml_horas": 192,
    "preco": 81.58,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hidra-b07mfm3bn4",
@@ -2849,7 +3033,8 @@
    "prazo_ml_horas": 168,
    "preco": 81.95,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hidra-b08765pyfk",
@@ -2865,7 +3050,8 @@
    "prazo_ml_horas": 192,
    "preco": 107.21,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "hidra-b08nf7mbv8",
@@ -2881,7 +3067,8 @@
    "prazo_ml_horas": 336,
    "preco": 62.63,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "glut-darklab-300",
@@ -2897,7 +3084,8 @@
    "disponivel": true,
    "amazon_preco": 44.9,
    "amazon_entrega": "16/11",
-   "mais_barato": "ML"
+   "mais_barato": "ML",
+   "entrega_rapida": true
   },
   {
    "id": "glut-im-300",
@@ -2906,11 +3094,12 @@
    "tam": "300 g",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_672077-MLA101182123490_122025-E.webp",
    "ml_id": "MLB23613075",
-   "preco_ml": 46.0,
+   "preco_ml": 46,
    "prazo_ml_horas": 12,
    "preco": 50.6,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "glut-darklab-500",
@@ -2926,7 +3115,8 @@
    "disponivel": true,
    "amazon_preco": 59.9,
    "amazon_entrega": "16/11",
-   "mais_barato": "Empate"
+   "mais_barato": "Empate",
+   "entrega_rapida": true
   },
   {
    "id": "glut-maxt-300",
@@ -2942,7 +3132,8 @@
    "disponivel": true,
    "amazon_preco": 64.34,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "glut-soldiers-1kg",
@@ -2958,7 +3149,8 @@
    "disponivel": true,
    "amazon_preco": 105.2,
    "amazon_entrega": "16/11",
-   "mais_barato": "ML"
+   "mais_barato": "ML",
+   "entrega_rapida": true
   },
   {
    "id": "glut-soldiers-500",
@@ -2971,7 +3163,8 @@
    "prazo_ml_horas": 12,
    "preco": 77.89,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "glut-vitafor-300",
@@ -2984,7 +3177,8 @@
    "prazo_ml_horas": 12,
    "preco": 79.24,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "glut-nutrify-500",
@@ -2997,7 +3191,8 @@
    "prazo_ml_horas": 12,
    "preco": 84.62,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "glut-b07lclykl5",
@@ -3013,7 +3208,8 @@
    "prazo_ml_horas": 168,
    "preco": 26.29,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "glut-b07lcrk49s",
@@ -3029,7 +3225,8 @@
    "prazo_ml_horas": 168,
    "preco": 41.55,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "glut-b0b8thyy3r",
@@ -3045,7 +3242,8 @@
    "prazo_ml_horas": 168,
    "preco": 36.19,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "glut-b0b44zp6m9",
@@ -3061,7 +3259,8 @@
    "prazo_ml_horas": 192,
    "preco": 55.3,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "glut-b07nf7v3tj",
@@ -3077,7 +3276,8 @@
    "prazo_ml_horas": 192,
    "preco": 46.92,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "glut-b07nf96smj",
@@ -3093,7 +3293,8 @@
    "prazo_ml_horas": 168,
    "preco": 30.69,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "glut-b0bxffjgtr",
@@ -3109,7 +3310,8 @@
    "prazo_ml_horas": 168,
    "preco": 136.74,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "glut-b07ngkrny7",
@@ -3125,7 +3327,8 @@
    "prazo_ml_horas": 360,
    "preco": 100.93,
    "prazo_cliente_horas": 384,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "glut-b09nlgw8mc",
@@ -3141,7 +3344,8 @@
    "prazo_ml_horas": 168,
    "preco": 58.19,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "glut-b07mk4dgxl",
@@ -3157,7 +3361,8 @@
    "prazo_ml_horas": 192,
    "preco": 124.07,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-maxt-2400",
@@ -3173,7 +3378,8 @@
    "prazo_ml_horas": 168,
    "preco": 56.06,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-darklab-311",
@@ -3189,7 +3395,8 @@
    "prazo_ml_horas": 168,
    "preco": 43.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-3vs-attack",
@@ -3205,7 +3412,8 @@
    "prazo_ml_horas": 168,
    "preco": 37.29,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-3vs-1011",
@@ -3221,7 +3429,8 @@
    "prazo_ml_horas": 168,
    "preco": 55.28,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-maxt-drink",
@@ -3237,7 +3446,8 @@
    "prazo_ml_horas": 168,
    "preco": 127.24,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-on-megasize",
@@ -3253,7 +3463,8 @@
    "prazo_ml_horas": 192,
    "preco": 198.44,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-true-perfect-amino",
@@ -3266,7 +3477,8 @@
    "prazo_ml_horas": 24,
    "preco": 184.76,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "bcaa-probiotica-2400",
@@ -3282,7 +3494,8 @@
    "prazo_ml_horas": 192,
    "preco": 100.07,
    "prazo_cliente_horas": 216,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-b07hv4qzc8",
@@ -3298,7 +3511,8 @@
    "prazo_ml_horas": 264,
    "preco": 40.74,
    "prazo_cliente_horas": 288,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-b0779mfclz",
@@ -3314,7 +3528,8 @@
    "prazo_ml_horas": 168,
    "preco": 89.28,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-b07qpw9hgy",
@@ -3330,7 +3545,8 @@
    "prazo_ml_horas": 312,
    "preco": 89.24,
    "prazo_cliente_horas": 336,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-b09bw622d9",
@@ -3346,7 +3562,8 @@
    "prazo_ml_horas": 216,
    "preco": 156.64,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-b07cv2kfbj",
@@ -3362,7 +3579,8 @@
    "prazo_ml_horas": 192,
    "preco": 49.05,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "bcaa-b07mgjf5k2",
@@ -3378,7 +3596,8 @@
    "prazo_ml_horas": 168,
    "preco": 55.28,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b0ctkr43dv",
@@ -3394,7 +3613,8 @@
    "prazo_ml_horas": 168,
    "preco": 40.34,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b0dkxytmpq",
@@ -3410,7 +3630,8 @@
    "prazo_ml_horas": 168,
    "preco": 50.38,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b08xlxzyvz",
@@ -3426,7 +3647,8 @@
    "prazo_ml_horas": 168,
    "preco": 52.13,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b0blw29m1y",
@@ -3442,7 +3664,8 @@
    "prazo_ml_horas": 168,
    "preco": 42.01,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b09v1jdk15",
@@ -3458,7 +3681,8 @@
    "prazo_ml_horas": 336,
    "preco": 47.54,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b097fgzkxb",
@@ -3474,7 +3698,8 @@
    "prazo_ml_horas": 168,
    "preco": 39.8,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b0bz5qy5x3",
@@ -3490,7 +3715,8 @@
    "prazo_ml_horas": 192,
    "preco": 125.16,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b09kmvrbc1",
@@ -3506,7 +3732,8 @@
    "prazo_ml_horas": 192,
    "preco": 65.82,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b0d3vd6l14",
@@ -3522,7 +3749,8 @@
    "prazo_ml_horas": 168,
    "preco": 65.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b0b8q84dlt",
@@ -3538,7 +3766,8 @@
    "prazo_ml_horas": 168,
    "preco": 43.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b0d81hn8ck",
@@ -3554,7 +3783,8 @@
    "prazo_ml_horas": 168,
    "preco": 61.59,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b09w8nm6z8",
@@ -3570,7 +3800,8 @@
    "prazo_ml_horas": 168,
    "preco": 53.36,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b0953w7j2y",
@@ -3586,7 +3817,8 @@
    "prazo_ml_horas": 192,
    "preco": 34.75,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "amino-b098rg3h4v",
@@ -3602,7 +3834,8 @@
    "prazo_ml_horas": 168,
    "preco": 60.43,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-thermoflame",
@@ -3618,7 +3851,8 @@
    "disponivel": true,
    "amazon_preco": 32.5,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "termo-fireblack",
@@ -3634,7 +3868,8 @@
    "disponivel": true,
    "amazon_preco": 32.48,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "termo-thermapro",
@@ -3650,7 +3885,8 @@
    "disponivel": true,
    "amazon_preco": 33.7,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "termo-thermaburn",
@@ -3666,7 +3902,8 @@
    "disponivel": true,
    "amazon_preco": 44.9,
    "amazon_entrega": "16/11",
-   "mais_barato": "Empate"
+   "mais_barato": "Empate",
+   "entrega_rapida": true
   },
   {
    "id": "termo-hell",
@@ -3682,7 +3919,8 @@
    "disponivel": true,
    "amazon_preco": 53.1,
    "amazon_entrega": "16/11",
-   "mais_barato": "Amazon"
+   "mais_barato": "Amazon",
+   "entrega_rapida": true
   },
   {
    "id": "termo-cafeina-soldiers",
@@ -3695,7 +3933,8 @@
    "prazo_ml_horas": 12,
    "preco": 39.49,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "termo-lipo6",
@@ -3708,7 +3947,8 @@
    "prazo_ml_horas": 24,
    "preco": 43.99,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "termo-kimera",
@@ -3721,7 +3961,8 @@
    "prazo_ml_horas": 12,
    "preco": 62.03,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "termo-2hot",
@@ -3734,7 +3975,8 @@
    "prazo_ml_horas": 24,
    "preco": 75.34,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "termo-212",
@@ -3747,7 +3989,8 @@
    "prazo_ml_horas": 12,
    "preco": 86.79,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "termo-termoplus",
@@ -3760,7 +4003,8 @@
    "prazo_ml_horas": 48,
    "preco": 120.89,
    "prazo_cliente_horas": 72,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "termo-vitafor-lipix6",
@@ -3776,7 +4020,8 @@
    "prazo_ml_horas": 192,
    "preco": 78.84,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-dux-cafeina90",
@@ -3789,7 +4034,8 @@
    "prazo_ml_horas": 24,
    "preco": 46.62,
    "prazo_cliente_horas": 48,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "termo-probiotica-millenium",
@@ -3805,7 +4051,8 @@
    "prazo_ml_horas": 216,
    "preco": 63.57,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b0d88jcx8v",
@@ -3821,7 +4068,8 @@
    "prazo_ml_horas": 192,
    "preco": 49.63,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b0c5kl77jn",
@@ -3837,7 +4085,8 @@
    "prazo_ml_horas": 192,
    "preco": 43.99,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b07s5833s8",
@@ -3853,7 +4102,8 @@
    "prazo_ml_horas": 192,
    "preco": 43.99,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b07l5vh5hk",
@@ -3869,7 +4119,8 @@
    "prazo_ml_horas": 168,
    "preco": 22.14,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b07l5wzk1b",
@@ -3885,7 +4136,8 @@
    "prazo_ml_horas": 168,
    "preco": 63.11,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b0clfjg9g5",
@@ -3901,7 +4153,8 @@
    "prazo_ml_horas": 192,
    "preco": 30.97,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b0fh7ktnz5",
@@ -3917,7 +4170,8 @@
    "prazo_ml_horas": 192,
    "preco": 40.47,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b07rwl8v3f",
@@ -3933,7 +4187,8 @@
    "prazo_ml_horas": 168,
    "preco": 38.45,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b0d7x2267b",
@@ -3949,7 +4204,8 @@
    "prazo_ml_horas": 192,
    "preco": 32.59,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b07l5x3hbl",
@@ -3965,7 +4221,8 @@
    "prazo_ml_horas": 168,
    "preco": 54.99,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b07l5w5cxq",
@@ -3981,7 +4238,8 @@
    "prazo_ml_horas": 168,
    "preco": 62.59,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b0d6z9tkcs",
@@ -3997,7 +4255,8 @@
    "prazo_ml_horas": 168,
    "preco": 76.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b0b8qyl7nm",
@@ -4013,7 +4272,8 @@
    "prazo_ml_horas": 168,
    "preco": 67.61,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b0bsb16r2j",
@@ -4029,7 +4289,8 @@
    "prazo_ml_horas": 168,
    "preco": 48.98,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b0b1vstpcv",
@@ -4045,7 +4306,8 @@
    "prazo_ml_horas": 216,
    "preco": 76.99,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b08kwq6d5t",
@@ -4056,12 +4318,13 @@
    "fonte": "amazon",
    "amazon_asin": "B08KWQ6D5T",
    "ml_id": null,
-   "amazon_preco": 74.0,
+   "amazon_preco": 74,
    "preco_ml": null,
    "prazo_ml_horas": 168,
    "preco": 81.4,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b09mkvglb6",
@@ -4077,7 +4340,8 @@
    "prazo_ml_horas": 336,
    "preco": 76.8,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "termo-b0b3ztcnq9",
@@ -4093,7 +4357,8 @@
    "prazo_ml_horas": 192,
    "preco": 140.62,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-max-topwhey",
@@ -4106,7 +4371,8 @@
    "prazo_ml_horas": 12,
    "preco": 82.49,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "barra-nutrata-grego",
@@ -4119,7 +4385,8 @@
    "prazo_ml_horas": 12,
    "preco": 75.68,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "barra-im-crisp-trufa",
@@ -4132,7 +4399,8 @@
    "prazo_ml_horas": 12,
    "preco": 87.92,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "barra-im-crisp-leite",
@@ -4145,7 +4413,8 @@
    "prazo_ml_horas": 12,
    "preco": 102.52,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "barra-bold-mista",
@@ -4154,11 +4423,12 @@
    "tam": "caixa 12 un · sabores mistos",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_974524-MLA110945015307_042026-E.webp",
    "ml_id": "MLB18996045",
-   "preco_ml": 139.0,
+   "preco_ml": 139,
    "prazo_ml_horas": 12,
    "preco": 152.9,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "barra-nutrata-yopro",
@@ -4167,11 +4437,12 @@
    "tam": "caixa 12 un · cappuccino",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_935453-MLA116049142712_092026-E.webp",
    "ml_id": "MLB79197311",
-   "preco_ml": 75.0,
+   "preco_ml": 75,
    "prazo_ml_horas": 12,
    "preco": 82.5,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "barra-im-crisp-cookies",
@@ -4184,7 +4455,8 @@
    "prazo_ml_horas": 24,
    "preco": 108.79,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "barra-im-crisp-duo",
@@ -4197,7 +4469,8 @@
    "prazo_ml_horas": 12,
    "preco": 94.94,
    "prazo_cliente_horas": 36,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "barra-nutrata-choc",
@@ -4210,7 +4483,8 @@
    "prazo_ml_horas": 48,
    "preco": 98.9,
    "prazo_cliente_horas": 72,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "barra-bold-pistache",
@@ -4223,7 +4497,8 @@
    "prazo_ml_horas": 24,
    "preco": 130.57,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "barra-b0f2gmt6t3",
@@ -4239,7 +4514,8 @@
    "prazo_ml_horas": 168,
    "preco": 92.35,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b07xkclvjd",
@@ -4255,7 +4531,8 @@
    "prazo_ml_horas": 168,
    "preco": 55.68,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b0frdfsxxc",
@@ -4271,7 +4548,8 @@
    "prazo_ml_horas": 168,
    "preco": 44.76,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b0b92c7nvp",
@@ -4287,7 +4565,8 @@
    "prazo_ml_horas": 168,
    "preco": 61.83,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b07xgm1bm7",
@@ -4303,7 +4582,8 @@
    "prazo_ml_horas": 168,
    "preco": 43.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b07xkcmcfq",
@@ -4319,7 +4599,8 @@
    "prazo_ml_horas": 168,
    "preco": 60.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b0b3241kvw",
@@ -4335,7 +4616,8 @@
    "prazo_ml_horas": 192,
    "preco": 62.5,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b0b324kh8g",
@@ -4351,7 +4633,8 @@
    "prazo_ml_horas": 168,
    "preco": 66.98,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b0cgy1w5fn",
@@ -4367,7 +4650,8 @@
    "prazo_ml_horas": 168,
    "preco": 51.58,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b0cgy1l6pg",
@@ -4383,7 +4667,8 @@
    "prazo_ml_horas": 168,
    "preco": 46.51,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b08lcwcjl3",
@@ -4399,7 +4684,8 @@
    "prazo_ml_horas": 168,
    "preco": 62.91,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b0dmt41dsl",
@@ -4415,7 +4701,8 @@
    "prazo_ml_horas": 312,
    "preco": 76.62,
    "prazo_cliente_horas": 336,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b0d2lxb8k2",
@@ -4431,7 +4718,8 @@
    "prazo_ml_horas": 168,
    "preco": 72.11,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b0g1cnhkp1",
@@ -4447,7 +4735,8 @@
    "prazo_ml_horas": 168,
    "preco": 83.49,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b0cp2qd7s9",
@@ -4463,7 +4752,8 @@
    "prazo_ml_horas": 168,
    "preco": 99.17,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b07g7x5qc2",
@@ -4474,12 +4764,13 @@
    "fonte": "amazon",
    "amazon_asin": "B07G7X5QC2",
    "ml_id": null,
-   "amazon_preco": 51.0,
+   "amazon_preco": 51,
    "preco_ml": null,
    "prazo_ml_horas": 168,
    "preco": 56.1,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b07xphp5bg",
@@ -4495,7 +4786,8 @@
    "prazo_ml_horas": 192,
    "preco": 57.43,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "barra-b0d2lwz6vl",
@@ -4509,9 +4801,10 @@
    "amazon_preco": 65.45,
    "preco_ml": null,
    "prazo_ml_horas": 192,
-   "preco": 72.0,
+   "preco": 72,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b084xrhdjc",
@@ -4527,7 +4820,8 @@
    "prazo_ml_horas": 168,
    "preco": 17.49,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b084xr8cvb",
@@ -4543,7 +4837,8 @@
    "prazo_ml_horas": 168,
    "preco": 17.49,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b084xqz3cv",
@@ -4559,7 +4854,8 @@
    "prazo_ml_horas": 168,
    "preco": 20.77,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b084xrck74",
@@ -4575,7 +4871,8 @@
    "prazo_ml_horas": 192,
    "preco": 69.07,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b07g7pvn6p",
@@ -4591,7 +4888,8 @@
    "prazo_ml_horas": 168,
    "preco": 28.71,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b07dq6bz1c",
@@ -4607,7 +4905,8 @@
    "prazo_ml_horas": 168,
    "preco": 26.13,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b08lcd4rb1",
@@ -4623,7 +4922,8 @@
    "prazo_ml_horas": 216,
    "preco": 37.62,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b07y3rgs46",
@@ -4639,7 +4939,8 @@
    "prazo_ml_horas": 168,
    "preco": 16.38,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0cqkmc7lq",
@@ -4655,7 +4956,8 @@
    "prazo_ml_horas": 168,
    "preco": 19.79,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b07yld878q",
@@ -4671,7 +4973,8 @@
    "prazo_ml_horas": 192,
    "preco": 19.79,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0961s866v",
@@ -4682,12 +4985,13 @@
    "fonte": "amazon",
    "amazon_asin": "B0961S866V",
    "ml_id": null,
-   "amazon_preco": 54.0,
+   "amazon_preco": 54,
    "preco_ml": null,
    "prazo_ml_horas": 168,
    "preco": 59.4,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0c5dwqqkw",
@@ -4698,12 +5002,13 @@
    "fonte": "amazon",
    "amazon_asin": "B0C5DWQQKW",
    "ml_id": null,
-   "amazon_preco": 54.0,
+   "amazon_preco": 54,
    "preco_ml": null,
    "prazo_ml_horas": 168,
    "preco": 59.4,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b09ttsv3sj",
@@ -4719,7 +5024,8 @@
    "prazo_ml_horas": 168,
    "preco": 27.72,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b09tttzps4",
@@ -4735,7 +5041,8 @@
    "prazo_ml_horas": 168,
    "preco": 17.05,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0bvzy7bm6",
@@ -4751,7 +5058,8 @@
    "prazo_ml_horas": 168,
    "preco": 37.35,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0c2zs78k9",
@@ -4767,7 +5075,8 @@
    "prazo_ml_horas": 168,
    "preco": 43.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0bkh7r8y2",
@@ -4783,7 +5092,8 @@
    "prazo_ml_horas": 168,
    "preco": 20.96,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0bkh9mz5q",
@@ -4799,7 +5109,8 @@
    "prazo_ml_horas": 168,
    "preco": 26.95,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0bw11tkmp",
@@ -4815,7 +5126,8 @@
    "prazo_ml_horas": 216,
    "preco": 41.64,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0bg33d8n7",
@@ -4831,7 +5143,8 @@
    "prazo_ml_horas": 168,
    "preco": 23.09,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0822rgg8z",
@@ -4847,7 +5160,8 @@
    "prazo_ml_horas": 168,
    "preco": 19.69,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0b2bnsg6y",
@@ -4863,7 +5177,8 @@
    "prazo_ml_horas": 168,
    "preco": 56.95,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b092mj1tk3",
@@ -4879,7 +5194,8 @@
    "prazo_ml_horas": 192,
    "preco": 67.82,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0c957nrd1",
@@ -4895,7 +5211,8 @@
    "prazo_ml_horas": 168,
    "preco": 45.98,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0d79dxnhh",
@@ -4911,7 +5228,8 @@
    "prazo_ml_horas": 168,
    "preco": 45.98,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "fit-b0hfl4bxkx",
@@ -4927,7 +5245,8 @@
    "prazo_ml_horas": 456,
    "preco": 52.14,
    "prazo_cliente_horas": 480,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vitd-growth-1000",
@@ -4940,7 +5259,8 @@
    "prazo_ml_horas": 24,
    "preco": 32.89,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vitd-nutren-2000",
@@ -4953,7 +5273,8 @@
    "prazo_ml_horas": 24,
    "preco": 46.67,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vitd-growth-ultra",
@@ -4966,7 +5287,8 @@
    "prazo_ml_horas": 24,
    "preco": 51.14,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vitd-nutrify-d3",
@@ -4975,11 +5297,12 @@
    "tam": "120 cápsulas",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_907138-MLA114453361069_072026-E.webp",
    "ml_id": "MLB25683624",
-   "preco_ml": 45.0,
+   "preco_ml": 45,
    "prazo_ml_horas": 24,
    "preco": 49.5,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vitd-true-liquida",
@@ -4992,7 +5315,8 @@
    "prazo_ml_horas": 24,
    "preco": 55.42,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vitd-vhita-k2",
@@ -5005,7 +5329,8 @@
    "prazo_ml_horas": 24,
    "preco": 58.4,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vit-omega-vitafor",
@@ -5021,7 +5346,8 @@
    "prazo_ml_horas": 168,
    "preco": 105.46,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-omega-dux",
@@ -5037,7 +5363,8 @@
    "prazo_ml_horas": 192,
    "preco": 107.14,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-omega-darklab",
@@ -5053,7 +5380,8 @@
    "prazo_ml_horas": 168,
    "preco": 109.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-omega-nutrify",
@@ -5069,7 +5397,8 @@
    "prazo_ml_horas": 168,
    "preco": 117.76,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-omegafor-plus",
@@ -5080,12 +5409,13 @@
    "fonte": "amazon",
    "amazon_asin": "B07L5W6GVC",
    "ml_id": null,
-   "amazon_preco": 121.0,
+   "amazon_preco": 121,
    "preco_ml": null,
    "prazo_ml_horas": 192,
    "preco": 133.1,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-omega-true",
@@ -5101,7 +5431,8 @@
    "prazo_ml_horas": 192,
    "preco": 164.34,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-multi-lavitan",
@@ -5117,7 +5448,8 @@
    "prazo_ml_horas": 192,
    "preco": 25.25,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-multi-centrum",
@@ -5133,7 +5465,8 @@
    "prazo_ml_horas": 192,
    "preco": 32.77,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-multi-revigoran",
@@ -5149,7 +5482,8 @@
    "prazo_ml_horas": 192,
    "preco": 46.62,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-multi-dux",
@@ -5165,7 +5499,8 @@
    "prazo_ml_horas": 192,
    "preco": 56.27,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-multi-growth",
@@ -5181,7 +5516,8 @@
    "prazo_ml_horas": 168,
    "preco": 58.19,
    "prazo_cliente_horas": 192,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "vit-dha-true",
@@ -5197,7 +5533,8 @@
    "prazo_ml_horas": 168,
    "preco": 60.61,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-magnesio-true",
@@ -5208,11 +5545,12 @@
    "amazon_asin": "B0C4CCZFBL",
    "ml_id": "MLB35238590",
    "amazon_preco": 136.27,
-   "preco_ml": 161.0,
+   "preco_ml": 161,
    "prazo_ml_horas": 24,
    "preco": 177.1,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vit-vitafor-q10",
@@ -5228,7 +5566,8 @@
    "prazo_ml_horas": 168,
    "preco": 105.38,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-vitafor-curcuma",
@@ -5244,7 +5583,8 @@
    "prazo_ml_horas": 168,
    "preco": 70.73,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-vitafor-colagentek",
@@ -5260,7 +5600,8 @@
    "prazo_ml_horas": 168,
    "preco": 103.46,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-vitafor-simfort",
@@ -5276,7 +5617,8 @@
    "prazo_ml_horas": 216,
    "preco": 101.54,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-vitafor-d3czinco",
@@ -5292,7 +5634,8 @@
    "prazo_ml_horas": 192,
    "preco": 66.77,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-vitafor-magnesio",
@@ -5308,7 +5651,8 @@
    "prazo_ml_horas": 288,
    "preco": 191.86,
    "prazo_cliente_horas": 312,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-dux-multi90",
@@ -5321,7 +5665,8 @@
    "prazo_ml_horas": 24,
    "preco": 73.59,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vit-dux-mag3",
@@ -5334,7 +5679,8 @@
    "prazo_ml_horas": 24,
    "preco": 81.58,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vit-true-vitc-lipo",
@@ -5347,7 +5693,8 @@
    "prazo_ml_horas": 24,
    "preco": 69.29,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vit-true-b12",
@@ -5360,7 +5707,8 @@
    "prazo_ml_horas": 24,
    "preco": 38.6,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vit-true-curcuma-omega",
@@ -5373,7 +5721,8 @@
    "prazo_ml_horas": 24,
    "preco": 138.59,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vit-true-metilfolato",
@@ -5386,7 +5735,8 @@
    "prazo_ml_horas": 24,
    "preco": 64.57,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "vit-b0dd2wsrpg",
@@ -5402,7 +5752,8 @@
    "prazo_ml_horas": 168,
    "preco": 62.26,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0bft18h8d",
@@ -5418,7 +5769,8 @@
    "prazo_ml_horas": 192,
    "preco": 34.39,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0dkb2pn8l",
@@ -5434,7 +5786,8 @@
    "prazo_ml_horas": 192,
    "preco": 103.02,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0bft4gt1y",
@@ -5450,7 +5803,8 @@
    "prazo_ml_horas": 168,
    "preco": 26.8,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0blhp2snj",
@@ -5466,7 +5820,8 @@
    "prazo_ml_horas": 168,
    "preco": 22.01,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b08yx4m2s5",
@@ -5482,7 +5837,8 @@
    "prazo_ml_horas": 168,
    "preco": 43.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0dktnwlsz",
@@ -5498,7 +5854,8 @@
    "prazo_ml_horas": 192,
    "preco": 65.11,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0d4mjnvwq",
@@ -5514,7 +5871,8 @@
    "prazo_ml_horas": 168,
    "preco": 46.65,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b087pqqglb",
@@ -5530,7 +5888,8 @@
    "prazo_ml_horas": 192,
    "preco": 38.39,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b07dvh5bj2",
@@ -5546,7 +5905,8 @@
    "prazo_ml_horas": 336,
    "preco": 47.18,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b004rcr5eg",
@@ -5562,7 +5922,8 @@
    "prazo_ml_horas": 312,
    "preco": 100.11,
    "prazo_cliente_horas": 336,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0b2j68yjh",
@@ -5578,7 +5939,8 @@
    "prazo_ml_horas": 168,
    "preco": 54.22,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b07y56n6ml",
@@ -5594,7 +5956,8 @@
    "prazo_ml_horas": 168,
    "preco": 42.23,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b08ycrr59l",
@@ -5610,7 +5973,8 @@
    "prazo_ml_horas": 216,
    "preco": 15.39,
    "prazo_cliente_horas": 240,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b07rs3vx2b",
@@ -5626,7 +5990,8 @@
    "prazo_ml_horas": 168,
    "preco": 27.15,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0977gjx65",
@@ -5642,7 +6007,8 @@
    "prazo_ml_horas": 168,
    "preco": 20.68,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0czbmnjhw",
@@ -5658,7 +6024,8 @@
    "prazo_ml_horas": 192,
    "preco": 42.89,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0cc9y5kjc",
@@ -5674,7 +6041,8 @@
    "prazo_ml_horas": 192,
    "preco": 61.44,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b08y3th191",
@@ -5690,7 +6058,8 @@
    "prazo_ml_horas": 168,
    "preco": 27.48,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b09tjbyp83",
@@ -5706,7 +6075,8 @@
    "prazo_ml_horas": 168,
    "preco": 21.36,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0f2glc758",
@@ -5722,7 +6092,8 @@
    "prazo_ml_horas": 192,
    "preco": 31.24,
    "prazo_cliente_horas": 216,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b07lcsn2h3",
@@ -5738,7 +6109,8 @@
    "prazo_ml_horas": 168,
    "preco": 48.5,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b08y7cckvf",
@@ -5754,7 +6126,8 @@
    "prazo_ml_horas": 192,
    "preco": 46.92,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0fqhlzzf3",
@@ -5770,7 +6143,8 @@
    "prazo_ml_horas": 168,
    "preco": 61.96,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b08cl1rtfw",
@@ -5786,7 +6160,8 @@
    "prazo_ml_horas": 168,
    "preco": 83.37,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0cc9yrf8t",
@@ -5802,7 +6177,8 @@
    "prazo_ml_horas": 168,
    "preco": 57.02,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b09l2zj7c3",
@@ -5818,7 +6194,8 @@
    "prazo_ml_horas": 192,
    "preco": 62.61,
    "prazo_cliente_horas": 216,
-   "disponivel": false
+   "disponivel": false,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0c1y2w3vt",
@@ -5834,7 +6211,8 @@
    "prazo_ml_horas": 192,
    "preco": 64.79,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b09x8dhbw7",
@@ -5850,7 +6228,8 @@
    "prazo_ml_horas": 168,
    "preco": 29.1,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b09bdj5v5d",
@@ -5866,7 +6245,8 @@
    "prazo_ml_horas": 168,
    "preco": 253.99,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b08d4ffwlk",
@@ -5882,7 +6262,8 @@
    "prazo_ml_horas": 168,
    "preco": 44.9,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b07p8v9pwh",
@@ -5898,7 +6279,8 @@
    "prazo_ml_horas": 168,
    "preco": 49.45,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0dx2k882l",
@@ -5914,7 +6296,8 @@
    "prazo_ml_horas": 336,
    "preco": 153.6,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0cbhrh5dv",
@@ -5930,7 +6313,8 @@
    "prazo_ml_horas": 216,
    "preco": 109.99,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b08d4cdlc3",
@@ -5946,7 +6330,8 @@
    "prazo_ml_horas": 168,
    "preco": 29.55,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b07l5v8fff",
@@ -5962,7 +6347,8 @@
    "prazo_ml_horas": 168,
    "preco": 139.55,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0dk7vd89k",
@@ -5978,7 +6364,8 @@
    "prazo_ml_horas": 168,
    "preco": 67.87,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b08kz41nws",
@@ -5994,7 +6381,8 @@
    "prazo_ml_horas": 168,
    "preco": 39.4,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0djrxp1rz",
@@ -6008,9 +6396,10 @@
    "amazon_preco": 221.82,
    "preco_ml": null,
    "prazo_ml_horas": 216,
-   "preco": 244.0,
+   "preco": 244,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0f3jvvjv1",
@@ -6026,7 +6415,8 @@
    "prazo_ml_horas": 192,
    "preco": 29.65,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0dy1yqz29",
@@ -6042,7 +6432,8 @@
    "prazo_ml_horas": 192,
    "preco": 60.12,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0g2682gzf",
@@ -6058,7 +6449,8 @@
    "prazo_ml_horas": 192,
    "preco": 63.54,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0d4f8jw6l",
@@ -6074,7 +6466,8 @@
    "prazo_ml_horas": 168,
    "preco": 35.81,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0czlzfg2x",
@@ -6090,7 +6483,8 @@
    "prazo_ml_horas": 192,
    "preco": 50.99,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b09yyyw34h",
@@ -6106,7 +6500,8 @@
    "prazo_ml_horas": 192,
    "preco": 46.42,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0cnf4zm1b",
@@ -6122,7 +6517,8 @@
    "prazo_ml_horas": 192,
    "preco": 32.2,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0ddvbcrvp",
@@ -6138,7 +6534,8 @@
    "prazo_ml_horas": 168,
    "preco": 62.44,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0cmrbxx28",
@@ -6154,7 +6551,8 @@
    "prazo_ml_horas": 192,
    "preco": 50.94,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b09sn7mr86",
@@ -6170,7 +6568,8 @@
    "prazo_ml_horas": 168,
    "preco": 107.91,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "vit-b0cztxpld8",
@@ -6186,7 +6585,8 @@
    "prazo_ml_horas": 192,
    "preco": 107.71,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b07lct61bk",
@@ -6202,7 +6602,8 @@
    "prazo_ml_horas": 168,
    "preco": 73.6,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b08kthrvty",
@@ -6218,7 +6619,8 @@
    "prazo_ml_horas": 168,
    "preco": 74.17,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b0cmvbvfw2",
@@ -6234,7 +6636,8 @@
    "prazo_ml_horas": 168,
    "preco": 51.04,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b084x7c1cr",
@@ -6250,7 +6653,8 @@
    "prazo_ml_horas": 168,
    "preco": 60.39,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b097j2gklp",
@@ -6266,7 +6670,8 @@
    "prazo_ml_horas": 192,
    "preco": 85.09,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b084wpr16j",
@@ -6282,7 +6687,8 @@
    "prazo_ml_horas": 168,
    "preco": 61.55,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b09k54v3fz",
@@ -6298,7 +6704,8 @@
    "prazo_ml_horas": 168,
    "preco": 39.93,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b08ftjn8l7",
@@ -6314,7 +6721,8 @@
    "prazo_ml_horas": 168,
    "preco": 56.46,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b08d4dnzj6",
@@ -6330,7 +6738,8 @@
    "prazo_ml_horas": 168,
    "preco": 48.29,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b0bb4wpy7m",
@@ -6346,7 +6755,8 @@
    "prazo_ml_horas": 168,
    "preco": 95.03,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b09ffn418l",
@@ -6362,7 +6772,8 @@
    "prazo_ml_horas": 168,
    "preco": 109.73,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b0cbgplsrp",
@@ -6378,7 +6789,8 @@
    "prazo_ml_horas": 192,
    "preco": 133.44,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b0bj36hcmp",
@@ -6394,7 +6806,8 @@
    "prazo_ml_horas": 168,
    "preco": 99.99,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b0bj3637k2",
@@ -6410,7 +6823,8 @@
    "prazo_ml_horas": 216,
    "preco": 245.58,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b07wrlwksf",
@@ -6426,7 +6840,8 @@
    "prazo_ml_horas": 168,
    "preco": 209.39,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b08cq8rvk5",
@@ -6442,7 +6857,8 @@
    "prazo_ml_horas": 312,
    "preco": 150.4,
    "prazo_cliente_horas": 336,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b0clhbs3bq",
@@ -6458,7 +6874,8 @@
    "prazo_ml_horas": 216,
    "preco": 113.59,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "colag-b08d4n3pf2",
@@ -6474,7 +6891,8 @@
    "prazo_ml_horas": 168,
    "preco": 52.66,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "strap-strongfist-preto",
@@ -6487,7 +6905,8 @@
    "prazo_ml_horas": 24,
    "preco": 21.77,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "strap-fortwazz-azul",
@@ -6500,7 +6919,8 @@
    "prazo_ml_horas": 24,
    "preco": 21.13,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "strap-strongfist-rosa",
@@ -6509,11 +6929,12 @@
    "tam": "100% algodão · rosa",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_651170-MLA115359927821_072026-E.webp",
    "ml_id": "MLB48945960",
-   "preco_ml": 18.0,
+   "preco_ml": 18,
    "prazo_ml_horas": 24,
    "preco": 19.8,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "strap-strongfist-2pares",
@@ -6526,7 +6947,8 @@
    "prazo_ml_horas": 24,
    "preco": 31.23,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "strap-fortwazz-zz60",
@@ -6539,7 +6961,8 @@
    "prazo_ml_horas": 24,
    "preco": 40.59,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "strap-bulldozer",
@@ -6552,7 +6975,8 @@
    "prazo_ml_horas": 24,
    "preco": 59.29,
    "prazo_cliente_horas": 48,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": true
   },
   {
    "id": "acess-b08vps711d",
@@ -6568,7 +6992,8 @@
    "prazo_ml_horas": 168,
    "preco": 28.34,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07mhmq6qf",
@@ -6579,12 +7004,13 @@
    "fonte": "amazon",
    "amazon_asin": "B07MHMQ6QF",
    "ml_id": null,
-   "amazon_preco": 25.0,
+   "amazon_preco": 25,
    "preco_ml": null,
    "prazo_ml_horas": 192,
    "preco": 27.5,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07fk3my6r",
@@ -6600,7 +7026,8 @@
    "prazo_ml_horas": 216,
    "preco": 22.99,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07mf1j8jb",
@@ -6616,7 +7043,8 @@
    "prazo_ml_horas": 168,
    "preco": 23.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07g7hh46y",
@@ -6632,7 +7060,8 @@
    "prazo_ml_horas": 192,
    "preco": 21.89,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0djf28py4",
@@ -6648,7 +7077,8 @@
    "prazo_ml_horas": 168,
    "preco": 29.62,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0df95zcyr",
@@ -6659,12 +7089,13 @@
    "fonte": "amazon",
    "amazon_asin": "B0DF95ZCYR",
    "ml_id": null,
-   "amazon_preco": 26.0,
+   "amazon_preco": 26,
    "preco_ml": null,
    "prazo_ml_horas": 168,
    "preco": 28.6,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0fssnf7f2",
@@ -6680,7 +7111,8 @@
    "prazo_ml_horas": 168,
    "preco": 29.59,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0f9xfq394",
@@ -6696,7 +7128,8 @@
    "prazo_ml_horas": 168,
    "preco": 78.25,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07tn3fsw5",
@@ -6712,7 +7145,8 @@
    "prazo_ml_horas": 192,
    "preco": 72.05,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07thmhx7x",
@@ -6728,7 +7162,8 @@
    "prazo_ml_horas": 168,
    "preco": 107.14,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07c81f48r",
@@ -6744,7 +7179,8 @@
    "prazo_ml_horas": 168,
    "preco": 99.33,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07gcmm2rr",
@@ -6760,7 +7196,8 @@
    "prazo_ml_horas": 216,
    "preco": 104.29,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0cn18wzyk",
@@ -6776,7 +7213,8 @@
    "prazo_ml_horas": 216,
    "preco": 77.8,
    "prazo_cliente_horas": 240,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0f226s851",
@@ -6792,7 +7230,8 @@
    "prazo_ml_horas": 168,
    "preco": 21.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0d2s39ksw",
@@ -6808,7 +7247,8 @@
    "prazo_ml_horas": 168,
    "preco": 67.82,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0bs6yckj4",
@@ -6824,7 +7264,8 @@
    "prazo_ml_horas": 168,
    "preco": 41.69,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0dngbdhzc",
@@ -6840,7 +7281,8 @@
    "prazo_ml_horas": 168,
    "preco": 25.84,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07z9smpzy",
@@ -6856,7 +7298,8 @@
    "prazo_ml_horas": 168,
    "preco": 31.89,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07z9rdq31",
@@ -6872,7 +7315,8 @@
    "prazo_ml_horas": 192,
    "preco": 75.49,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0ffdx5dl6",
@@ -6888,7 +7332,8 @@
    "prazo_ml_horas": 168,
    "preco": 78.27,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07fyrd38l",
@@ -6904,7 +7349,8 @@
    "prazo_ml_horas": 168,
    "preco": 80.19,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07t9d44gr",
@@ -6920,7 +7366,8 @@
    "prazo_ml_horas": 168,
    "preco": 47.19,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07ph1qgdq",
@@ -6936,7 +7383,8 @@
    "prazo_ml_horas": 168,
    "preco": 50.49,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0ccznfdpf",
@@ -6952,7 +7400,8 @@
    "prazo_ml_horas": 168,
    "preco": 14.18,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0bzjcw89m",
@@ -6968,7 +7417,8 @@
    "prazo_ml_horas": 168,
    "preco": 28.49,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07g3gzpcq",
@@ -6984,7 +7434,8 @@
    "prazo_ml_horas": 168,
    "preco": 24.09,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b06wd8xhtl",
@@ -7000,7 +7451,8 @@
    "prazo_ml_horas": 168,
    "preco": 106.59,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0f9393l2g",
@@ -7016,7 +7468,8 @@
    "prazo_ml_horas": 168,
    "preco": 31.33,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b0b4tfn968",
@@ -7032,7 +7485,8 @@
    "prazo_ml_horas": 168,
    "preco": 31.87,
    "prazo_cliente_horas": 192,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b08vwx6338",
@@ -7048,7 +7502,8 @@
    "prazo_ml_horas": 192,
    "preco": 43.89,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b07gz7fgwx",
@@ -7064,7 +7519,8 @@
    "prazo_ml_horas": 336,
    "preco": 32.89,
    "prazo_cliente_horas": 360,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   },
   {
    "id": "acess-b087nz9ls6",
@@ -7080,7 +7536,9 @@
    "prazo_ml_horas": 192,
    "preco": 48.7,
    "prazo_cliente_horas": 216,
-   "disponivel": true
+   "disponivel": true,
+   "entrega_rapida": false
   }
- ]
+ ],
+ "regra_entrega": "No site só aparecem produtos que o fornecedor entrega hoje ou amanhã no CEP 41771080 (campo entrega_rapida). Amazon conferida em 14/11/2026 23h: nenhum produto chega antes de 23/11."
 }
