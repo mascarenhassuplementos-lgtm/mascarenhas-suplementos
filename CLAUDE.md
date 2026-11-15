@@ -44,7 +44,7 @@
    O site **não confirma** o pagamento sozinho — conferir o comprovante no app do banco antes de comprar.
 3. A mensagem do WhatsApp traz o link **"Ficha do pedido"** (`pedido.html#p=...`, dados do pedido codificados no link).
    - O cliente que abrir vê só o resumo.
-   - Na **área da loja** (rodapé da ficha → "Área da loja" → senha **813125**, uma vez por aparelho) aparecem
+   - Na **área da loja** (rodapé da ficha → "Área da loja" → senha que o dono guarda fora do repositório, uma vez por aparelho) aparecem
      o botão **"Comprar no Amazon / Mercado Livre"** de cada item, o custo de referência e a margem estimada.
 4. Ao mesmo tempo, chega um **email automático** em mascarenhassuplementos@gmail.com (via **FormSubmit**, gratuito,
    **ativado em 14/11**) com itens, links de compra do estoque e ficha de entrega. O cliente não vê.
@@ -101,7 +101,7 @@
 - [ ] **Amazon:** conferir os 54 produtos que faltaram (Vitaminas e Saúde, Colágeno, Acessórios).
 - [ ] **Painel com a logo nova:** abrir conversa a partir da página do Painel, anexar `painel-administrativo-logo-nova.html` e pedir para publicar.
 - [ ] Refazer catálogo em PDF e textos de WhatsApp (`catalogo/`) com os preços novos.
-- [ ] Liberar a "Área da loja" (senha 813125) no celular da loja.
+- [ ] Liberar a "Área da loja" (senha com o dono) no celular da loja.
 - [ ] Abrir o CNPJ novo e preencher `cnpj` no `CONFIG` do site (a chave Pix pode passar a ser o CNPJ).
 - [ ] Conseguir a logo em alta resolução. Decidir se a Shopify continua.
 
