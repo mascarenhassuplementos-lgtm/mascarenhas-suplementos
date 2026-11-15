@@ -737,6 +737,13 @@ const slug = c => "cat-" + c.toLowerCase().normalize("NFD").replace(/[\u0300-\u0
 
 function initials(n){ return n.replace("Creatina","").trim().split(/\s+/).slice(0,2).map(w=>w[0]).join("").toUpperCase(); }
 let ATUALIZADO = null;
+/* De onde veio o cliente: links divulgados levam ?origem=instagram, ?origem=olx, ?origem=grupo, ?origem=whatsapp...
+   A origem fica guardada no aparelho e vai junto na mensagem do pedido e no email da loja. */
+const ORIGEM = (() => { try {
+  const q = new URLSearchParams(location.search), o = q.get("origem") || q.get("utm_source");
+  if (o) localStorage.setItem("mascOrigem", o);
+  return (o || localStorage.getItem("mascOrigem") || "").replace(/[^\w\- ]/g, "").slice(0, 30);
+} catch (_) { return ""; } })();
 /* Só aparecem no site os produtos que o fornecedor (ML/Amazon) entrega hoje ou amanhã no CEP da loja.
    O campo entrega_rapida é calculado pelo atualizador de preços (tools/atualizar_precos.py). */
 const chegaRapido = p => p.disponivel !== false && (p.entrega_rapida === undefined ? p.fonte !== "amazon" : p.entrega_rapida === true);
@@ -870,6 +877,7 @@ ret ? `🏢 *RETIRADA NO LOCAL*` : `📦 *FICHA DE ENTREGA*`,
 v("ref") ? `Referência: ${v("ref")}` : null]),
 `Horário: ${v("janela")}`,
 v("obs") ? `Obs.: ${v("obs")}` : null,
+ORIGEM ? `Veio por: ${ORIGEM}` : null,
   ].filter(l => l !== null).join("\n");
 
   avisarLoja(id, ficha, fichaLink, its, total, ret);
@@ -937,7 +945,8 @@ function avisarLoja(id, f, fichaLink, its, total, ret){
     "Nome": e.n, "WhatsApp": e.w,
     ...(ret ? {} : {"Endereço": e.a, "Bairro": e.b, "Cidade": e.c, "CEP": e.cep, "Referência": e.ref || "-"}),
     "Horário": e.h, "Observações": e.o || "-",
-    "Ficha do pedido": fichaLink
+    "Ficha do pedido": fichaLink,
+    "Origem do cliente": ORIGEM || "não informada (link sem ?origem=)"
   };
   try { fetch("https://formsubmit.co/ajax/" + CONFIG.emailPedidos, {method: "POST", keepalive: true,
     headers: {"Content-Type": "application/json", "Accept": "application/json"}, body: JSON.stringify(dados)}).catch(() => {}); } catch (_) {}
