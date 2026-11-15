@@ -100,9 +100,9 @@ def oferta_do_catalogo(token, ml_id):
 
 
 def frete_e_prazo(token, item_id, cep):
-    """Devolve (custo_frete, horas_ate_chegar) para o CEP, ou (None, None)."""
+    """Devolve (custo_frete, horas_ate_chegar, dias_corridos) para o CEP, ou (None, None, None)."""
     if not cep or not item_id:
-        return None, None
+        return None, None, None
     r = http("GET", f"/items/{item_id}/shipping_options?zip_code={cep}", token)
     opcoes = (r or {}).get("options") or []
     melhor = None
@@ -116,10 +116,11 @@ def frete_e_prazo(token, item_id, cep):
         except ValueError:
             continue
         horas = max(1, math.ceil((quando - agora).total_seconds() / 3600))
+        dias = (quando.astimezone(BRT).date() - agora.date()).days
         custo = o.get("cost", o.get("list_cost"))
         if melhor is None or horas < melhor[1]:
-            melhor = (float(custo) if custo is not None else None, horas)
-    return melhor if melhor else (None, None)
+            melhor = (float(custo) if custo is not None else None, horas, dias)
+    return melhor if melhor else (None, None, None)
 
 
 def main():
@@ -147,18 +148,23 @@ def main():
         p["preco_ml"] = round(preco_ml, 2)
         p["preco"] = round(max(preco_ml * (1 + cfg["margem_sobre_ml"]), preco_ml + cfg.get("margem_minima_reais", 0)), 2)
         try:
-            frete, horas = frete_e_prazo(token, item_id, cep)
+            frete, horas, dias = frete_e_prazo(token, item_id, cep)
         except Exception as e:
-            frete, horas = None, None
+            frete, horas, dias = None, None, None
             falhas.append(f"{p['id']} (frete): {e}")
         if horas is not None:
             p["frete_ml"] = frete
             p["prazo_ml_horas"] = horas
+            p["entrega_dias"] = dias
+            p["entrega_conferida_em"] = datetime.now(BRT).isoformat(timespec="minutes")
         prazo_ml = p.get("prazo_ml_horas") or 0
         p["prazo_cliente_horas"] = prazo_ml + cfg["tempo_proprio_horas"]
-        p["disponivel"] = prazo_ml <= cfg["prazo_max_ml_horas"]
-        if not p["disponivel"]:
-            fora.append(f"{p['id']}: ML entrega em {prazo_ml}h (> {cfg['prazo_max_ml_horas']}h)")
+        p["disponivel"] = True
+        # Regra da loja: só fica no site o que chega hoje (0) ou amanhã (1) no CEP da loja.
+        dias_ok = p.get("entrega_dias")
+        p["entrega_rapida"] = dias_ok is not None and dias_ok <= cfg.get("entrega_max_dias", 1)
+        if not p["entrega_rapida"]:
+            fora.append(f"{p['id']}: ML entrega em {dias_ok} dia(s) — fora do site")
         ok += 1
 
     dados["atualizado_em"] = datetime.now(BRT).isoformat(timespec="minutes")
