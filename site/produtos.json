@@ -1,6 +1,6 @@
 {
- "atualizado_em": "2026-11-14T13:10-03:00",
- "fonte": "Conferência manual no Mercado Livre",
+ "atualizado_em": "2026-11-15T12:00-03:00",
+ "fonte": "Conferência na busca do Mercado Livre (15/11)",
  "produtos": [
   {
    "id": "growth-250",
@@ -17,7 +17,9 @@
    "amazon_preco": 39.9,
    "amazon_entrega": "16/11",
    "mais_barato": "Empate",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "growth-500p",
@@ -34,7 +36,9 @@
    "amazon_preco": 69.9,
    "amazon_entrega": "16/11",
    "mais_barato": "ML",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "soldiers-300",
@@ -44,11 +48,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_874037-MLA118277770414_102026-E.webp",
    "ml_id": "MLB32081918",
    "preco_ml": 39.9,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 43.89,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "soldiers-500",
@@ -65,7 +71,9 @@
    "amazon_preco": 44.9,
    "amazon_entrega": "16/11",
    "mais_barato": "Empate",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "soldiers-1kg",
@@ -82,7 +90,9 @@
    "amazon_preco": 68.9,
    "amazon_entrega": "16/11",
    "mais_barato": "Empate",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "darklab-300",
@@ -92,14 +102,16 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_830138-MLA116668021755_082026-E.webp",
    "ml_id": "MLB19506691",
    "preco_ml": 39.92,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 43.91,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 35.89,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "darklab-500",
@@ -116,7 +128,9 @@
    "amazon_preco": 44.89,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "darklab-1kg",
@@ -133,7 +147,9 @@
    "amazon_preco": 69.89,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "im-300",
@@ -143,14 +159,16 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_888917-MLA120800034791_112026-E.webp",
    "ml_id": "MLB6204289",
    "preco_ml": 35.79,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 39.37,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 35.8,
    "amazon_entrega": "16/11",
    "mais_barato": "Empate",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "im-1kg",
@@ -160,11 +178,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_779449-MLA100012609239_122025-E.webp",
    "ml_id": "MLB18552153",
    "preco_ml": 102.99,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 113.29,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "maxt-300",
@@ -174,14 +194,16 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_920350-MLA113966831509_062026-E.webp",
    "ml_id": "MLB6104856",
    "preco_ml": 40.1,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 44.11,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 33.37,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "bskull-300",
@@ -191,11 +213,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_901273-MLA99622932862_122025-E.webp",
    "ml_id": "MLB46235017",
    "preco_ml": 37.4,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 41.14,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "creat-true",
@@ -260,7 +284,9 @@
    "preco": 351.99,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "ml-mlb19548531",
@@ -677,7 +703,9 @@
    "amazon_preco": 74.9,
    "amazon_entrega": "16/11",
    "mais_barato": "Empate",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-soldiers-core",
@@ -687,14 +715,16 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_972299-MLA114716702965_072026-E.webp",
    "ml_id": "MLB74125006",
    "preco_ml": 78.9,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 86.79,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 68.6,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "whey-maxt-super",
@@ -704,11 +734,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_766899-MLA112393880407_052026-E.webp",
    "ml_id": "MLB19549587",
    "preco_ml": 77,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 84.7,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "whey-darklab-1kg",
@@ -718,14 +750,16 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_999968-MLA99990200369_112025-E.webp",
    "ml_id": "MLB40367709",
    "preco_ml": 149.92,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 164.91,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 136.9,
    "amazon_entrega": "16/11",
    "mais_barato": "Empate",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "whey-im-pure",
@@ -742,7 +776,9 @@
    "amazon_preco": 139.89,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-vitafor-wpc",
@@ -751,15 +787,17 @@
    "tam": "900 g · beijinho",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_965969-MLA99506477616_112025-E.webp",
    "ml_id": "MLB51868297",
-   "preco_ml": 135.15,
+   "preco_ml": 142.9,
    "prazo_ml_horas": 12,
-   "preco": 148.67,
+   "preco": 157.19,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 132.9,
    "amazon_entrega": "18/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-growth-conc",
@@ -768,12 +806,14 @@
    "tam": "1 kg · baunilha",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_824274-MLA98770399871_112025-E.webp",
    "ml_id": "MLB18953093",
-   "preco_ml": 166,
+   "preco_ml": 319,
    "prazo_ml_horas": 12,
-   "preco": 182.6,
+   "preco": 350.9,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-true-iso",
@@ -787,7 +827,9 @@
    "preco": 372.9,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-dux-conc",
@@ -796,12 +838,14 @@
    "tam": "900 g · chocolate",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_728880-MLA107260069950_032026-E.webp",
    "ml_id": "MLB23853955",
-   "preco_ml": 166.59,
+   "preco_ml": 177,
    "prazo_ml_horas": 12,
-   "preco": 183.25,
+   "preco": 194.7,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-dux-sache",
@@ -815,7 +859,9 @@
    "preco": 87.99,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-dux-conc-450",
@@ -824,12 +870,14 @@
    "tam": "450 g · chocolate branco",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_666597-MLA107124009476_022026-E.webp",
    "ml_id": "MLB33979204",
-   "preco_ml": 144.58,
+   "preco_ml": 153.9,
    "prazo_ml_horas": 12,
-   "preco": 159.04,
+   "preco": 169.29,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-dux-fresh-450",
@@ -838,12 +886,14 @@
    "tam": "450 g · chocolate e amendoim",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_824219-MLA110863132598_052026-E.webp",
    "ml_id": "MLB69936986",
-   "preco_ml": 168,
+   "preco_ml": 179.9,
    "prazo_ml_horas": 12,
-   "preco": 184.8,
+   "preco": 197.89,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-dux-iso",
@@ -852,12 +902,14 @@
    "tam": "900 g · chocolate",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_907462-MLA100849173513_122025-E.webp",
    "ml_id": "MLB21087279",
-   "preco_ml": 313.82,
+   "preco_ml": 349.9,
    "prazo_ml_horas": 12,
-   "preco": 345.2,
+   "preco": 384.89,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-dux-conc-18",
@@ -866,12 +918,14 @@
    "tam": "1,8 kg · baunilha",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_778817-MLA114107313188_082026-E.webp",
    "ml_id": "MLB15067115",
-   "preco_ml": 405,
-   "prazo_ml_horas": 12,
-   "preco": 445.5,
-   "prazo_cliente_horas": 36,
+   "preco_ml": 434.37,
+   "prazo_ml_horas": 24,
+   "preco": 477.81,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "whey-dux-iso-18",
@@ -880,12 +934,14 @@
    "tam": "1,8 kg · baunilha",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_701908-MLA99505330570_112025-E.webp",
    "ml_id": "MLB18512115",
-   "preco_ml": 648,
+   "preco_ml": 665.97,
    "prazo_ml_horas": 12,
-   "preco": 712.8,
+   "preco": 732.57,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-ftw-1kg",
@@ -899,7 +955,9 @@
    "preco": 82.45,
    "prazo_cliente_horas": 72,
    "disponivel": false,
-   "entrega_rapida": false
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-im-pure-pouch",
@@ -908,12 +966,14 @@
    "tam": "900 g · morango",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_834791-MLA99514208339_112025-E.webp",
    "ml_id": "MLB18218402",
-   "preco_ml": 151.56,
+   "preco_ml": 179.81,
    "prazo_ml_horas": 24,
-   "preco": 166.72,
+   "preco": 197.79,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "whey-mu-pacoquinha",
@@ -923,11 +983,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_617786-MLA100000347809_112025-E.webp",
    "ml_id": "MLB61058173",
    "preco_ml": 152.96,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 168.26,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "whey-vitafor-3w",
@@ -936,12 +998,14 @@
    "tam": "900 g · chocolate",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_683095-MLA116188539817_082026-E.webp",
    "ml_id": "MLB18724527",
-   "preco_ml": 181.92,
-   "prazo_ml_horas": 12,
-   "preco": 200.11,
-   "prazo_cliente_horas": 36,
+   "preco_ml": 192.06,
+   "prazo_ml_horas": 24,
+   "preco": 211.27,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "whey-adaptogen-tasty",
@@ -955,7 +1019,8 @@
    "preco": 242,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_dias": null
   },
   {
    "id": "whey-im-iso-triple",
@@ -964,12 +1029,14 @@
    "tam": "900 g · baunilha",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_645191-MLA119102284218_112026-E.webp",
    "ml_id": "MLB13088510",
-   "preco_ml": 308,
-   "prazo_ml_horas": 12,
-   "preco": 338.8,
-   "prazo_cliente_horas": 36,
+   "preco_ml": 283.15,
+   "prazo_ml_horas": 24,
+   "preco": 311.46,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "whey-growth-iso",
@@ -983,7 +1050,9 @@
    "preco": 439.89,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-true-protein",
@@ -1082,7 +1151,9 @@
    "preco": 109.89,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "whey-dux-fresh-sache6",
@@ -1096,7 +1167,9 @@
    "preco": 103.4,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "whey-dux-power-810",
@@ -1110,7 +1183,9 @@
    "preco": 243.12,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "whey-true-baunilha900",
@@ -1119,12 +1194,14 @@
    "tam": "900 g · baunilha",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_631990-MLA114253563822_082026-E.webp",
    "ml_id": "MLB51917857",
-   "preco_ml": 214,
+   "preco_ml": 205.36,
    "prazo_ml_horas": 24,
-   "preco": 235.4,
+   "preco": 225.9,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "whey-true-beef",
@@ -1133,12 +1210,14 @@
    "tam": "1,8 kg · chocolate",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_807255-MLA86033470781_062025-E.webp",
    "ml_id": "MLB51160015",
-   "preco_ml": 439.9,
+   "preco_ml": 485,
    "prazo_ml_horas": 24,
-   "preco": 483.89,
+   "preco": 533.5,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "ml-mlb19549827",
@@ -2515,7 +2594,9 @@
    "amazon_preco": 66.49,
    "amazon_entrega": "17/11",
    "mais_barato": "ML",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "pre-horus",
@@ -2524,15 +2605,17 @@
    "tam": "300 g · maçã verde",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_662388-MLA113359614120_072026-E.webp",
    "ml_id": "MLB26862831",
-   "preco_ml": 66.27,
-   "prazo_ml_horas": 12,
-   "preco": 72.9,
-   "prazo_cliente_horas": 36,
+   "preco_ml": 68.41,
+   "prazo_ml_horas": 24,
+   "preco": 75.25,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 57.19,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "pre-evora",
@@ -2541,12 +2624,14 @@
    "tam": "300 g · limão",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_953067-MLA99497155850_112025-E.webp",
    "ml_id": "MLB38659798",
-   "preco_ml": 70.08,
+   "preco_ml": 75.48,
    "prazo_ml_horas": 12,
-   "preco": 77.09,
+   "preco": 83.03,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "pre-venom",
@@ -2556,14 +2641,16 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_665577-MLA100021635731_122025-E.webp",
    "ml_id": "MLB24141780",
    "preco_ml": 99.9,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 109.89,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 99.9,
    "amazon_entrega": "16/11",
    "mais_barato": "Empate",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "pre-exquenta",
@@ -2573,11 +2660,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_818963-MLA99429360494_112025-E.webp",
    "ml_id": "MLB19708626",
    "preco_ml": 113.9,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 125.29,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "pre-bone-crusher",
@@ -2587,11 +2676,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_871436-MLA99469979612_112025-E.webp",
    "ml_id": "MLB42448337",
    "preco_ml": 49.99,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 54.99,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "pre-true-energyzer",
@@ -2600,12 +2691,14 @@
    "tam": "300 g · fruit punch",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_993555-MLA115743111634_092026-E.webp",
    "ml_id": "MLB33578177",
-   "preco_ml": 120.9,
+   "preco_ml": 122.98,
    "prazo_ml_horas": 12,
-   "preco": 132.99,
+   "preco": 135.28,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "pre-egide",
@@ -2614,12 +2707,14 @@
    "tam": "300 g · frutas vermelhas",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_648417-MLA113252966538_072026-E.webp",
    "ml_id": "MLB18996066",
-   "preco_ml": 98,
-   "prazo_ml_horas": 12,
-   "preco": 107.8,
-   "prazo_cliente_horas": 36,
+   "preco_ml": 88.2,
+   "prazo_ml_horas": 24,
+   "preco": 97.02,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "pre-panic",
@@ -2629,11 +2724,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_687869-MLA118799062691_102026-E.webp",
    "ml_id": "MLB32427969",
    "preco_ml": 74.34,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 81.77,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "pre-raze",
@@ -2647,7 +2744,9 @@
    "preco": 86.79,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "pre-beast-kaos",
@@ -2657,11 +2756,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_951975-MLA99492783886_112025-E.webp",
    "ml_id": "MLB53477620",
    "preco_ml": 62.77,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 69.05,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "pre-bope-150",
@@ -2675,7 +2776,9 @@
    "preco": 28.12,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "pre-insane-clown",
@@ -2689,7 +2792,9 @@
    "preco": 126.49,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "pre-vitafor-vfort",
@@ -2720,7 +2825,9 @@
    "preco": 81.95,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "ml-mlb18724257",
@@ -3590,14 +3697,16 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_733514-MLA99625549234_122025-E.webp",
    "ml_id": "MLB19481867",
    "preco_ml": 39.9,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 43.89,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 44.9,
    "amazon_entrega": "16/11",
    "mais_barato": "ML",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "glut-im-300",
@@ -3607,11 +3716,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_672077-MLA101182123490_122025-E.webp",
    "ml_id": "MLB23613075",
    "preco_ml": 46,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 50.6,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "glut-darklab-500",
@@ -3621,14 +3732,16 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_828636-MLA100044091017_122025-E.webp",
    "ml_id": "MLB37227814",
    "preco_ml": 59.9,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 65.89,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 59.9,
    "amazon_entrega": "16/11",
    "mais_barato": "Empate",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "glut-maxt-300",
@@ -3637,15 +3750,17 @@
    "tam": "300 g",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_679388-MLA114285583081_072026-E.webp",
    "ml_id": "MLB6099982",
-   "preco_ml": 90.19,
+   "preco_ml": 78.9,
    "prazo_ml_horas": 12,
-   "preco": 99.21,
+   "preco": 86.79,
    "prazo_cliente_horas": 36,
    "disponivel": true,
    "amazon_preco": 64.34,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "glut-soldiers-1kg",
@@ -3655,14 +3770,16 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_747003-MLA99963859397_112025-E.webp",
    "ml_id": "MLB18930516",
    "preco_ml": 110.9,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 121.99,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 105.2,
    "amazon_entrega": "16/11",
    "mais_barato": "ML",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "glut-soldiers-500",
@@ -3672,11 +3789,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_751338-MLA99524535878_122025-E.webp",
    "ml_id": "MLB18958070",
    "preco_ml": 70.81,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 77.89,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "glut-vitafor-300",
@@ -3686,11 +3805,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_656390-MLA120820399119_112026-E.webp",
    "ml_id": "MLB19548566",
    "preco_ml": 72.04,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 79.24,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "glut-nutrify-500",
@@ -3699,12 +3820,14 @@
    "tam": "500 g",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_660746-MLA99539301574_122025-E.webp",
    "ml_id": "MLB19532854",
-   "preco_ml": 76.93,
-   "prazo_ml_horas": 12,
-   "preco": 84.62,
-   "prazo_cliente_horas": 36,
+   "preco_ml": 80.22,
+   "prazo_ml_horas": 24,
+   "preco": 88.24,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "ml-mlb18958071",
@@ -4006,7 +4129,9 @@
    "preco": 184.76,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "ml-mlb19764361",
@@ -4420,15 +4545,17 @@
    "tam": "120 tabletes",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_623712-MLA99599426228_122025-E.webp",
    "ml_id": "MLB13312706",
-   "preco_ml": 40.89,
-   "prazo_ml_horas": 12,
-   "preco": 44.98,
-   "prazo_cliente_horas": 36,
+   "preco_ml": 45.9,
+   "prazo_ml_horas": 24,
+   "preco": 50.49,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
    "amazon_preco": 32.5,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "termo-fireblack",
@@ -4445,7 +4572,9 @@
    "amazon_preco": 32.48,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "termo-thermapro",
@@ -4462,7 +4591,9 @@
    "amazon_preco": 33.7,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "termo-thermaburn",
@@ -4479,7 +4610,8 @@
    "amazon_preco": 44.9,
    "amazon_entrega": "16/11",
    "mais_barato": "Empate",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_dias": null
   },
   {
    "id": "termo-hell",
@@ -4496,7 +4628,9 @@
    "amazon_preco": 53.1,
    "amazon_entrega": "16/11",
    "mais_barato": "Amazon",
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "termo-cafeina-soldiers",
@@ -4506,11 +4640,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_904771-MLA99581041994_122025-E.webp",
    "ml_id": "MLB19721765",
    "preco_ml": 35.9,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 39.49,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "termo-lipo6",
@@ -4524,7 +4660,9 @@
    "preco": 43.99,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "termo-kimera",
@@ -4534,11 +4672,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_645988-MLA99401317418_112025-E.webp",
    "ml_id": "MLB6117575",
    "preco_ml": 56.39,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 62.03,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "termo-2hot",
@@ -4552,7 +4692,9 @@
    "preco": 75.34,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "termo-212",
@@ -4562,11 +4704,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_700838-MLA111134479209_052026-E.webp",
    "ml_id": "MLB69020625",
    "preco_ml": 78.9,
-   "prazo_ml_horas": 12,
+   "prazo_ml_horas": 24,
    "preco": 86.79,
-   "prazo_cliente_horas": 36,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "termo-termoplus",
@@ -4575,12 +4719,14 @@
    "tam": "90 cápsulas",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_804374-MLA119342092919_102026-E.webp",
    "ml_id": "MLB20716072",
-   "preco_ml": 109.9,
+   "preco_ml": 109.1,
    "prazo_ml_horas": 48,
-   "preco": 120.89,
+   "preco": 120.01,
    "prazo_cliente_horas": 72,
    "disponivel": false,
-   "entrega_rapida": false
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "termo-vitafor-lipix6",
@@ -4611,7 +4757,8 @@
    "preco": 46.62,
    "prazo_cliente_horas": 48,
    "disponivel": false,
-   "entrega_rapida": false
+   "entrega_rapida": false,
+   "entrega_dias": null
   },
   {
    "id": "ml-mlb36336728",
@@ -5007,12 +5154,14 @@
    "tam": "caixa 12 un · chocolate com avelã",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_625368-MLA99492778734_112025-E.webp",
    "ml_id": "MLB19549522",
-   "preco_ml": 74.99,
+   "preco_ml": 69.13,
    "prazo_ml_horas": 12,
-   "preco": 82.49,
+   "preco": 76.04,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "barra-nutrata-grego",
@@ -5021,12 +5170,14 @@
    "tam": "caixa 12 un · doce de leite",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_801971-MLA118690648252_102026-E.webp",
    "ml_id": "MLB43292149",
-   "preco_ml": 68.8,
+   "preco_ml": 61.92,
    "prazo_ml_horas": 12,
-   "preco": 75.68,
+   "preco": 68.11,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "barra-im-crisp-trufa",
@@ -5035,12 +5186,14 @@
    "tam": "caixa 12 un · trufa de avelã",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_757662-MLA99517910371_112025-E.webp",
    "ml_id": "MLB6099973",
-   "preco_ml": 79.93,
-   "prazo_ml_horas": 12,
-   "preco": 87.92,
-   "prazo_cliente_horas": 36,
+   "preco_ml": 87.54,
+   "prazo_ml_horas": 24,
+   "preco": 96.29,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "barra-im-crisp-leite",
@@ -5049,12 +5202,14 @@
    "tam": "caixa 12 un · leite em pó c/ creme de avelã",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_923086-MLA112579809718_062026-E.webp",
    "ml_id": "MLB18563013",
-   "preco_ml": 93.2,
-   "prazo_ml_horas": 12,
-   "preco": 102.52,
-   "prazo_cliente_horas": 36,
+   "preco_ml": 92.7,
+   "prazo_ml_horas": 24,
+   "preco": 101.97,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "barra-bold-mista",
@@ -5068,7 +5223,9 @@
    "preco": 152.9,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "barra-nutrata-yopro",
@@ -5082,7 +5239,9 @@
    "preco": 82.5,
    "prazo_cliente_horas": 36,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "barra-im-crisp-cookies",
@@ -5091,12 +5250,14 @@
    "tam": "caixa 12 un · cookies and cream",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_620754-MLA99513852791_112025-E.webp",
    "ml_id": "MLB24000217",
-   "preco_ml": 98.9,
+   "preco_ml": 96.99,
    "prazo_ml_horas": 24,
-   "preco": 108.79,
+   "preco": 106.69,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "barra-im-crisp-duo",
@@ -5105,12 +5266,14 @@
    "tam": "caixa 12 un · duo crunch",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_955563-MLA99637540883_112025-E.webp",
    "ml_id": "MLB24588327",
-   "preco_ml": 86.31,
-   "prazo_ml_horas": 12,
-   "preco": 94.94,
-   "prazo_cliente_horas": 36,
+   "preco_ml": 86.94,
+   "prazo_ml_horas": 24,
+   "preco": 95.63,
+   "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "barra-nutrata-choc",
@@ -5120,11 +5283,13 @@
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_806740-MLA99938937791_112025-E.webp",
    "ml_id": "MLB28747012",
    "preco_ml": 89.91,
-   "prazo_ml_horas": 48,
+   "prazo_ml_horas": 24,
    "preco": 98.9,
-   "prazo_cliente_horas": 72,
+   "prazo_cliente_horas": 48,
    "disponivel": false,
-   "entrega_rapida": false
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "barra-bold-pistache",
@@ -5138,7 +5303,9 @@
    "preco": 130.57,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "ml-mlb18709245",
@@ -5980,7 +6147,9 @@
    "preco": 32.89,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "vitd-nutren-2000",
@@ -5994,7 +6163,9 @@
    "preco": 46.67,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "vitd-growth-ultra",
@@ -6003,12 +6174,14 @@
    "tam": "120 cápsulas",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_700082-MLA111894430024_062026-E.webp",
    "ml_id": "MLB73071892",
-   "preco_ml": 46.49,
+   "preco_ml": 46.9,
    "prazo_ml_horas": 24,
-   "preco": 51.14,
+   "preco": 51.59,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "vitd-nutrify-d3",
@@ -6017,12 +6190,14 @@
    "tam": "120 cápsulas",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_907138-MLA114453361069_072026-E.webp",
    "ml_id": "MLB25683624",
-   "preco_ml": 45,
+   "preco_ml": 47.97,
    "prazo_ml_horas": 24,
-   "preco": 49.5,
+   "preco": 52.77,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "vitd-true-liquida",
@@ -6031,12 +6206,14 @@
    "tam": "30 ml · framboesa",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_953623-MLA114323325724_082026-E.webp",
    "ml_id": "MLB19708078",
-   "preco_ml": 50.38,
+   "preco_ml": 57.88,
    "prazo_ml_horas": 24,
-   "preco": 55.42,
+   "preco": 63.67,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "vitd-vhita-k2",
@@ -6050,7 +6227,9 @@
    "preco": 58.4,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "vit-omega-vitafor",
@@ -6265,12 +6444,14 @@
    "amazon_asin": "B0C4CCZFBL",
    "ml_id": "MLB35238590",
    "amazon_preco": 136.27,
-   "preco_ml": 161,
+   "preco_ml": 152,
    "prazo_ml_horas": 24,
-   "preco": 177.1,
+   "preco": 167.2,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "vit-vitafor-q10",
@@ -6386,7 +6567,9 @@
    "preco": 73.59,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "vit-dux-mag3",
@@ -6395,12 +6578,14 @@
    "tam": "90 cápsulas",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_863596-MLA99595331156_122025-E.webp",
    "ml_id": "MLB47329471",
-   "preco_ml": 74.16,
+   "preco_ml": 78.9,
    "prazo_ml_horas": 24,
-   "preco": 81.58,
+   "preco": 86.79,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "vit-true-vitc-lipo",
@@ -6409,12 +6594,14 @@
    "tam": "60 cápsulas",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_650819-MLA119800419077_102026-E.webp",
    "ml_id": "MLB26182136",
-   "preco_ml": 62.99,
+   "preco_ml": 64.06,
    "prazo_ml_horas": 24,
-   "preco": 69.29,
+   "preco": 70.47,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "vit-true-b12",
@@ -6423,12 +6610,14 @@
    "tam": "30 ml · morango",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_771967-MLA114070514670_072026-E.webp",
    "ml_id": "MLB49296469",
-   "preco_ml": 35.09,
+   "preco_ml": 35,
    "prazo_ml_horas": 24,
-   "preco": 38.6,
+   "preco": 38.5,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "vit-true-curcuma-omega",
@@ -6437,12 +6626,14 @@
    "tam": "120 cápsulas",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_859862-MLA111910125227_052026-E.webp",
    "ml_id": "MLB38654554",
-   "preco_ml": 125.99,
+   "preco_ml": 128,
    "prazo_ml_horas": 24,
-   "preco": 138.59,
+   "preco": 140.8,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "vit-true-metilfolato",
@@ -6451,12 +6642,14 @@
    "tam": "90 cápsulas",
    "img": "https://http2.mlstatic.com/D_Q_NP_2X_805754-MLA111187071132_052026-E.webp",
    "ml_id": "MLB35968074",
-   "preco_ml": 58.7,
+   "preco_ml": 59.9,
    "prazo_ml_horas": 24,
-   "preco": 64.57,
+   "preco": 65.89,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "ml-mlb12630467",
@@ -7690,7 +7883,9 @@
    "preco": 21.77,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "strap-fortwazz-azul",
@@ -7704,7 +7899,9 @@
    "preco": 21.13,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "strap-strongfist-rosa",
@@ -7718,7 +7915,9 @@
    "preco": 19.8,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "strap-strongfist-2pares",
@@ -7732,7 +7931,9 @@
    "preco": 31.23,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": false,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": null
   },
   {
    "id": "strap-fortwazz-zz60",
@@ -7746,7 +7947,9 @@
    "preco": 40.59,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "strap-bulldozer",
@@ -7760,7 +7963,9 @@
    "preco": 59.29,
    "prazo_cliente_horas": 48,
    "disponivel": true,
-   "entrega_rapida": true
+   "entrega_rapida": true,
+   "entrega_conferida_em": "2026-11-15T12:00-03:00",
+   "entrega_dias": 1
   },
   {
    "id": "ml-mlb40118261",
@@ -8340,5 +8545,5 @@
    "entrega_rapida": false
   }
  ],
- "regra_entrega": "No site só aparecem produtos que o fornecedor entrega hoje ou amanhã no CEP 41771080 (campo entrega_rapida). Amazon conferida em 14/11/2026 23h: nenhum produto chega antes de 23/11. Em 15/11/2026: +50 produtos do ML com entrega amanhã (conferidos na busca do ML)."
+ "regra_entrega": "No site só aparecem produtos que o fornecedor entrega hoje ou amanhã no CEP 41771080 (campo entrega_rapida). ML conferido em 15/11/2026 pela busca: só ficam os que mostram \"chega amanhã\". Amazon conferida em 14/11: nenhum chega antes de 23/11."
 }
