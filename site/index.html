@@ -331,6 +331,7 @@ footer a{text-decoration:none}
 const CONFIG = {
   nomeLoja: "Mascarenhas Suplementos",
   whatsapp: "5571997044675",     // WhatsApp de atendimento (71) 99704-4675
+  infinitepayHandle: "",          // InfiniteTag da InfinitePay, sem o $ — preenchido liga o link de cartão automático
   chavePix: "+5571997044675",    // chave Pix (celular) usada no QR Code e no copia e cola
   chavePixExibir: "(71) 99704-4675",
   pixNome: "Mascarenhas Suplementos", // nome que aparece no Pix (até 25 letras)
@@ -945,6 +946,22 @@ $("cep").addEventListener("input", async e => {
   } catch(_) {}
 });
 
+/* Cartão: com a InfiniteTag configurada, o site gera o link de pagamento na hora (InfinitePay Checkout).
+   Sem a tag, continua como antes: a loja manda o link pelo WhatsApp. */
+if (CONFIG.infinitepayHandle) {
+  const opt = document.querySelector('#pag option[value^="Cartão"]');
+  if (opt) opt.textContent = "Cartão de crédito (link na hora, até 12x)";
+}
+function linkCartao(id, its, frete, ret, ssa, nome, tel) {
+  const items = its.map(i => ({quantity: i.q, price: Math.round(i.preco * 100), description: `${i.nome} ${i.tam}`.slice(0, 100)}));
+  if (!ret && ssa && frete > 0) items.push({quantity: 1, price: Math.round(frete * 100), description: "Entrega em Salvador"});
+  const fone = tel.replace(/\D/g, "").replace(/^55(?=\d{10,11}$)/, "");
+  const corpo = {handle: CONFIG.infinitepayHandle, items, order_nsu: id, customer: {name: nome, phone_number: "+55" + fone}};
+  return fetch("https://api.checkout.infinitepay.io/links", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(corpo)})
+    .then(r => r.json())
+    .then(d => { const u = d.url || d.link || d.checkout_url || (d.data && (d.data.url || d.data.link)); if (!u) throw new Error(JSON.stringify(d).slice(0, 200)); return u; });
+}
+
 function pedidoId(){
   const d = new Date(), p = n => String(n).padStart(2,"0");
   return `MS-${d.getFullYear()%100}${p(d.getMonth()+1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}-${Math.floor(Math.random()*90+10)}`;
@@ -1000,6 +1017,44 @@ ORIGEM ? `Veio por: ${ORIGEM}` : null,
   const waLink = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
   const pix = v("pag") === "Pix" && CONFIG.chavePix;
   cart = {}; save(); $("count").textContent = 0;
+
+  if (!pix && CONFIG.infinitepayHandle && v("pag").startsWith("Cartão")) {
+    const nomeC = v("nome"), telC = v("tel");   /* ler antes de trocar o painel (o formulário some) */
+    $("panelTitle").textContent = "Pagamento no cartão";
+    $("panelBody").innerHTML = `
+    <div class="pixpay">
+      <div class="mono">Pedido ${id}</div>
+      <div class="pixval"><span>R$</span>${brl(total).replace(/^R\$\s?/, "")}</div>
+      <p class="pixtip" id="cartaoStatus">Gerando o seu link de pagamento seguro…</p>
+    </div>`;
+    linkCartao(id, its, frete, ret, ssa, nomeC, telC).then(url => {
+      const waC = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg + "\n💳 Link de pagamento (cartão): " + url)}`;
+      $("panelBody").innerHTML = `
+      <div class="pixpay">
+        <div class="mono">Pedido ${id}</div>
+        <div class="pixval"><span>R$</span>${brl(total).replace(/^R\$\s?/, "")}</div>
+        <p class="pixtip">Pague no cartão de crédito em uma página segura da InfinitePay. A ${ret ? "separação" : "entrega em até " + prazoTxt(prazoPedido)} começa assim que o pagamento for aprovado.</p>
+        <h4>1 · Pagar</h4>
+        <a class="send" href="${url}" target="_blank" rel="noopener" id="pagarCartao">Pagar no cartão</a>
+        <p class="note">Abre em outra aba. Parcelamento disponível na página de pagamento.</p>
+        <h4>2 · Já pagou?</h4>
+        <a class="send pixok" href="${waC}" target="_blank" rel="noopener" id="jaPaguei">Já paguei · enviar pedido pelo WhatsApp</a>
+        <p class="note">Pedidos sem pagamento aprovado não são separados.</p>
+      </div>`;
+      $("jaPaguei").addEventListener("click", () => { $("jaPaguei").textContent = "Pedido enviado ✓"; });
+    }).catch(() => {
+      window.open(waLink, "_blank");
+      $("panelTitle").textContent = "Pedido enviado";
+      $("panelBody").innerHTML = `
+      <div class="done">
+        <h3>Pedido ${id}</h3>
+        <p>Se o WhatsApp não abriu, <a href="${waLink}" target="_blank" rel="noopener">toque aqui</a>.</p>
+        <p>Total: <strong>${brl(total)}</strong></p>
+        <p>Vamos te enviar o link de pagamento do cartão no WhatsApp.</p>
+      </div>`;
+    });
+    return;
+  }
 
   if (!pix) {
     window.open(waLink, "_blank");
