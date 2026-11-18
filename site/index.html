@@ -332,7 +332,7 @@ const CONFIG = {
   nomeLoja: "Mascarenhas Suplementos",
   whatsapp: "5571997044675",     // WhatsApp de atendimento (71) 99704-4675
   infinitepayHandle: "rafael-oliveira-m3o",
-  taxaCartao: 5.81,               // % cobrado do cliente no cartão. Taxa InfinitePay (Receba na Hora, link) no crédito à vista = 5,49%; 5,81% = 1/(1-0,0549)-1, para a loja receber o valor cheio          // InfiniteTag da InfinitePay, sem o $ — preenchido liga o link de cartão automático
+  taxaCartao: 0,                  // % somado pelo SITE no cartão. Fica 0: o app InfinitePay já repassa a taxa ao cliente (R$ 100 → R$ 104,39 em 1x, conferido em 18/11)          // InfiniteTag da InfinitePay, sem o $ — preenchido liga o link de cartão automático
   chavePix: "+5571997044675",    // chave Pix (celular) usada no QR Code e no copia e cola
   chavePixExibir: "(71) 99704-4675",
   pixNome: "Mascarenhas Suplementos", // nome que aparece no Pix (até 25 letras)
@@ -1038,7 +1038,7 @@ ORIGEM ? `Veio por: ${ORIGEM}` : null,
       <div class="pixpay">
         <div class="mono">Pedido ${id}</div>
         <div class="pixval"><span>R$</span>${brl(totalC).replace(/^R\$\s?/, "")}</div>
-        ${taxaC > 0 ? `<p class="note">Inclui a taxa do cartão de ${String(CONFIG.taxaCartao).replace(".", ",")}% (${brl(taxaC)}). Total no cartão: <b>${brl(totalC)}</b>. No Pix não tem taxa.</p>` : ""}
+        ${taxaC > 0 ? `<p class="note">Inclui a taxa do cartão de ${String(CONFIG.taxaCartao).replace(".", ",")}% (${brl(taxaC)}). Total no cartão: <b>${brl(totalC)}</b>. No Pix não tem taxa.</p>` : `<p class="note">A taxa do cartão é somada na página de pagamento da InfinitePay (à vista ou parcelado). No Pix não tem taxa.</p>`}
         <p class="pixtip">Pague no cartão de crédito em uma página segura da InfinitePay. A ${ret ? "separação" : "entrega em até " + prazoTxt(prazoPedido)} começa assim que o pagamento for aprovado.</p>
         <h4>1 · Pagar</h4>
         <a class="send" href="${url}" target="_blank" rel="noopener" id="pagarCartao">Pagar no cartão</a>
