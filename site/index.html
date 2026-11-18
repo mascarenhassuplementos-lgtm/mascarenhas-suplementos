@@ -331,7 +331,8 @@ footer a{text-decoration:none}
 const CONFIG = {
   nomeLoja: "Mascarenhas Suplementos",
   whatsapp: "5571997044675",     // WhatsApp de atendimento (71) 99704-4675
-  infinitepayHandle: "rafael-oliveira-m3o",          // InfiniteTag da InfinitePay, sem o $ — preenchido liga o link de cartão automático
+  infinitepayHandle: "rafael-oliveira-m3o",
+  taxaCartao: 0,                  // % cobrado do cliente no cartão (taxa da InfinitePay no crédito à vista). Ex.: 4.2 = 4,2%          // InfiniteTag da InfinitePay, sem o $ — preenchido liga o link de cartão automático
   chavePix: "+5571997044675",    // chave Pix (celular) usada no QR Code e no copia e cola
   chavePixExibir: "(71) 99704-4675",
   pixNome: "Mascarenhas Suplementos", // nome que aparece no Pix (até 25 letras)
@@ -952,9 +953,12 @@ if (CONFIG.infinitepayHandle) {
   const opt = document.querySelector('#pag option[value^="Cartão"]');
   if (opt) opt.textContent = "Cartão de crédito (link na hora, até 12x)";
 }
+const taxaCartaoValor = base => CONFIG.taxaCartao > 0 ? Math.round(base * CONFIG.taxaCartao) / 100 : 0;
 function linkCartao(id, its, frete, ret, ssa, nome, tel) {
   const items = its.map(i => ({quantity: i.q, price: Math.round(i.preco * 100), description: `${i.nome} ${i.tam}`.slice(0, 100)}));
   if (!ret && ssa && frete > 0) items.push({quantity: 1, price: Math.round(frete * 100), description: "Entrega em Salvador"});
+  const taxa = taxaCartaoValor(items.reduce((s, i) => s + i.price * i.quantity, 0) / 100);
+  if (taxa > 0) items.push({quantity: 1, price: Math.round(taxa * 100), description: `Taxa do cartão (${String(CONFIG.taxaCartao).replace(".", ",")}%)`});
   const fone = tel.replace(/\D/g, "").replace(/^55(?=\d{10,11}$)/, "");
   const corpo = {handle: CONFIG.infinitepayHandle, items, order_nsu: id, customer: {name: nome, phone_number: "+55" + fone}};
   return fetch("https://api.checkout.infinitepay.io/links", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(corpo)})
@@ -1028,11 +1032,13 @@ ORIGEM ? `Veio por: ${ORIGEM}` : null,
       <p class="pixtip" id="cartaoStatus">Gerando o seu link de pagamento seguro…</p>
     </div>`;
     linkCartao(id, its, frete, ret, ssa, nomeC, telC).then(url => {
-      const waC = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg + "\n💳 Link de pagamento (cartão): " + url)}`;
+      const taxaC = taxaCartaoValor(total), totalC = total + taxaC;
+      const waC = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg + (taxaC > 0 ? `\nTaxa do cartão: ${brl(taxaC)} · *Total no cartão: ${brl(totalC)}*` : "") + "\n💳 Link de pagamento (cartão): " + url)}`;
       $("panelBody").innerHTML = `
       <div class="pixpay">
         <div class="mono">Pedido ${id}</div>
         <div class="pixval"><span>R$</span>${brl(total).replace(/^R\$\s?/, "")}</div>
+        ${taxaC > 0 ? `<p class="note">Inclui a taxa do cartão de ${String(CONFIG.taxaCartao).replace(".", ",")}% (${brl(taxaC)}). Total no cartão: <b>${brl(totalC)}</b>. No Pix não tem taxa.</p>` : ""}
         <p class="pixtip">Pague no cartão de crédito em uma página segura da InfinitePay. A ${ret ? "separação" : "entrega em até " + prazoTxt(prazoPedido)} começa assim que o pagamento for aprovado.</p>
         <h4>1 · Pagar</h4>
         <a class="send" href="${url}" target="_blank" rel="noopener" id="pagarCartao">Pagar no cartão</a>
