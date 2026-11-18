@@ -190,7 +190,7 @@ footer a{text-decoration:none}
 .vazio a{font-weight:700}
 .thumb{position:relative}
 .tag48{position:absolute;left:10px;top:10px;background:var(--ink);color:var(--accent);font:600 11px var(--f-sans);letter-spacing:.04em;padding:4px 9px;border-radius:999px;border:1px solid rgba(245,184,0,.5)}
-.tag48.lento{color:#C9CDD2;border-color:rgba(201,205,210,.6)}
+.tag48.lento{color:#C9CDD2;border-color:rgba(201,205,210,.6)}.tag48.pronta{background:var(--accent);color:var(--ink);border-color:var(--accent);font-weight:700}
 .meta{font:14px/1.45 var(--f-sans);letter-spacing:0;text-transform:none;color:#b8b8b8}
 @media (max-width:820px){
   .hero{padding:28px 0 26px}
@@ -838,16 +838,16 @@ const prazoDe = p => p.prazo_cliente_horas || CONFIG.prazoHoras;
 const tagPrazo = h => h <= CONFIG.prazoHoras ? `Chega em ${CONFIG.prazoHoras}h` : `Chega em ${Math.ceil(h/24)} dias`;
 const card = p => `
   <article class="card${p.disponivel === false ? " off" : ""}">
-    <div class="thumb">${p.disponivel === false ? "" : `<span class="tag48${prazoDe(p) > CONFIG.prazoHoras ? " lento" : ""}">${tagPrazo(prazoDe(p))}</span>`}${p.img ? `<img src="${p.img}" alt="${p.nome} ${p.tam}" loading="lazy" onerror="this.replaceWith(document.createTextNode('${initials(p.nome)}'))">` : initials(p.nome)}</div>
+    <div class="thumb">${p.disponivel === false ? "" : `${p.pronta_entrega ? `<span class="tag48 pronta">Pronta entrega</span>` : `<span class="tag48${prazoDe(p) > CONFIG.prazoHoras ? " lento" : ""}">${tagPrazo(prazoDe(p))}</span>`}`}${p.img ? `<img src="${p.img}" alt="${p.nome} ${p.tam}" loading="lazy" onerror="this.replaceWith(document.createTextNode('${initials(p.nome)}'))">` : initials(p.nome)}</div>
     <h3>${p.nome}</h3>
-    <div class="meta">${p.tam}${p.disponivel === false ? " · indisponível no momento" : ""}</div>
+    <div class="meta">${p.tam}${p.pronta_entrega && p.estoque ? (p.estoque === 1 ? " · última unidade" : ` · ${p.estoque} em estoque`) : ""}${p.disponivel === false ? " · indisponível no momento" : ""}</div>
     <div class="buy"><div class="price">${brl(p.preco).replace(/^R\$\s?/, "<span>R$</span>")}</div>
     <button class="add" data-id="${p.id}"${p.disponivel === false ? " disabled" : ""}>${p.disponivel === false ? "Indisponível" : "+ Adicionar"}</button></div>
   </article>`;
 const AVISO_CAFEINA = "⚠️ Contém cafeína. Não recomendado para gestantes, lactantes, menores de 18 anos e pessoas com problemas cardíacos ou hipertensão. Consulte um profissional de saúde.";
 const AVISOS = {"Pré-treino": AVISO_CAFEINA, "Termogênico": AVISO_CAFEINA + " Termogênicos não substituem dieta e exercícios."};
 /* Produtos em destaque ("Mais procurados"): ids do produtos.json. Os que saírem do site são ignorados. */
-const DESTAQUES = ["im-300","bskull-300","maxt-300","whey-maxt-super","ml-mlb6087972","pre-bone-crusher","glut-darklab-300","ml-mlb19451619"];
+const DESTAQUES = ["pe-mass-titanium-3kg-morango","pe-cromo-nutrata-120","pe-hepatofor-60","im-300","bskull-300","maxt-300","whey-maxt-super","ml-mlb6087972","pre-bone-crusher","glut-darklab-300","ml-mlb19451619"];
 const norm = t => String(t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
 let BUSCA = "";
 function renderGrid(){
