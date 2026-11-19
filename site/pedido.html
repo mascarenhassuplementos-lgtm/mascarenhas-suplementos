@@ -86,6 +86,7 @@ async function montar(){
   const its = d.i.map(([id, q, preco, nome]) => ({...(by[id] || {}), id, q, precoPedido: preco, nomePedido: nome}));
   document.body.classList.toggle("on", dono);
   const e = d.e || {};
+  const fr = d.fr && typeof d.fr === "object" ? d.fr : null;
   const custoTotal = its.reduce((s,i) => s + (custo(i) || 0) * i.q, 0);
   $("app").innerHTML = `
     <div class="mono" style="margin-top:28px">${esc(d.d)}</div>
@@ -102,8 +103,10 @@ async function montar(){
       </div>`; }).join("")}</div>
     <div class="box tot" style="margin-top:14px">
       <div><span>Produtos</span><span>${brl(d.s)}</span></div>
-      <div><span>${d.r ? "Retirada no local" : "Entrega"}</span><span>${d.f === null ? "A combinar" : d.f ? brl(d.f) : "Grátis"}</span></div>
+      ${fr ? `<div><span>Frete ${esc(fr.n)} (${esc(fr.e)}) — chega em até ${Number(fr.d)} dias úteis</span><span>${brl(fr.p)}</span></div>`
+        : `<div><span>${d.r ? "Retirada no local" : "Entrega"}</span><span>${d.f === null ? "A combinar" : d.f ? brl(d.f) : "Grátis"}</span></div>`}
       <div class="big"><span>Total</span><span>${brl(d.t)}</span></div>
+      ${fr ? `<div class="dono" style="margin-top:12px">Etiqueta: peso <b>${Number(fr.peso).toLocaleString("pt-BR")} kg</b> · caixa <b>${fr.caixa ? `${Number(fr.caixa.a)}×${Number(fr.caixa.l)}×${Number(fr.caixa.c)} cm` : "—"}</b> · CEP destino <b>${esc(e.cep)}</b> · valor declarado <b>${brl(d.s)}</b></div>` : ""}
       <div class="dono" style="margin-top:12px">Custo estimado dos itens: <b>${brl(custoTotal)}</b> · margem estimada: <b>${brl(d.s - custoTotal)}</b></div>
     </div>
     <h2>${d.r ? "Dados para retirada" : "Ficha de entrega"}</h2>
