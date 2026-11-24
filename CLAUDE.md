@@ -107,6 +107,10 @@
 
 ## Histórico
 
+- **24/11/2026** — Funil de vendas com **Lista VIP** (lista de transmissão do WhatsApp). Primeira Oferta da Semana para 30/11
+  em `catalogo/lista-vip/`. Faixa "Entrar na Lista VIP" no site (`#lista-vip`, depois dos produtos) e atalho no topo;
+  a mensagem leva a origem do cliente (`?origem=`). Atenção: a maioria dos produtos do site tem prazo de até 4 dias, não 48h.
+
 - **14/11/2026 (19h20)** — Conferidos mais 113 produtos da Amazon: 50 preços mudaram, 5 produtos fora do ar; faltam 54 (CAPTCHA).
 
 - **14/11/2026 (19h05)** — **Site novo publicado** no endereço principal (visual Ouro Estrutural, Pix antecipado, ficha do pedido, email automático); página de teste `index-novo.html` apagada.

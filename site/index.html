@@ -211,6 +211,18 @@ footer a{text-decoration:none}
   .tag48{font-size:10px;padding:3px 7px;left:6px;top:6px}
 }
 /* bloco de SEO: texto da loja e perguntas frequentes */
+.vip{position:relative;z-index:1;border-top:1px solid var(--line);background:linear-gradient(180deg,var(--ink),#120e02)}
+.vip .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:56px}
+.vip h2{font:400 clamp(34px,5vw,56px)/1 var(--f-display);text-transform:uppercase;letter-spacing:.02em;margin:10px 0 14px}
+.vip h2 .gd{background:linear-gradient(180deg,#ffd24a,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.vip p{color:var(--muted);margin:0;font-size:16px;max-width:560px}
+.vip ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px;font-size:15px}
+.vip li b{color:var(--accent);margin-right:8px}
+.vip-cta{text-align:center}
+.vip-cta .btn{width:100%;max-width:380px}
+.vip-cta small{display:block;margin-top:12px;color:var(--muted);font-size:13px}
+.vip-mini{display:inline-block;margin-top:18px;color:var(--accent);font-size:14px;text-decoration:none;border-bottom:1px dashed var(--accent)}
+@media (max-width:820px){.vip .wrap{grid-template-columns:1fr;gap:24px;padding-top:44px;padding-bottom:44px}}
 .sobre{border-top:1px solid var(--line);padding:56px 0 48px}
 .sobre h2{font:400 clamp(30px,4vw,42px)/1.05 var(--f-display);text-transform:uppercase;letter-spacing:.02em;margin:0 0 20px}
 .sobre-txt{max-width:820px;color:var(--silver);font-size:16px}
@@ -243,6 +255,7 @@ footer a{text-decoration:none}
     <h1><span class="kick">Loja de suplementos em Salvador · Bahia</span>Suplementos<br>originais<br><span class="gd">entrega rápida</span></h1>
     <p class="lead">Escolha, mande o pedido pelo WhatsApp e receba em casa. Ou retire grátis no Aquarius.</p>
     <div class="ctas"><a class="btn btn-gold" href="#produtos">Ver produtos</a><a class="btn btn-line" id="ctaWhats" href="#" target="_blank" rel="noopener">Pedir no WhatsApp</a></div>
+    <a class="vip-mini" href="#lista-vip">⭐ Receba as ofertas da semana no WhatsApp</a>
     <ul class="selos" aria-label="Por que comprar aqui"><li><b>✔</b> Original e lacrado</li><li><b>🚚</b> Prazo de entrega em cada produto</li><li><b>🏠</b> Retirada grátis</li><li><b>📦</b> Enviamos para todo o Brasil</li><li><b>⚡</b> Pix</li><li><b>💬</b> Atendimento no WhatsApp</li></ul>
     <svg class="regua" viewBox="0 -2 1200 60" aria-hidden="true"><line x1="0" y1="0" x2="0" y2="26" stroke="#f5b800" stroke-width="1.5"/><line x1="25" y1="14" x2="25" y2="26" stroke="#555" stroke-width="1"/><line x1="50" y1="14" x2="50" y2="26" stroke="#555" stroke-width="1"/><line x1="75" y1="14" x2="75" y2="26" stroke="#555" stroke-width="1"/><line x1="100" y1="14" x2="100" y2="26" stroke="#555" stroke-width="1"/><line x1="125" y1="14" x2="125" y2="26" stroke="#555" stroke-width="1"/><line x1="150" y1="8" x2="150" y2="26" stroke="#555" stroke-width="1"/><line x1="175" y1="14" x2="175" y2="26" stroke="#555" stroke-width="1"/><line x1="200" y1="14" x2="200" y2="26" stroke="#555" stroke-width="1"/><line x1="225" y1="14" x2="225" y2="26" stroke="#555" stroke-width="1"/><line x1="250" y1="14" x2="250" y2="26" stroke="#555" stroke-width="1"/><line x1="275" y1="14" x2="275" y2="26" stroke="#555" stroke-width="1"/><line x1="300" y1="0" x2="300" y2="26" stroke="#f5b800" stroke-width="1.5"/><line x1="325" y1="14" x2="325" y2="26" stroke="#555" stroke-width="1"/><line x1="350" y1="14" x2="350" y2="26" stroke="#555" stroke-width="1"/><line x1="375" y1="14" x2="375" y2="26" stroke="#555" stroke-width="1"/><line x1="400" y1="14" x2="400" y2="26" stroke="#555" stroke-width="1"/><line x1="425" y1="14" x2="425" y2="26" stroke="#555" stroke-width="1"/><line x1="450" y1="8" x2="450" y2="26" stroke="#555" stroke-width="1"/><line x1="475" y1="14" x2="475" y2="26" stroke="#555" stroke-width="1"/><line x1="500" y1="14" x2="500" y2="26" stroke="#555" stroke-width="1"/><line x1="525" y1="14" x2="525" y2="26" stroke="#555" stroke-width="1"/><line x1="550" y1="14" x2="550" y2="26" stroke="#555" stroke-width="1"/><line x1="575" y1="14" x2="575" y2="26" stroke="#555" stroke-width="1"/><line x1="600" y1="0" x2="600" y2="26" stroke="#f5b800" stroke-width="1.5"/><line x1="625" y1="14" x2="625" y2="26" stroke="#555" stroke-width="1"/><line x1="650" y1="14" x2="650" y2="26" stroke="#555" stroke-width="1"/><line x1="675" y1="14" x2="675" y2="26" stroke="#555" stroke-width="1"/><line x1="700" y1="14" x2="700" y2="26" stroke="#555" stroke-width="1"/><line x1="725" y1="14" x2="725" y2="26" stroke="#555" stroke-width="1"/><line x1="750" y1="8" x2="750" y2="26" stroke="#555" stroke-width="1"/><line x1="775" y1="14" x2="775" y2="26" stroke="#555" stroke-width="1"/><line x1="800" y1="14" x2="800" y2="26" stroke="#555" stroke-width="1"/><line x1="825" y1="14" x2="825" y2="26" stroke="#555" stroke-width="1"/><line x1="850" y1="14" x2="850" y2="26" stroke="#555" stroke-width="1"/><line x1="875" y1="14" x2="875" y2="26" stroke="#555" stroke-width="1"/><line x1="900" y1="0" x2="900" y2="26" stroke="#f5b800" stroke-width="1.5"/><line x1="925" y1="14" x2="925" y2="26" stroke="#555" stroke-width="1"/><line x1="950" y1="14" x2="950" y2="26" stroke="#555" stroke-width="1"/><line x1="975" y1="14" x2="975" y2="26" stroke="#555" stroke-width="1"/><line x1="1000" y1="14" x2="1000" y2="26" stroke="#555" stroke-width="1"/><line x1="1025" y1="14" x2="1025" y2="26" stroke="#555" stroke-width="1"/><line x1="1050" y1="8" x2="1050" y2="26" stroke="#555" stroke-width="1"/><line x1="1075" y1="14" x2="1075" y2="26" stroke="#555" stroke-width="1"/><line x1="1100" y1="14" x2="1100" y2="26" stroke="#555" stroke-width="1"/><line x1="1125" y1="14" x2="1125" y2="26" stroke="#555" stroke-width="1"/><line x1="1150" y1="14" x2="1150" y2="26" stroke="#555" stroke-width="1"/><line x1="1175" y1="14" x2="1175" y2="26" stroke="#555" stroke-width="1"/><line x1="1200" y1="0" x2="1200" y2="26" stroke="#f5b800" stroke-width="1.5"/><text x="0" y="50">PEDIDO</text><text class="mid" x="300" y="50" text-anchor="middle">PIX</text><text class="mid" x="600" y="50" text-anchor="middle">SEPARAÇÃO</text><text class="mid" x="900" y="50" text-anchor="middle">A CAMINHO</text><text class="g" x="1200" y="50" text-anchor="end">NA SUA PORTA · PRAZO EM CADA PRODUTO</text></svg>
   </div></section>
@@ -261,6 +274,19 @@ footer a{text-decoration:none}
   </div></div>
   <div class="wrap"><section class="grid" id="grid" aria-label="Produtos"></section></div>
 </main>
+
+<section class="vip" id="lista-vip" aria-labelledby="vipTit"><div class="wrap">
+  <div>
+    <span class="kick">Lista VIP · grátis</span>
+    <h2 id="vipTit">Ofertas da semana<br><span class="gd">no seu WhatsApp</span></h2>
+    <p>Toda segunda, os melhores preços da semana direto no seu celular, antes de todo mundo.</p>
+    <ul><li><b>🔥</b>Oferta da Semana com preço e link para pedir</li><li><b>⚡</b>Aviso quando chega produto de pronta entrega</li><li><b>🤝</b>No máximo 3 mensagens por semana. Sair é só pedir.</li></ul>
+  </div>
+  <div class="vip-cta">
+    <a class="btn btn-gold" id="ctaVip" href="#" target="_blank" rel="noopener">Entrar na Lista VIP</a>
+    <small>Abre o WhatsApp com a mensagem pronta. É só enviar.<br><b style="color:var(--text)">Salve o número (71) 99704-4675</b> para receber as ofertas.</small>
+  </div>
+</div></section>
 
 <section class="sobre" aria-labelledby="sobreTit"><div class="wrap">
   <h2 id="sobreTit">Loja de suplementos em Salvador</h2>
@@ -835,6 +861,7 @@ const ORIGEM = (() => { try {
   if (o) localStorage.setItem("mascOrigem", o);
   return (o || localStorage.getItem("mascOrigem") || "").replace(/[^\w\- ]/g, "").slice(0, 30);
 } catch (_) { return ""; } })();
+$("ctaVip").href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Quero entrar na Lista VIP Mascarenhas! ⭐" + (ORIGEM ? ` (vim por: ${ORIGEM})` : ""))}`;
 /* Só aparecem no site os produtos que o fornecedor (ML/Amazon) entrega hoje ou amanhã no CEP da loja.
    O campo entrega_rapida é calculado pelo atualizador de preços (tools/atualizar_precos.py). */
 const chegaRapido = p => p.disponivel !== false && (p.entrega_rapida === undefined ? p.fonte !== "amazon" : p.entrega_rapida === true);
