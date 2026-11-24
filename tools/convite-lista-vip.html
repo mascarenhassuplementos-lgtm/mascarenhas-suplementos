@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Convite Lista VIP</title>
+<style>
+:root{--bg:#070707;--surface:#111;--surface-2:#181818;--text:#f2efe8;--muted:#9a9a9a;--accent:#f5b800;--line:#2c2c2c;--ok:#5bd18b;--danger:#ff7a7a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:26px;margin:0 0 4px;text-transform:uppercase;letter-spacing:.02em}
+h1 span{color:var(--accent)}
+h2{font-size:17px;margin:28px 0 10px;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+p.sub{color:var(--muted);margin:0 0 18px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.regras{margin:0;padding-left:20px;color:var(--muted);font-size:14px}
+.regras b{color:var(--text)}
+label{display:block;font-size:14px;color:var(--muted);margin:12px 0 6px}
+input[type=number],textarea{width:100%;background:var(--surface-2);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit}
+textarea{min-height:110px;resize:vertical}
+.btn{display:inline-block;border:0;border-radius:999px;padding:13px 22px;font:700 15px inherit;font-family:inherit;cursor:pointer;text-decoration:none;text-align:center}
+.btn-gold{background:var(--accent);color:#0a0a0a}
+.btn-line{background:none;border:1px solid #4a4a4a;color:var(--text)}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:16px 0}
+.stats div{background:var(--surface-2);border-radius:10px;padding:10px;text-align:center}
+.stats b{display:block;font-size:22px;color:var(--accent)}
+.stats small{color:var(--muted);font-size:12px}
+.card h3{margin:0;font-size:22px}
+.card .tel{color:var(--muted);font-family:ui-monospace,Menlo,monospace;font-size:14px}
+.msg{white-space:pre-wrap;background:var(--surface-2);border-left:3px solid var(--accent);border-radius:8px;padding:12px 14px;margin:14px 0;font-size:15px}
+.aviso{color:var(--accent);font-size:14px;margin-top:10px}
+.erro{color:var(--danger)}
+.ok{color:var(--ok)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td{padding:6px 4px;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;color:var(--muted)}
+.hide{display:none}
+@media (max-width:520px){.stats{grid-template-columns:repeat(2,1fr)}.btn{width:100%}}
+</style>
+</head>
+<body><div class="wrap">
+
+<h1>Convite <span>Lista VIP</span></h1>
+<p class="sub">Mascarenhas Suplementos · convide seus clientes um por um, do seu WhatsApp.<br>
+Tudo fica só neste aparelho: a lista de clientes não é enviada para lugar nenhum.</p>
+
+<div class="box">
+<ul class="regras">
+  <li><b>Só clientes de verdade</b> (quem já comprou ou já conversou com você). Nada de lista comprada.</li>
+  <li><b>Poucos por dia:</b> comece com 15 a 20 e espere 1 a 3 minutos entre um e outro.</li>
+  <li><b>Cada mensagem tem o nome da pessoa</b> e um jeito fácil de dizer "não quero".</li>
+  <li><b>Responda todo mundo</b> que responder. Conversa de mão dupla é o que mostra ao WhatsApp que você não é spam.</li>
+  <li>Quem pedir para sair: toque em <b>"Pediu para sair"</b>. Nunca mais aparece aqui.</li>
+</ul>
+</div>
+
+<h2>1. Abrir a lista de clientes</h2>
+<div class="box">
+  <label for="arq">Arquivo de clientes (HTML, CSV, TXT ou contatos .vcf)</label>
+  <input type="file" id="arq" accept=".html,.htm,.csv,.txt,.vcf">
+  <label for="colar">Ou cole aqui (uma pessoa por linha: nome e telefone)</label>
+  <textarea id="colar" placeholder="Maria Souza  (71) 98888-7777&#10;João  71 99999-0000"></textarea>
+  <div class="row"><button class="btn btn-line" id="lerColado">Usar o texto colado</button></div>
+  <p id="lido" class="aviso"></p>
+</div>
+
+<div id="painel" class="hide">
+<h2>2. Enviar convites</h2>
+<div class="box">
+  <div class="row" style="margin-top:0">
+    <label for="limite" style="margin:0">Limite por dia</label>
+    <input type="number" id="limite" min="1" max="50" value="20" style="width:90px">
+  </div>
+  <div class="stats">
+    <div><b id="sHoje">0</b><small>enviados hoje</small></div>
+    <div><b id="sFalta">0</b><small>falta convidar</small></div>
+    <div><b id="sTotal">0</b><small>já convidados</small></div>
+    <div><b id="sSair">0</b><small>pediram para sair</small></div>
+  </div>
+
+  <div id="atual" class="card">
+    <h3 id="nome"></h3>
+    <div class="tel" id="tel"></div>
+    <div class="msg" id="msg"></div>
+    <div class="row">
+      <a class="btn btn-gold" id="abrir" target="_blank" rel="noopener">Abrir no WhatsApp</a>
+      <button class="btn btn-line" id="outra">Outra mensagem</button>
+    </div>
+    <div class="row">
+      <button class="btn btn-line" id="enviei">✓ Enviei</button>
+      <button class="btn btn-line" id="pular">Pular por agora</button>
+      <button class="btn btn-line" id="sair">Pediu para sair</button>
+    </div>
+    <p class="aviso" id="espera"></p>
+  </div>
+  <p id="fim" class="ok hide"></p>
+</div>
+
+<h2>3. Quem já foi convidado</h2>
+<div class="box"><table id="hist"></table>
+  <div class="row"><button class="btn btn-line" id="zerar">Apagar dados deste aparelho</button></div>
+</div>
+</div>
+
+</div>
+<script>
+/* ---------- mensagens (variam de verdade: cada uma é um jeito diferente de convidar) ---------- */
+const MSGS = [
+`Oi, {nome}! Aqui é da Mascarenhas Suplementos 💪
+Criei uma Lista VIP no WhatsApp: toda segunda mando as ofertas da semana, antes de todo mundo.
+Quer entrar? Responde *SIM* e salva este número.
+Se não quiser, é só responder *NÃO* que eu não mando mais nada. 🙏`,
+`{nome}, tudo bem? É da Mascarenhas Suplementos.
+Você já comprou com a gente, então quis te chamar primeiro: estou montando uma lista com os melhores preços da semana (creatina, whey, pré-treino...).
+Posso te incluir? Responde *SIM*. Se preferir não receber, responde *NÃO*, sem problema.`,
+`Fala, {nome}! Mascarenhas Suplementos aqui 🏠🏠
+A partir de segunda vou mandar uma oferta por semana, no máximo 3 mensagens, pra quem quiser.
+Topa entrar na Lista VIP? Responde *SIM*.
+Não quer? Responde *SAIR* e pronto.`,
+`Olá, {nome}! Obrigado por ter comprado com a Mascarenhas Suplementos.
+Toda segunda vou mandar as ofertas da semana e avisar quando chegar produto de pronta entrega.
+Se quiser receber, responde *SIM* e salva nosso número. Se não, responde *NÃO*. 😉`,
+`Oi, {nome}, bom dia! Mascarenhas Suplementos.
+Lançamos a Lista VIP: preço da semana direto no WhatsApp, pra quem treina em Salvador.
+Quer participar? É só responder *SIM*.
+Prefere não receber? Me fala que eu tiro você.`,
+`{nome}, passando rapidinho! 💪 Mascarenhas Suplementos.
+Vou começar a mandar as ofertas da semana pra quem já é cliente.
+Responde *SIM* que eu te coloco na lista, ou *NÃO* se não quiser receber.`
+];
+
+/* ---------- armazenamento local ---------- */
+const K = "mascVipConvite";
+const load = () => { try { return JSON.parse(localStorage.getItem(K)) || {}; } catch (_) { return {}; } };
+const save = d => { try { localStorage.setItem(K, JSON.stringify(d)); } catch (_) {} };
+let DB = Object.assign({ status: {}, envios: [], limite: 20, msgIdx: 0, ultimoEnvio: 0 }, load());
+let CLIENTES = [];
+let atual = null, varIdx = 0, puladosSessao = new Set();
+
+const $ = id => document.getElementById(id);
+const hoje = () => new Date().toISOString().slice(0, 10);
+
+/* ---------- leitura do arquivo ---------- */
+function normTel(raw) {
+  let d = String(raw).replace(/\D/g, "");
+  if (d.startsWith("00")) d = d.slice(2);
+  if (d.length === 8 || d.length === 9) d = "71" + d;          // sem DDD: assume Salvador
+  if (d.length === 10 || d.length === 11) d = "55" + d;
+  if (d.length === 12 && d.startsWith("55")) {                  // celular antigo sem o 9
+    const n = d.slice(4); if (/^[6-9]/.test(n)) d = d.slice(0, 4) + "9" + n;
+  }
+  return /^55\d{11}$/.test(d) ? d : null;
+}
+const RE_TEL = /(?:\+?55[\s.-]?)?(?:\(?\d{2}\)?[\s.-]?)?9?\d{4}[\s.-]?\d{4}/g;
+function limpaNome(t) {
+  return t.replace(RE_TEL, " ").replace(/[\d|;,\t:+()\-]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 60);
+}
+function primeiroNome(n) {
+  const p = (n || "").split(" ")[0] || "";
+  return p ? p[0].toUpperCase() + p.slice(1).toLowerCase() : "";
+}
+function deLinhas(linhas) {
+  const out = [];
+  for (const l of linhas) {
+    const m = l.match(RE_TEL); if (!m) continue;
+    const tel = normTel(m[0]); if (!tel) continue;
+    out.push({ tel, nome: limpaNome(l) });
+  }
+  return out;
+}
+function deVcf(txt) {
+  const out = [];
+  for (const bloco of txt.split(/END:VCARD/i)) {
+    const fn = (bloco.match(/^FN[^:]*:(.*)$/im) || [])[1] || "";
+    for (const t of bloco.match(/^TEL[^:]*:(.*)$/gim) || []) {
+      const tel = normTel(t.split(":").pop()); if (tel) { out.push({ tel, nome: fn.trim() }); break; }
+    }
+  }
+  return out;
+}
+function deHtml(txt) {
+  const doc = new DOMParser().parseFromString(txt, "text/html");
+  doc.querySelectorAll("script,style").forEach(e => e.remove());
+  const telDeLink = a => decodeURIComponent(a.getAttribute("href") || "").replace(/^.*?(?:wa\.me\/|phone=|tel:)/, "").replace(/\D/g, "");
+  const out = [];
+  const linhas = [...doc.querySelectorAll("tr,li")];
+  for (const el of linhas) {
+    const cels = el.matches("tr") ? [...el.children] : [el];
+    let tel = null, nome = "";
+    for (const c of cels) {
+      for (const a of c.querySelectorAll("a[href]")) { const t = normTel(telDeLink(a)); if (t && !tel) tel = t; }
+      const semLinks = c.cloneNode(true); semLinks.querySelectorAll("a").forEach(a => a.remove());
+      const txt = semLinks.textContent;
+      const m = txt.match(RE_TEL); if (m && !tel) tel = normTel(m[0]);
+      if (!nome) nome = limpaNome(txt);
+    }
+    if (tel) out.push({ tel, nome });
+  }
+  if (out.length) return out;
+  return deLinhas((doc.body.innerText || doc.body.textContent).split("\n"));
+}
+function carregar(lista, origem) {
+  const vistos = new Map();
+  for (const c of lista) if (!vistos.has(c.tel)) vistos.set(c.tel, c); else if (!vistos.get(c.tel).nome && c.nome) vistos.set(c.tel, c);
+  CLIENTES = [...vistos.values()];
+  $("lido").innerHTML = CLIENTES.length
+    ? `<span class="ok">${CLIENTES.length} clientes encontrados</span> em ${origem}. Confira os nomes antes de enviar.`
+    : `<span class="erro">Não achei nenhum telefone.</span> Tente colar a lista no campo acima.`;
+  $("painel").classList.toggle("hide", !CLIENTES.length);
+  proximo();
+}
+$("arq").addEventListener("change", e => {
+  const f = e.target.files[0]; if (!f) return;
+  const r = new FileReader();
+  r.onload = () => {
+    const t = String(r.result), n = f.name.toLowerCase();
+    carregar(n.endsWith(".vcf") ? deVcf(t) : /\.html?$/.test(n) ? deHtml(t) : deLinhas(t.split(/\r?\n/)), f.name);
+  };
+  r.readAsText(f);
+});
+$("lerColado").addEventListener("click", () => carregar(deLinhas($("colar").value.split(/\r?\n/)), "texto colado"));
+
+/* ---------- envio ---------- */
+const enviadosHoje = () => DB.envios.filter(e => e.dia === hoje()).length;
+function montaMsg(c, i) {
+  const nome = primeiroNome(c.nome);
+  let m = MSGS[i % MSGS.length].replace(/\{nome\}/g, nome || "tudo bem");
+  if (!nome) m = m.replace(/^(Oi|Olá|Fala), tudo bem!/, "$1, tudo bem?").replace(/^tudo bem, tudo bem\?/, "Tudo bem?");
+  return m;
+}
+function proximo() {
+  DB.limite = +$("limite").value || 20; save(DB);
+  const pend = CLIENTES.filter(c => !DB.status[c.tel] && !puladosSessao.has(c.tel));
+  const falta = CLIENTES.filter(c => !DB.status[c.tel]).length;
+  $("sHoje").textContent = enviadosHoje();
+  $("sFalta").textContent = falta;
+  $("sTotal").textContent = Object.values(DB.status).filter(s => s.s === "enviado").length;
+  $("sSair").textContent = Object.values(DB.status).filter(s => s.s === "sair").length;
+  renderHist();
+  const limite = enviadosHoje() >= DB.limite;
+  atual = limite ? null : pend[0] || null;
+  $("atual").classList.toggle("hide", !atual);
+  $("fim").classList.toggle("hide", !!atual);
+  if (!atual) {
+    $("fim").textContent = limite
+      ? `Limite de hoje atingido (${DB.limite}). Volte amanhã e responda quem respondeu.`
+      : falta ? "Só sobraram os que você pulou. Recarregue a página para vê-los de novo." : "Todos os clientes da lista já foram convidados. 🎉";
+    return;
+  }
+  varIdx = DB.msgIdx;
+  mostra();
+}
+function mostra() {
+  $("nome").textContent = atual.nome || "(sem nome)";
+  $("tel").textContent = "+" + atual.tel.replace(/^55(\d{2})(\d{5})(\d{4})$/, "55 ($1) $2-$3");
+  const m = montaMsg(atual, varIdx);
+  $("msg").textContent = m;
+  $("abrir").href = `https://wa.me/${atual.tel}?text=${encodeURIComponent(m)}`;
+  esperaTxt();
+}
+let timer;
+function esperaTxt() {
+  clearInterval(timer);
+  const tick = () => {
+    const seg = Math.ceil((DB.ultimoEnvio + 90000 - Date.now()) / 1000);
+    $("espera").textContent = seg > 0 ? `Calma: espere mais ${seg}s antes do próximo (pausa recomendada de 1 a 3 min).` : "";
+    if (seg <= 0) clearInterval(timer);
+  };
+  tick(); timer = setInterval(tick, 1000);
+}
+$("outra").addEventListener("click", () => { varIdx++; mostra(); });
+$("enviei").addEventListener("click", () => {
+  if (!atual) return;
+  DB.status[atual.tel] = { s: "enviado", nome: atual.nome, dia: hoje() };
+  DB.envios.push({ tel: atual.tel, dia: hoje() });
+  DB.msgIdx = varIdx + 1; DB.ultimoEnvio = Date.now();
+  save(DB); proximo();
+});
+$("pular").addEventListener("click", () => { puladosSessao.add(atual.tel); proximo(); });
+$("sair").addEventListener("click", () => {
+  if (!atual) return;
+  DB.status[atual.tel] = { s: "sair", nome: atual.nome, dia: hoje() };
+  save(DB); proximo();
+});
+$("limite").value = DB.limite;
+$("limite").addEventListener("change", proximo);
+function renderHist() {
+  const linhas = Object.entries(DB.status).sort((a, b) => b[1].dia.localeCompare(a[1].dia)).slice(0, 200);
+  $("hist").innerHTML = linhas.length
+    ? linhas.map(([t, s]) => `<tr><td>${(s.nome || "+" + t).replace(/</g, "&lt;")}</td><td>${s.s === "sair" ? "pediu para sair" : "convidado"} · ${s.dia.split("-").reverse().slice(0, 2).join("/")}</td></tr>`).join("")
+    : `<tr><td>Ninguém convidado ainda.</td><td></td></tr>`;
+}
+$("zerar").addEventListener("click", () => {
+  if (confirm("Apagar o histórico de convites deste aparelho? (quem pediu para sair também será esquecido)")) {
+    try { localStorage.removeItem(K); } catch (_) {}
+    DB = { status: {}, envios: [], limite: 20, msgIdx: 0, ultimoEnvio: 0 }; proximo();
+  }
+});
+</script>
+</body>
+</html>

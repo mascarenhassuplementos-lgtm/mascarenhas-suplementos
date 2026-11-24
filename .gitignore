@@ -2,3 +2,8 @@
 __pycache__/
 *.pyc
 .claude/
+
+# Dados de clientes nunca vão para o repositório (ele é público)
+clientes*
+*clientes*
+*.vcf
